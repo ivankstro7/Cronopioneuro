@@ -43,11 +43,12 @@
     color: var(--green-900)
 }
 
-#heroimage .content-heroimage ..heroimage-title h1{
+#heroimage .content-heroimage .heroimage-title h1{
     margin-bottom: 1.5rem;
 }
 
 #heroimage .content-heroimage .heroimage-title p{
+    font-size: 1.125rem;
     margin-bottom: 1.5rem;
 }
 
@@ -55,4 +56,19 @@
     background-color: var(--green-900);
     border: none;
     color: var(--white);
+}
+
+#heroimage .content-heroimage .heroimage-list-group{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+    font-size: 1.125rem;
+}
+
+#heroimage .content-heroimage .heroimage-list-group .list-group-item img{
+    margin-bottom: 1rem;
+}
+
+#heroimage .content-heroimage picture img{
+    width: 100%;
 }
