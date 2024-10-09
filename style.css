@@ -14,7 +14,7 @@
 }
 
 /*navbar*/
-.navbar{
+.navbar {
     padding: 16px !important;
 }
 
@@ -22,27 +22,27 @@
     --bs-bg-opacity: 0 !important;
 }
 
-.navbar .container-fluid{
+.navbar .container-fluid {
     padding: 0.5rem 0.75rem;
     border-radius: 16px;
     background-color: var(--green-gray-100);
 }
 
-.navbar .navbar-brand{
+.navbar .navbar-brand {
     width: 50%;
 }
 
-.navbar .navbar-brand img{
+.navbar .navbar-brand img {
     width: 100%;
 }
 
-.navbar .container-fluid .navbar-toggler{
+.navbar .container-fluid .navbar-toggler {
     padding: 0;
     border: none;
 }
 
 /*hero image*/
-#heroimage .content-heroimage{
+#heroimage .content-heroimage {
     padding-top: 6.25rem;
     background-color: var(--green-200);
 }
@@ -52,18 +52,18 @@
     color: var(--green-900)
 }
 
-#heroimage .content-heroimage .heroimage-title h1{
+#heroimage .content-heroimage .heroimage-title h1 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
 }
 
-#heroimage .content-heroimage .heroimage-title p{
+#heroimage .content-heroimage .heroimage-title p {
     font-size: 1.125rem;
     margin-bottom: 1.5rem;
 }
 
-#heroimage .content-heroimage .heroimage-title .btn-primary{
+#heroimage .content-heroimage .heroimage-title .btn-primary {
     width: 100%;
     font-size: 1.125rem;
     font-weight: 500;
@@ -73,23 +73,23 @@
     padding: 16px 24px;
 }
 
-#heroimage .content-heroimage .heroimage-title .btn-primary img{
+#heroimage .content-heroimage .heroimage-title .btn-primary img {
     margin-left: 8px;
 }
 
 
-#heroimage .content-heroimage .heroimage-list-group{
+#heroimage .content-heroimage .heroimage-list-group {
     display: flex;
     flex-direction: column;
     margin: 1.5rem 0;
     font-size: 1.125rem;
 }
 
-#heroimage .content-heroimage .heroimage-list-group .list-group-item img{
+#heroimage .content-heroimage .heroimage-list-group .list-group-item img {
     margin-bottom: 1rem;
 }
 
-#heroimage .content-heroimage picture img{
+#heroimage .content-heroimage picture img {
     width: 100%;
 }
 
@@ -98,7 +98,7 @@
     padding: 1rem;
 }
 
-#neuro-service .neuro-service-container{
+#neuro-service .neuro-service-container {
     background-color: var(--green-gray-100);
     border-radius: 1.5rem;
     border: 1px solid var(--green-900);
@@ -106,31 +106,31 @@
     padding: 0;
 }
 
-#neuro-service .neuro-service-container picture img{
+#neuro-service .neuro-service-container picture img {
     width: 100%;
     border-radius: 24px 24px 0 0;
 }
 
-#neuro-service .neuro-service-container .neuro-service-info{
+#neuro-service .neuro-service-container .neuro-service-info {
     padding: 1rem;
 }
 
-#neuro-service .neuro-service-container .neuro-service-info .neuro-service-title small{
+#neuro-service .neuro-service-container .neuro-service-info .neuro-service-title small {
     font-weight: bold;
     color: var(--green-900);
 }
 
-#neuro-service .neuro-service-container .neuro-service-info h2{
+#neuro-service .neuro-service-container .neuro-service-info h2 {
     font-weight: bold;
     margin-bottom: 1rem;
     color: var(--green-900);
 }
 
-#neuro-service .neuro-service-container .neuro-service-info p{
+#neuro-service .neuro-service-container .neuro-service-info p {
     color: var(--gray-800);
 }
 
-#neuro-service .neuro-service-container .neuro-service-info .list-group-item{
+#neuro-service .neuro-service-container .neuro-service-info .list-group-item {
     font-size: 0.875rem;
     background-color: var(--green-gray-100);
     border: none;
@@ -139,50 +139,50 @@
 }
 
 /*benefits*/
-#benfits .benfits-title small{
+#benfits .benfits-title small {
     font-weight: bold;
     color: var(--green-900);
 }
 
-#benfits .benfits-title h2{
+#benfits .benfits-title h2 {
     font-weight: bold;
     color: var(--green-900);
 }
 
-#benfits .benfits-title p{
+#benfits .benfits-title p {
     color: var(--gray-800);
 }
 
-#benfits .benfits-grid{
+#benfits .benfits-grid {
     padding: 0 1rem 0 1rem;
 }
 
-#benfits .benfits-grid .card{
+#benfits .benfits-grid .card {
     background-color: var(--green-gray-100);
     border: 1px solid var(--green-gray-200);
     border-radius: 24px;
     margin-bottom: 1rem;
 }
 
-#benfits .benfits-grid .card .card-body{
+#benfits .benfits-grid .card .card-body {
     color: var(--gray-800);
     padding: 1.5rem;
 }
 
-#benfits .benfits-grid .card .card-body h3{
+#benfits .benfits-grid .card .card-body h3 {
     margin-bottom: 1rem;
 }
 
-#benfits .benfits-grid img{
+#benfits .benfits-grid img {
     border-radius: 0 0 24px 24px;
 }
 
-#benfits .benfits-cta{
+#benfits .benfits-cta {
     padding: 1rem;
     text-align: center;
 }
 
-#benfits .benfits-cta h2{
+#benfits .benfits-cta h2 {
     color: var(--gray-800);
     margin-bottom: 1rem;
 }
@@ -193,7 +193,7 @@
     margin-bottom: 1.5rem;
 }
 
-#benfits .benfits-cta .list-group .list-group-item{
+#benfits .benfits-cta .list-group .list-group-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,7 +203,7 @@
     border: none;
 }
 
-#benfits .benfits-cta .btn-primary{
+#benfits .benfits-cta .btn-primary {
     font-size: 1.125rem;
     font-weight: 500;
     background-color: var(--green-900);
@@ -212,6 +212,75 @@
     padding: 16px 24px;
 }
 
-#benfits .benfits-cta .btn-primary img{
+#benfits .benfits-cta .btn-primary img {
     margin-left: 8px;
+}
+
+/*testimonials*/
+#testimonials {
+    padding: 1rem;
+}
+
+#testimonials .testimonials-body {
+    background-color: var(--green-200);
+    border-radius: 24px;
+    border: 1px solid var(--green-gray-200);
+    padding: 1rem;
+}
+
+#testimonials .testimonials-body .body-title small {
+    font-weight: bold;
+    color: var(--green-900);
+}
+
+#testimonials .testimonials-body .body-title h2 {
+    font-weight: bold;
+    color: var(--green-900);
+    margin-bottom: 1.5rem;
+}
+
+#testimonials .testimonials-body .body-grid .card {
+    background-color: var(--green-900);
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+#testimonials .testimonials-body .body-grid .card .card-body h6{
+    margin-bottom: 1rem;
+}
+
+#testimonials .testimonials-body .body-grid .card .card-body p{
+    font-weight: 300;
+}
+
+#testimonials .testimonials-body .body-grid .card .card-patient{
+    padding: 0 1rem 0 1rem;
+}
+
+#testimonials .testimonials-body .body-grid .card .card-patient img{
+    width: 25%;
+    margin: 0 0 1rem 0;
+}
+
+#testimonials .testimonials-body .body-grid .card .card-patient blockquote{
+    margin: 0 0 0.5rem 0
+}
+
+#testimonials .testimonials-body .body-grid .card .card-patient .blockquote-footer{
+    color: var(--green-gray-200);
+    margin-top: 0;
+}
+
+#testimonials .testimonials-body .body-list-group .list-group-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--green-200);
+    border: none;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+#testimonials .testimonials-body .body-list-group .list-group-item h6{
+    color: var(--green-900);
 }
