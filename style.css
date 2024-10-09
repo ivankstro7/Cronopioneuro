@@ -87,6 +87,22 @@
     background-color: var(--green-gray-100);
     border-radius: 1.5rem;
     border: 1px solid var(--green-900);
+    margin-bottom: 1.5rem;
+    padding: 0;
+}
+
+#neuro-service .neuro-service-container picture img{
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+}
+
+#neuro-service .neuro-service-container .neuro-service-info{
+    padding: 1rem;
+}
+
+#neuro-service .neuro-service-container .neuro-service-info .neuro-service-title small{
+    font-weight: bold;
+    color: var(--green-900);
 }
 
 #neuro-service .neuro-service-container .neuro-service-info h2{
@@ -100,21 +116,10 @@
 }
 
 #neuro-service .neuro-service-container .neuro-service-info .list-group-item{
+    font-size: 0.875rem;
     background-color: var(--green-gray-100);
     border: none;
     padding: 0;
     margin-bottom: 1rem;
 }
 
-#neuro-service .neuro-service-container .neuro-service-info ui ul::before{
-    content: "";
-    background-image: url('https://tu-repositorio.com/icono-check.png'); /* URL de la imagen */
-    background-size: contain; /* Asegura que la imagen se ajuste correctamente */
-    background-repeat: no-repeat;
-    width: 16px; /* Ancho de la imagen */
-    height: 16px; /* Altura de la imagen */
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%); /* Centra verticalmente el ícono */
-}
