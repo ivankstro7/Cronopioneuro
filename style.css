@@ -44,6 +44,8 @@
 }
 
 #heroimage .content-heroimage .heroimage-title h1{
+    font-size: 2rem;
+    font-weight: bold;
     margin-bottom: 1.5rem;
 }
 
@@ -53,9 +55,12 @@
 }
 
 #heroimage .content-heroimage .heroimage-title .btn-primary{
+    font-size: 1.125rem;
+    font-weight: 500;
     background-color: var(--green-900);
     border: none;
     color: var(--white);
+    padding: 16px 24px;
 }
 
 #heroimage .content-heroimage .heroimage-list-group{
@@ -71,4 +76,45 @@
 
 #heroimage .content-heroimage picture img{
     width: 100%;
+}
+
+/*service*/
+#neuro-service {
+    padding: 1rem;
+}
+
+#neuro-service .neuro-service-container{
+    background-color: var(--green-gray-100);
+    border-radius: 1.5rem;
+    border: 1px solid var(--green-900);
+}
+
+#neuro-service .neuro-service-container .neuro-service-info h2{
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--green-900);
+}
+
+#neuro-service .neuro-service-container .neuro-service-info p{
+    color: var(--gray-800);
+}
+
+#neuro-service .neuro-service-container .neuro-service-info .list-group-item{
+    background-color: var(--green-gray-100);
+    border: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+#neuro-service .neuro-service-container .neuro-service-info ui ul::before{
+    content: "";
+    background-image: url('https://tu-repositorio.com/icono-check.png'); /* URL de la imagen */
+    background-size: contain; /* Asegura que la imagen se ajuste correctamente */
+    background-repeat: no-repeat;
+    width: 16px; /* Ancho de la imagen */
+    height: 16px; /* Altura de la imagen */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Centra verticalmente el ícono */
 }
