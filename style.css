@@ -41,6 +41,7 @@
     border: none;
 }
 
+/*hero image*/
 #heroimage .content-heroimage{
     padding-top: 6.25rem;
     background-color: var(--green-200);
@@ -177,4 +178,27 @@
 
 #benfits .benfits-grid .card .card-body h3{
     margin-bottom: 1rem;
+}
+
+#benfits .benfits-grid img{
+    border-radius: 0 0 24px 24px;
+}
+
+#benfits .benfits-cta{
+    padding: 1rem;
+    text-align: center;
+}
+
+#benfits .benfits-cta h2{
+    color: var(--gray-800);
+    margin-bottom: 1rem;
+}
+
+#benfits .benfits-cta .btn-primary{
+    font-size: 1.125rem;
+    font-weight: 500;
+    background-color: var(--green-900);
+    border: none;
+    color: var(--white);
+    padding: 16px 24px;
 }
