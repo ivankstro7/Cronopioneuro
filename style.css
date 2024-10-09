@@ -64,6 +64,7 @@
 }
 
 #heroimage .content-heroimage .heroimage-title .btn-primary{
+    width: 100%;
     font-size: 1.125rem;
     font-weight: 500;
     background-color: var(--green-900);
@@ -71,6 +72,11 @@
     color: var(--white);
     padding: 16px 24px;
 }
+
+#heroimage .content-heroimage .heroimage-title .btn-primary img{
+    margin-left: 8px;
+}
+
 
 #heroimage .content-heroimage .heroimage-list-group{
     display: flex;
@@ -147,19 +153,6 @@
     color: var(--gray-800);
 }
 
-#benfits .list-group {
-    margin-bottom: 1rem;
-}
-
-#benfits .list-group .list-group-item{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: center;
-    padding-top: 0;
-    border: none;
-}
-
 #benfits .benfits-grid{
     padding: 0 1rem 0 1rem;
 }
@@ -194,6 +187,22 @@
     margin-bottom: 1rem;
 }
 
+#benfits .benfits-cta .list-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+#benfits .benfits-cta .list-group .list-group-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    border: none;
+}
+
 #benfits .benfits-cta .btn-primary{
     font-size: 1.125rem;
     font-weight: 500;
@@ -201,4 +210,8 @@
     border: none;
     color: var(--white);
     padding: 16px 24px;
+}
+
+#benfits .benfits-cta .btn-primary img{
+    margin-left: 8px;
 }
