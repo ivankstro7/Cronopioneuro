@@ -359,8 +359,29 @@
     padding: 16px 24px;
 }
 
-#contact .card .card-body .btn-primary img{
+#contact .card .card-body .btn-primary img {
     margin-left: 0.5rem;
+}
+
+/*footer*/
+#footer {
+    padding: 1rem;
+    border-top: 1px solid var(--green-gray-200);
+}
+
+#footer .footer-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer .footer-body .navbar-brand img{
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+}
+
+#footer .footer-body p{
+    text-align: center;
 }
 
 /*FAB*/
