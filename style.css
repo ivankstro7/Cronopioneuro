@@ -359,6 +359,10 @@
     padding: 16px 24px;
 }
 
+#contact .card .card-body .btn-primary img{
+    margin-left: 0.5rem;
+}
+
 /*FAB*/
 .fixed-bottom {
     left: auto !important;
