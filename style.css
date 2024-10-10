@@ -91,6 +91,7 @@
 
 #heroimage .content-heroimage picture img {
     width: 100%;
+    border-radius: 1.5rem 1.5rem 0 0;
 }
 
 /*service*/
