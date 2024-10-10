@@ -310,7 +310,7 @@
     margin: 0 0 1.5rem 0;
 }
 
-#faq .faq-body .accordion .accordion-item{
+#faq .faq-body .accordion .accordion-item {
     border-top: 1px solid var(--green-gray-200);
     border-right: 0;
     border-bottom: 1px solid var(--green-gray-200);
@@ -321,6 +321,7 @@
     font-weight: 600;
     color: var(--green-900);
     padding: 1rem 0 1rem 0;
+    border-radius: 0;
 }
 
 #faq .faq-body .accordion .accordion-item .accordion-button:not(.collapsed) {
@@ -329,9 +330,33 @@
     box-shadow: none;
 }
 
-#faq .faq-body .accordion .accordion-item .accordion-body{
+#faq .faq-body .accordion .accordion-item .accordion-body {
     color: var(--gray-800);
     padding: 0 0 1rem 0;
+}
+
+/*contact*/
+#contact {
+    padding: 1rem;
+}
+
+#contact .card {
+    background-color: var(--green-900);
+    color: var(--white);
+    border: none;
+}
+
+#contact .card .card-body h2 {
+    font-weight: bold;
+}
+
+#contact .card .card-body .btn-primary {
+    font-size: 1.125rem;
+    font-weight: 500;
+    background-color: var(--green-200);
+    border: none;
+    color: var(--green-900);
+    padding: 16px 24px;
 }
 
 /*FAB*/
