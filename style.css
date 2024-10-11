@@ -41,6 +41,15 @@
     border: none;
 }
 
+.navbar .container-fluid .btn-primary {
+    display: none;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--green-900);
+}
+
 /*hero image*/
 #heroimage .content-heroimage {
     padding-top: 6.25rem;
@@ -85,12 +94,24 @@
     font-size: 1.125rem;
 }
 
-#heroimage .content-heroimage .heroimage-list-group .list-group-item img {
+#heroimage .content-heroimage .heroimage-list-group .list-group-item {
+    display: flex;
+    align-items: center;
     margin-bottom: 1rem;
+}
+
+#heroimage .content-heroimage .heroimage-list-group .list-group-item img {
+    margin: 0 0.5rem 0 0;
+}
+
+#heroimage .content-heroimage .heroimage-list-group .list-group-item p {
+    margin: 0;
 }
 
 #heroimage .content-heroimage picture img {
     width: 100%;
+    height: 300px;
+    object-fit: cover;
     border-radius: 1.5rem 1.5rem 0 0;
 }
 
@@ -244,6 +265,7 @@
     background-color: var(--green-900);
     color: var(--white);
     margin-bottom: 1.5rem;
+    border-radius: 1.5rem;
 }
 
 #testimonials .testimonials-body .body-grid .card .card-body h6 {
@@ -293,7 +315,6 @@
 }
 
 #faq .faq-body .body-img {
-    width: 100%;
     margin-bottom: 1.5rem;
     background-color: var(--green-gray-100);
     border: 1px solid var(--green-gray-200);
@@ -345,6 +366,11 @@
     background-color: var(--green-900);
     color: var(--white);
     border: none;
+    border-radius: 1.5rem;
+}
+
+#contact .card .card-body {
+    text-align: center;
 }
 
 #contact .card .card-body h2 {
@@ -370,18 +396,18 @@
     border-top: 1px solid var(--green-gray-200);
 }
 
-#footer .footer-body{
+#footer .footer-body {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#footer .footer-body .navbar-brand img{
+#footer .footer-body .navbar-brand img {
     width: 100%;
     margin: 0 0 1.5rem 0;
 }
 
-#footer .footer-body p{
+#footer .footer-body p {
     text-align: center;
 }
 
@@ -396,4 +422,248 @@
 
 .fixed-bottom button img {
     width: 100%;
+}
+
+/*landscape phones, 608px*/
+@media (min-width: 608px) {
+    .navbar .navbar-brand {
+        width: 40%;
+    }
+
+    #heroimage .content-heroimage {
+        padding-top: 7rem;
+    }
+
+    #heroimage .content-heroimage picture img {
+        height: 400px;
+    }
+
+    #neuro-service .neuro-service-container picture img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    #benfits .benfits-title {
+        text-align: center;
+    }
+
+    #benfits .benfits-grid img {
+        height: 150px;
+        object-fit: cover;
+    }
+
+    #testimonials .testimonials-body .body-title {
+        text-align: center;
+    }
+
+    #testimonials .testimonials-body .body-grid .card .card-patient {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        padding: 0 1.5rem 0 1.5rem;
+    }
+
+    #testimonials .testimonials-body .body-grid .card .card-patient img {
+        width: auto;
+        margin: 0 1rem 0 0;
+    }
+
+    #testimonials .testimonials-body .body-grid .card .card-patient figure {
+        margin: 0;
+    }
+
+    #testimonials .testimonials-body .body-grid .card .card-patient .blockquote-footer {
+        margin-bottom: 0;
+    }
+
+    #testimonials .testimonials-body .body-grid .card .card-body {
+        padding: 1.5rem;
+    }
+
+    #faq .faq-body .body-img img {
+        height: 300px;
+        object-fit: contain;
+    }
+
+    #faq {
+        padding: 0.3rem;
+    }
+
+    #footer {
+        padding: 1.5rem;
+    }
+
+    #footer .footer-body .footer-brand {
+        text-align: center;
+    }
+
+    #footer .footer-body .footer-brand img {
+        width: 50%;
+    }
+}
+
+/*tablets, 768px*/
+@media (min-width: 768px) {
+    .navbar .navbar-brand {
+        width: 25%;
+    }
+
+    #heroimage .content-heroimage {
+        padding: 7rem 1.5rem 0 1.5rem;
+    }
+
+    #heroimage .content-heroimage .heroimage-title .btn-primary {
+        width: auto;
+    }
+
+    #heroimage .content-heroimage picture img {
+        height: 500px;
+    }
+
+    #neuro-service {
+        padding: 1.5rem;
+    }
+
+    #neuro-service .neuro-service-container picture img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    #benfits {
+        padding: 1.5rem;
+    }
+
+    #benfits .benfits-grid {
+        display: flex;
+        padding: 0;
+        gap: 20px;
+    }
+
+    #benfits .benfits-grid .card {
+        flex-direction: row;
+    }
+
+    #benfits .benfits-grid img {
+        border-radius: 0 24px 24px 0;
+        object-fit: cover;
+    }
+
+    #benfits .benfits-cta h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    #benfits .benfits-cta .list-group {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #testimonials {
+        padding: 1.5rem;
+    }
+
+    #testimonials .testimonials-body {
+        padding: 1.5rem;
+    }
+
+    #contact {
+        padding: 1.5rem;
+    }
+
+    #contact .card {
+        flex-direction: row;
+    }
+
+    #contact .card .card-body {
+        margin: auto;
+    }
+
+    #contact .card .card-img-top {
+        width: 50%;
+    }
+}
+
+/*desktop, 992px*/
+@media (min-width: 992px) {
+    .navbar .navbar-brand {
+        width: 20%;
+    }
+
+    .navbar .container-fluid .btn-primary {
+        display: block;
+        font-size: 1rem;
+        background-color: var(--green-900);
+        border: none;
+        color: var(--white);
+        padding: 8px 12px;
+    }
+
+    .navbar .container-fluid .btn-primary img {
+        margin-left: 8px;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: center;
+    }
+
+    #heroimage .content-heroimage {
+        display: flex;
+    }
+
+    #heroimage .content-heroimage .heroimage-title {
+        padding-right: 1.5rem;
+    }
+
+    #heroimage .content-heroimage picture img {
+        height: 630px;
+    }
+
+    #heroimage .content-heroimage .heroimage-list-group {
+        margin: 1.5rem 0 0 0;
+    }
+
+    #neuro-service .neuro-service-container {
+        display: flex;
+    }
+
+    #neuro-service .neuro-service-container picture img {
+        height: 348px;
+        object-fit: cover;
+        border-radius: 24px 0 0 24px;
+    }
+
+    #neuro-service .neuro-service-container .neuro-service-info {
+        padding: 1.5rem;
+    }
+
+    #benfits .benfits-title {
+        padding: 0 10rem;
+    }
+
+    #benfits .benfits-grid img {
+        height: 176px;
+    }
+
+    #testimonials .testimonials-body .body-list-group .list-group {
+        flex-direction: row;
+    }
+
+    #faq .faq-body {
+        flex-direction: row;
+        gap: 36px;
+    }
+
+    #faq .faq-body .body-img img {
+        height: 470px;
+    }
+}
+
+/*large desktops, 1200px*/
+@media (min-width: 1200px){
+    #heroimage .content-heroimage{
+        padding-top: 8rem;
+    }
+
+    #neuro-service .neuro-service-container picture img{
+        height: 351px;
+    }
 }
