@@ -165,6 +165,10 @@
 }
 
 /*benefits*/
+#benfits .benfits-title{
+    text-align: center;
+}
+
 #benfits .benfits-title small {
     font-weight: bold;
     color: var(--green-900);
