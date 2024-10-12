@@ -342,11 +342,11 @@
     border-left: 0;
 }
 
-.accordion-item:last-of-type{
+.accordion-item:last-of-type {
     border-radius: 0 !important;
 }
 
-.accordion-item:last-of-type>.accordion-collapse{
+.accordion-item:last-of-type>.accordion-collapse {
     border-radius: 0 !important;
 }
 
@@ -840,15 +840,10 @@
         gap: 20px;
     }
 
-    #faq .faq-body{
+    #faq .faq-body {
         justify-content: space-around;
         gap: 0;
     }
-
-    #faq .faq-body .body-img img{
-        height: 613px;
-    }
-
 
     #contact .card .card-body {
         padding: 0 6rem;
