@@ -165,6 +165,11 @@
 }
 
 /*benefits*/
+#benfits{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 #benfits .benfits-title{
     text-align: center;
 }
