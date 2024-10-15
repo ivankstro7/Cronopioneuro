@@ -192,14 +192,31 @@
     padding: 0 1rem 0 1rem;
 }
 
-#benfits .benfits-grid .card {
+#benfits .benfits-grid .card{
+   border-radius: 0;
+   border: none; 
+   margin-bottom: 1rem;
+}
+
+#benfits .benfits-grid .card-last{
     background-color: var(--green-gray-100);
     border: 1px solid var(--green-gray-200);
     border-radius: 24px;
-    margin-bottom: 1rem;
+    color: var(--gray-800);
+}
+
+#benfits .benfits-grid .card-last .card-body-last{
+    border: none !important;
+    margin: auto;
 }
 
 #benfits .benfits-grid .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--green-gray-100);
+    border: 1px solid var(--green-gray-200);
+    border-radius: 24px;
     color: var(--gray-800);
     padding: 1.5rem;
 }
@@ -707,10 +724,6 @@
         padding: 0;
     }
 
-    #benfits .benfits-grid .card .card-body {
-        margin: auto;
-    }
-
     #benfits .benfits-grid img {
         height: 179px;
     }
@@ -817,6 +830,10 @@
     #benfits .benfits-grid {
         gap: 0;
     }
+
+    #benfits .benfits-grid .card:last-child{
+        padding-left: 20px;
+     }
 
     #benfits .benfits-grid img {
         height: 283px;
