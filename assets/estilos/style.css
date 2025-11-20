@@ -53,10 +53,10 @@
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary:active:focus {
-    background-color: var(--color-brand-primary) !important; 
+    background-color: var(--color-brand-primary) !important;
     border-color: var(--color-brand-primary) !important;
     color: var(--text-on-brand) !important;
-    filter: brightness(1.3); 
+    filter: brightness(1.3);
 }
 
 /* B. boton Secundario */
@@ -72,13 +72,70 @@
 
 .btn-promo:hover,
 .btn-promo:focus {
-    background-color: var(--bg-surface-promotional); 
+    background-color: var(--bg-surface-promotional);
     border-color: var(--color-brand-primary);
-    color: var(--color-brand-primary); 
-    filter: brightness(0.95); 
+    color: var(--color-brand-primary);
+    filter: brightness(0.95);
 }
 
 /* C. Tipografía Secundaria */
 .font-alt {
     font-family: var(--font-secundaria);
+}
+
+
+/* --- Header Unificado --- */
+.header-unified {
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    z-index: 1030;
+}
+
+/* Ajuste del texto de oferta */
+.text-muted-custom {
+    color: #555;
+    /* Un gris elegante, no negro puro */
+    font-size: 0.9rem;
+    white-space: nowrap;
+    /* Evita que el texto se rompa feo en desktop */
+}
+
+/* --- Timer Pill (Estilo Cápsula) --- */
+/* Esto hace que el contador se vea integrado, no pegado */
+.timer-pill {
+    background-color: var(--bg-accent-tonal);
+    /* Tu verde muy clarito */
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.time-box {
+    font-family: 'Courier New', monospace;
+    /* O tu fuente mono favorita */
+    font-weight: 700;
+    color: var(--color-brand-primary);
+    min-width: 22px;
+    text-align: center;
+}
+
+/* --- Ajustes Responsivos Críticos --- */
+@media (max-width: 991.98px) {
+
+    /* En móvil/tablet, la promo va en su propia "fila" abajo */
+    .promo-wrapper {
+        background-color: #f8f9fa;
+        /* Un fondo sutil para diferenciarlo */
+        padding: 8px;
+        border-radius: 8px;
+        margin-top: 5px;
+        flex-direction: row !important;
+        /* Mantenemos texto y reloj en línea si caben */
+    }
+
+    .text-muted-custom {
+        white-space: normal;
+        /* En móvil sí permitimos que haga salto de línea si es necesario */
+        font-size: 0.8rem;
+    }
 }
