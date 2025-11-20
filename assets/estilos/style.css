@@ -1,0 +1,84 @@
+/* =========================================
+   1. DESIGN TOKENS (Variables de Figma)
+   ========================================= */
+:root {
+    /* --- Color Brand --- */
+    --color-brand-primary: #072929;
+
+    /* --- Color Action --- */
+    --bg-surface-promotional: #DBFF00;
+
+    /* --- Color Surface (Fondos) --- */
+    --background-neutro-050: #FFFFFF;
+    --background-neutro-100: #F3F7F6;
+    --background-neutro-150: #F1F5F4;
+    --background-neutro-200: #CED4D0;
+    --background-neutro-300: #AEC8BB;
+    --background-accent-tonal: #86AE3E;
+    --background-accent-subtle: #CED7A4;
+
+    /* --- Color Content (Textos) --- */
+    --text-primary: #000000;
+    --text-secondary: #49454F;
+    --text-on-brand: #ffffff;
+
+    /* --- Tipografías --- */
+    --font-principal: 'DM Sans', sans-serif;
+    --font-secundaria: 'Handlee', cursive;
+
+    /* =========================================
+   2. BOOTSTRAP OVERRIDES (El puente)
+   ========================================= */
+    --bs-primary: var(--color-brand-primary);
+    --bs-body-font-family: 'DM Sans', sans-serif;
+    --bs-body-color: var(--text-primary);
+    --bs-body-bg: var(--background-neutro-050);
+}
+
+/* =========================================
+   3. COMPONENTES PERSONALIZADOS
+   ========================================= */
+/* A. Ajuste del Botón Primary (Oscuro) */
+.btn-primary {
+    background-color: var(--color-brand-primary);
+    color: var(--text-on-brand);
+    font-weight: 700;
+    padding: .75rem 1.5rem;
+    border-color: var(--color-brand-primary);
+    border-radius: .5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:focus {
+    background-color: var(--color-brand-primary) !important; 
+    border-color: var(--color-brand-primary) !important;
+    color: var(--text-on-brand) !important;
+    filter: brightness(1.3); 
+}
+
+/* B. boton Secundario */
+.btn-promo {
+    background-color: var(--bg-surface-promotional);
+    color: var(--color-brand-primary);
+    font-weight: 700;
+    padding: .75rem 1.5rem;
+    border-color: var(--color-brand-primary);
+    border-radius: .5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-promo:hover,
+.btn-promo:focus {
+    background-color: var(--bg-surface-promotional); 
+    border-color: var(--color-brand-primary);
+    color: var(--color-brand-primary); 
+    filter: brightness(0.95); 
+}
+
+/* C. Tipografía Secundaria */
+.font-alt {
+    font-family: var(--font-secundaria);
+}
