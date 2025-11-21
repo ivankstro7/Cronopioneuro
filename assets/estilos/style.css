@@ -143,6 +143,62 @@
 }
 
 /* =========================================
+   6. Datos de confianza
+   ========================================= */
+#datos-confianza h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-brand-primary);
+}
+
+.bg-light-card {
+    background-color: var(--background-neutro-150);
+}
+
+.bg-light-gray-card {
+    background-color: var(--background-neutro-200);
+}
+
+.bg-neutro-card {
+    background-color: var(--background-neutro-300);
+}
+
+.bg-accent-card {
+    background-color: var(--background-accent-subtle);
+}
+
+.bg-light-card img,
+.bg-accent-card img,
+.bg-neutro-card img {
+    width: 50%;
+}
+
+.data-card {
+    border: 1px solid var(--color-brand-primary);
+    text-align: left;
+    overflow: hidden;
+}
+
+.data-card h3 {
+    font-size: 2.5rem;
+    color: var(--color-brand-primary);
+}
+
+.data-card p {
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.rating-stars {
+    background-color: var(--background-neutro-050);
+}
+
+.rating-stars .star-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* =========================================
    Breakpoints Customizados
    ========================================= */
 
