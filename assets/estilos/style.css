@@ -42,8 +42,7 @@
 .btn-primary {
     background-color: var(--color-brand-primary);
     color: var(--text-on-brand);
-    font-weight: 700;
-    padding: .75rem 1.5rem;
+    font-weight: 600;
     border-color: var(--color-brand-primary);
     border-radius: .5rem;
     transition: all 0.3s ease;
@@ -64,7 +63,6 @@
     background-color: var(--bg-surface-promotional);
     color: var(--color-brand-primary);
     font-weight: 700;
-    padding: .75rem 1.5rem;
     border-color: var(--color-brand-primary);
     border-radius: .5rem;
     transition: all 0.3s ease;
@@ -83,59 +81,52 @@
     font-family: var(--font-secundaria);
 }
 
+/* D. badge */
+.badge {
+    padding: .5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 150%;
+    color: var(--color-brand-primary);
+    background-color: var(--background-neutro-200);
+    white-space: normal;
+    text-align: start;
+    border: 1px solid var(--color-brand-primary);
+}
+
+/* =========================================
+   4. banner promocional
+   ========================================= */
 
 /* --- Header Unificado --- */
-.header-unified {
-    background-color: #ffffff;
+.header {
+    background-color: var(--bg-surface-promotional);
     transition: all 0.3s ease;
     z-index: 1030;
 }
 
-/* Ajuste del texto de oferta */
-.text-muted-custom {
-    color: #555;
-    /* Un gris elegante, no negro puro */
-    font-size: 0.9rem;
-    white-space: nowrap;
-    /* Evita que el texto se rompa feo en desktop */
-}
-
-/* --- Timer Pill (Estilo Cápsula) --- */
-/* Esto hace que el contador se vea integrado, no pegado */
-.timer-pill {
-    background-color: var(--bg-accent-tonal);
-    /* Tu verde muy clarito */
-    padding: 4px 12px;
-    border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
 .time-box {
-    font-family: 'Courier New', monospace;
-    /* O tu fuente mono favorita */
     font-weight: 700;
     color: var(--color-brand-primary);
-    min-width: 22px;
-    text-align: center;
 }
 
-/* --- Ajustes Responsivos Críticos --- */
-@media (max-width: 991.98px) {
+/* =========================================
+   5. SECCIÓN HERO
+   ========================================= */
 
-    /* En móvil/tablet, la promo va en su propia "fila" abajo */
-    .promo-wrapper {
-        background-color: #f8f9fa;
-        /* Un fondo sutil para diferenciarlo */
-        padding: 8px;
-        border-radius: 8px;
-        margin-top: 5px;
-        flex-direction: row !important;
-        /* Mantenemos texto y reloj en línea si caben */
-    }
+#hero .discount p:first-child {
+    font-size: 1.125rem;
+}
 
-    .text-muted-custom {
-        white-space: normal;
-        /* En móvil sí permitimos que haga salto de línea si es necesario */
-        font-size: 0.8rem;
-    }
+#hero h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--color-brand-primary);
+}
+
+#hero .price {
+    font-size: 1.125rem;
+    font-family: var(--font-secundaria);
+    text-decoration: line-through;
 }

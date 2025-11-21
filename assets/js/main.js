@@ -1,43 +1,56 @@
-// assets/js/main.js
-
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Configuración del tiempo (en minutos)
-    const offerTime = 15;
+    const offerTime = 45;
 
-    // Intentamos obtener una fecha de fin guardada en el navegador del usuario
-    let endTime = localStorage.getItem('cronopioOfferEnd');
+    // Clave para localStorage (para no mezclar con otros proyectos)
+    const storageKey = 'cronopioOfferEnd';
 
-    if (!endTime) {
-        // Si no existe, creamos una nueva fecha: AHORA + 15 minutos
-        const now = new Date().getTime();
-        endTime = now + (offerTime * 60 * 1000);
-        localStorage.setItem('cronopioOfferEnd', endTime);
+    // Función para obtener o setear el tiempo final
+    function getEndTime() {
+        let storedTime = localStorage.getItem(storageKey);
+        if (!storedTime) {
+            const now = new Date().getTime();
+            storedTime = now + (offerTime * 60 * 1000);
+            localStorage.setItem(storageKey, storedTime);
+        }
+        return parseInt(storedTime);
     }
 
-    // Función que actualiza el contador cada segundo
+    let endTime = getEndTime();
+
+    // Función que actualiza el contador
     const updateTimer = setInterval(() => {
         const now = new Date().getTime();
-        const distance = endTime - now;
+        let distance = endTime - now;
 
-        // Cálculos matemáticos para horas, minutos y segundos
+        // --- AQUÍ ESTÁ EL CAMBIO PARA EL REINICIO AUTOMÁTICO ---
+        if (distance < 0) {
+            // El tiempo expiró. En lugar de detenerlo, reiniciamos el ciclo.
+            // Calculamos 15 minutos nuevos desde "ahora mismo"
+            endTime = now + (offerTime * 60 * 1000);
+            localStorage.setItem(storageKey, endTime);
+
+            // Recalculamos la distancia inmediatamente para que no se vea un salto raro
+            distance = endTime - now;
+        }
+        // ---------------------------------------------------------
+
+        // Cálculos matemáticos
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        // Mostrar en el HTML (asegurando que tenga 2 dígitos con "0")
-        document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
-        document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
-        document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
+        // Mostrar en el HTML (usamos getElementById que es más rápido)
+        const elHours = document.getElementById("hours");
+        const elMinutes = document.getElementById("minutes");
+        const elSeconds = document.getElementById("seconds");
 
-        // Si el tiempo termina
-        if (distance < 0) {
-            clearInterval(updateTimer);
-            // Opción A: Poner todo en 00
-            document.getElementById("countdown").innerHTML = "<span class='badge bg-danger'>¡Oferta Terminada!</span>";
-
-            // Opción B: Reiniciar el contador (Loop infinito de marketing - Opcional)
-            // localStorage.removeItem('cronopioOfferEnd'); 
-            // location.reload(); 
+        // Protección por si acaso no existen los elementos en alguna página interna
+        if (elHours && elMinutes && elSeconds) {
+            elHours.innerText = hours < 10 ? "0" + hours : hours;
+            elMinutes.innerText = minutes < 10 ? "0" + minutes : minutes;
+            elSeconds.innerText = seconds < 10 ? "0" + seconds : seconds;
         }
+
     }, 1000);
 });
