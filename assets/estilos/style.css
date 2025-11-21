@@ -212,13 +212,41 @@
     Tablets (768px)
    ========================================= */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .data-card {
+        min-height: 250px;
+        height: 100%;
+    }
+}
 
 /* =========================================
     Desktops (992px)
    ========================================= */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+    .bg-light-card,
+    .bg-accent-card {
+        min-height: 340px;
+    }
+
+    .bg-light-gray-card,
+    .bg-neutro-card {
+        min-height: 230px;
+    }
+
+    .bg-light-card img {
+        width: 100%;
+    }
+
+    .bg-neutro-card img {
+        width: 85%;
+    }
+
+    .bg-accent-card img {
+        width: 75%;
+    }
+}
 
 /* =========================================
     Large Desktops (1200px)
@@ -245,5 +273,14 @@
 
     .badge {
         border-radius: 1rem;
+    }
+
+    .bg-light-card img,
+    .bg-neutro-card img {
+        width: 60%;
+    }
+
+    .bg-accent-card img {
+        width: 50%;
     }
 }
