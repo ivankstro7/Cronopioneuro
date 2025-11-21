@@ -43,6 +43,7 @@
     background-color: var(--color-brand-primary);
     color: var(--text-on-brand);
     font-weight: 600;
+    padding: .5rem 1rem;
     border-color: var(--color-brand-primary);
     border-radius: .5rem;
     transition: all 0.3s ease;
@@ -98,7 +99,7 @@
    4. banner promocional
    ========================================= */
 
-/* --- Header Unificado --- */
+/* --- Header --- */
 .header {
     background-color: var(--bg-surface-promotional);
     transition: all 0.3s ease;
@@ -113,9 +114,14 @@
 /* =========================================
    5. SECCIÓN HERO
    ========================================= */
+#hero {
+    background-color: var(--background-neutro-100);
+}
 
 #hero .discount p:first-child {
     font-size: 1.125rem;
+    font-weight: bolder;
+    color: var(--color-brand-primary);
 }
 
 #hero h1 {
@@ -128,5 +134,60 @@
 #hero .price {
     font-size: 1.125rem;
     font-family: var(--font-secundaria);
+    color: var(--text-secondary);
     text-decoration: line-through;
+}
+
+#hero small {
+    color: var(--text-secondary);
+}
+
+/* =========================================
+   Breakpoints Customizados
+   ========================================= */
+
+/* =========================================
+   Landscape Phones (608px)
+   ========================================= */
+
+@media (min-width: 608px) {}
+
+/* =========================================
+    Tablets (768px)
+   ========================================= */
+
+@media (min-width: 768px) {}
+
+/* =========================================
+    Desktops (992px)
+   ========================================= */
+
+@media (min-width: 992px) {}
+
+/* =========================================
+    Large Desktops (1200px)
+   ========================================= */
+
+@media (min-width: 1200px) {}
+
+/* =========================================
+    Larger Desktops (1400px)
+   ========================================= */
+
+@media (min-width: 1400px) {
+    #hero .discount p:first-child {
+        font-size: 1.5rem;
+    }
+
+    #hero h1 {
+        font-size: 3.75rem;
+    }
+
+    #hero .Paragraph {
+        font-size: 1.5rem;
+    }
+
+    .badge {
+        border-radius: 1rem;
+    }
 }
