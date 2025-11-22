@@ -22,6 +22,9 @@
     --text-secondary: #49454F;
     --text-on-brand: #ffffff;
 
+    /* --- Color Stroke (Contornos) --- */
+    --color-stroke-light: #DEE2E6;
+
     /* --- Tipografías --- */
     --font-principal: 'DM Sans', sans-serif;
     --font-secundaria: 'Handlee', cursive;
@@ -82,7 +85,7 @@
     font-family: var(--font-secundaria);
 }
 
-/* D. badge */
+/* D. Badge */
 .badge {
     padding: .5rem 1rem;
     font-size: 0.875rem;
@@ -93,6 +96,12 @@
     white-space: normal;
     text-align: start;
     border: 1px solid var(--color-brand-primary);
+}
+
+/* E. Card */
+.card {
+    border-radius: 1rem;
+    border: 1px solid var(--color-stroke-light);
 }
 
 /* =========================================
@@ -196,6 +205,91 @@
 .rating-stars .star-icon {
     width: 24px;
     height: 24px;
+}
+
+/* =========================================
+   7. Datos de confianza
+   ========================================= */
+
+#problema h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-brand-primary);
+}
+
+#problema .subtitle {
+    font-size: 1.125rem;
+}
+
+#problema .card-bg-light h3 {
+    font-size: 1.125rem;
+    color: #D81813;
+}
+
+#problema .card-bg-light .trailing-icon {
+    background-color: var(--background-neutro-150);
+    padding: 0.25rem;
+    border-radius: 1rem;
+}
+
+#problema .card-bg-light .trailing-icon .container,
+#problema .card-bg-dark .trailing-icon .container {
+    background-color: var(--background-neutro-050);
+    padding: .5rem;
+    border-radius: 0.75rem;
+}
+
+#problema .card-bg-dark {
+    background-color: var(--color-brand-primary);
+}
+
+#problema .card-bg-dark h3 {
+    font-size: 1.125rem;
+}
+
+#problema .card-bg-dark .trailing-icon {
+    background-color: var(--background-neutro-300);
+    padding: 0.25rem;
+    border-radius: 1rem;
+}
+
+.problem-list li {
+    color: var(--text-secondary);
+}
+
+/* Estilo para las listas (Tradicional y Método) */
+.problem-list li,
+.solution-list li {
+    font-size: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 150%;
+}
+
+/* Viñeta para la lista Tradicional (Problemas - Círculo o X simple) */
+.problem-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--text-secondary);
+    font-weight: bold;
+}
+
+/* Viñeta para la lista Método (Solución - Checkmark simple si no usas imagen) */
+.solution-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+}
+
+#problema .Paragraph {
+    font-family: var(--font-secundaria);
+    font-size: 1.125rem;
+    line-height: 150%;
+}
+
+#problema .bg-image {
+    width: 50%;
 }
 
 /* =========================================
