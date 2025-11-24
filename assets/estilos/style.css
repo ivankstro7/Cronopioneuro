@@ -89,7 +89,6 @@
 .badge {
     padding: .5rem 1rem;
     font-size: 0.875rem;
-    font-weight: 600;
     line-height: 150%;
     color: var(--color-brand-primary);
     background-color: var(--background-neutro-200);
@@ -208,7 +207,7 @@
 }
 
 /* =========================================
-   7. Datos de confianza
+   7. problema que resuelvemos
    ========================================= */
 #problema {
     padding-bottom: 250px;
@@ -302,6 +301,88 @@
     width: 150px;
     /* Tamaño móvil, ajusta a tu preferencia */
     height: auto;
+}
+
+/* =========================================
+   8. SECCIÓN OFERTA DETALLADA
+   ========================================= */
+#oferta {
+    background-color: var(--background-neutro-100);
+}
+
+#oferta .discount p:first-child {
+    font-size: 1.125rem;
+    color: var(--color-brand-primary);
+}
+
+#oferta h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-brand-primary);
+}
+
+#oferta .card-offer {
+    border: 1px solid var(--color-brand-primary);
+}
+
+#oferta .card-offer h3 {
+    font-size: 1.125rem;
+}
+
+#oferta .card-offer .leading-icon {
+    background-color: var(--background-neutro-200);
+    padding: 0.25rem;
+    border-radius: 1rem;
+}
+
+#oferta .card-offer .leading-icon .container,
+#oferta .card-offer .leading-icon .container {
+    background-color: var(--background-neutro-050);
+    padding: .5rem;
+    border-radius: 0.75rem;
+}
+
+#oferta .card-offer .title-description h4 {
+    font-size: 1.125rem;
+    line-height: 150%;
+}
+
+#oferta .card-offer .title-description small {
+    color: var(--text-secondary);
+    line-height: 150%;
+}
+
+#oferta .card-summary {
+    background-color: var(--bg-surface-promotional);
+    border: 1px solid var(--color-brand-primary);
+}
+
+#oferta .card-summary small,
+#oferta .card-summary h3 {
+    color: var(--color-brand-primary);
+}
+
+#oferta .card-summary h3 {
+    font-size: 2rem;
+}
+
+#oferta .card-summary .card-price {
+    border-top: 1px solid var(--color-brand-primary);
+}
+
+#oferta .bg-light-price-card {
+    color: var(--color-brand-primary);
+    background-color: var(--background-neutro-200);
+    border: 1px solid var(--color-brand-primary);
+}
+
+#oferta .text-muted-custom {
+    color: var(--text-secondary);
+}
+
+#oferta .text-muted-custom-secundary {
+    font-family: var(--font-secundaria);
+    font-size: 1.125rem;
 }
 
 /* =========================================
