@@ -420,6 +420,7 @@
 /* Badge Promocional (Fondo Amarillo) */
 .badge-secondary-promotional {
     background-color: var(--bg-surface-promotional);
+    border: 1px solid var(--color-brand-primary);
 }
 
 #testimonios h2 {
@@ -481,6 +482,23 @@
 .carousel-control-next-icon {
     transform: rotate(-45deg);
     /* Flecha apuntando a la derecha */
+}
+
+/* =========================================
+   FAB de WhatsApp
+   ========================================= */
+
+.fixed-bottom {
+    left: auto !important;
+    bottom: 4% !important;
+}
+
+.fixed-bottom a {
+    max-width: 96px;
+}
+
+.fixed-bottom a img {
+    width: 100%;
 }
 
 /* =========================================
