@@ -430,6 +430,11 @@
 /* Estilos de la tarjeta de testimonio (Fondo blanco) */
 #testimonialCarousel .carousel-inner {
     background-color: var(--background-neutro-050);
+    min-height: 400px;
+}
+
+#testimonialCarousel .carousel-inner .carousel-item .blockquote {
+    min-height: 215px;
 }
 
 #testimonialCarousel .testimonial-rating {
@@ -439,34 +444,33 @@
 /* Estilos de los botones del carrusel */
 .carousel-control-prev,
 .carousel-control-next {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    border: 1px solid var(--color-stroke-light);
     background-color: var(--background-neutro-050);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    opacity: 1;
 }
 
 .carousel-control-prev {
-    left: -60px;
+    left: -20px;
 }
 
 /* Ajusta la posición fuera de la tarjeta */
 .carousel-control-next {
-    right: -60px;
+    right: -20px;
 }
 
 /* Iconos de navegación del carrusel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-image: none;
-    /* Elimina el icono por defecto de Bootstrap */
-    /* Puedes usar iconos SVG personalizados aquí, o un color sólido. */
-    border: 2px solid #fff;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid var(--color-brand-primary);
     border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 5px;
 }
 
 .carousel-control-prev-icon {
@@ -556,8 +560,14 @@
         border-radius: 1rem;
     }
 
+    #datos-confianza {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+
     #datos-confianza h2 {
-        font-size: 2rem;
+        font-size: 2.25rem;
+        line-height: 150%;
     }
 
     .bg-light-card img,
@@ -569,8 +579,14 @@
         width: 50%;
     }
 
+    #problema {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+
     #problema h2 {
-        font-size: 2rem;
+        font-size: 2.25rem;
+        line-height: 150%;
     }
 
     #problema .bg-image {
@@ -578,11 +594,37 @@
         bottom: 5%;
     }
 
+    #oferta {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+
     #oferta h2 {
-        font-size: 2rem;
+        font-size: 2.25rem;
+        line-height: 150%;
+    }
+
+    #pasos {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
     }
 
     #pasos h2 {
-        font-size: 2rem;
+        font-size: 2.25rem;
+        line-height: 150%;
+    }
+
+    #testimonios {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+
+    #testimonios h2 {
+        font-size: 2.25rem;
+        line-height: 150%;
+    }
+
+    #testimonialCarousel .carousel-inner .carousel-item .blockquote {
+        min-height: 120px;
     }
 }
