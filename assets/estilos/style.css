@@ -303,7 +303,7 @@
     height: 24px;
 }
 
-#problema .Paragraph {
+#problema .paragraph {
     font-family: var(--font-secundaria);
     font-size: 1.125rem;
     line-height: 150%;
@@ -566,9 +566,35 @@
     font-size: 1.5rem;
 }
 
-#faq .Paragraph {
+#faq .paragraph {
     font-size: 1.125rem;
     color: var(--text-secondary);
+}
+
+/* =========================================
+   13. cta final
+   ========================================= */
+
+#final-cta h2 {
+    font-size: 1.5rem;
+    color: var(--color-brand-primary);
+}
+
+#final-cta .paragraph {
+    font-size: 1.125rem;
+}
+
+.cta-image-box img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.cta-main-content {
+    background-color: var(--background-accent-subtle);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.cta-final-text {
+    font-family: var(--font-secundaria);
 }
 
 /* =========================================
@@ -625,6 +651,10 @@
 
     .alejandra-img {
         width: 46%;
+    }
+
+    .cta-main-content {
+        border-radius: 1rem 0 0 1rem;
     }
 }
 
@@ -686,6 +716,10 @@
         width: 50%;
         max-height: 256px;
     }
+
+    .cta-main-content {
+        padding: 3.75rem !important;
+    }
 }
 
 /* =========================================
@@ -701,7 +735,7 @@
         font-size: 3.75rem;
     }
 
-    #hero .Paragraph {
+    #hero .paragraph {
         font-size: 1.5rem;
     }
 
@@ -801,12 +835,41 @@
         line-height: 150%;
     }
 
-    #faq .Paragraph {
+    #faq .paragraph {
         font-size: 1.25rem;
     }
 
     .whatsapp-fab img {
         width: 72px;
         height: 72px;
+    }
+
+    #final-cta {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+
+    #final-cta h2 {
+        font-size: 3.75rem;
+        margin-bottom: 2rem !important;
+    }
+
+    #final-cta .paragraph {
+        margin-bottom: 2rem !important;
+    }
+
+    #final-cta .paragraph,
+    #final-cta .cta-final-text {
+        font-size: 1.25rem;
+    }
+
+    #final-cta .cta-final-text {
+        margin-top: 2rem !important;
+    }
+
+    .cta-image-box img {
+        object-fit: cover;
+        /* Ajustamos el max-height para controlar la altura total de la sección */
+        max-height: 700px;
     }
 }
