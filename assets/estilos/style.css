@@ -575,17 +575,32 @@
    FAB de WhatsApp
    ========================================= */
 
-.fixed-bottom {
-    left: auto !important;
-    bottom: 4% !important;
+/* Botón flotante personalizado */
+.whatsapp-fab {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 1050;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 16%;
+    background: #25D366;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+    text-decoration: none;
 }
 
-.fixed-bottom a {
-    max-width: 96px;
+.whatsapp-fab img {
+    width: 56px;
+    height: 56px;
+    display: block;
 }
 
-.fixed-bottom a img {
-    width: 100%;
+/* Si hay un banner inferior (cookies, barra), usa esta clase en <body> para empujar el FAB arriba */
+.with-bottom-banner .whatsapp-fab {
+    bottom: 72px;
 }
 
 /* =========================================
@@ -788,5 +803,10 @@
 
     #faq .Paragraph {
         font-size: 1.25rem;
+    }
+
+    .whatsapp-fab img {
+        width: 72px;
+        height: 72px;
     }
 }
