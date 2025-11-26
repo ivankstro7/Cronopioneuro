@@ -507,6 +507,12 @@
     font-size: 1.125rem;
 }
 
+.team-img-horizontal {
+    width: 100%;
+    max-height: 225px;
+    object-fit: cover;
+}
+
 .team-grid .card-team .text-muted-custom {
     font-size: 1rem;
     font-weight: 400;
@@ -596,6 +602,26 @@
 
     .bg-accent-card img {
         width: 75%;
+    }
+
+    .card-team {
+        padding: 1.5rem !important;
+    }
+
+    /* Imagen del profesional en el diseño horizontal */
+    .team-img-horizontal {
+        width: 44%;
+        margin-bottom: 0 !important;
+    }
+
+    .team-content-horizontal {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .team-content-horizontal small {
+        margin-bottom: 1rem !important;
     }
 }
 
