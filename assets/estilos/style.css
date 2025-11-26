@@ -598,6 +598,26 @@
 }
 
 /* =========================================
+   13. cta final
+   ========================================= */
+#footer {
+    border-top: 1px solid var(--color-stroke-light);
+}
+
+.logo-container {
+    /* Ajusta el tamaño del ícono del cerebro */
+    max-width: 320px;
+}
+
+.footer-logo {
+    width: 75%;
+}
+
+.footer-copyright p {
+    color: var(--color-brand-primary);
+}
+
+/* =========================================
    FAB de WhatsApp
    ========================================= */
 
@@ -659,6 +679,10 @@
 
     .cta-image-box img {
         border-radius: 0 1rem 1rem 1rem;
+    }
+
+    .whatsapp-fab {
+        bottom: 80px;
     }
 }
 
@@ -817,7 +841,6 @@
 
     #equipo {
         padding-top: 5rem !important;
-        padding-bottom: 5rem !important;
     }
 
     #equipo h2 {
@@ -831,7 +854,6 @@
 
     #faq {
         padding-top: 5rem !important;
-        padding-bottom: 5rem !important;
     }
 
     #faq h2 {
@@ -875,5 +897,9 @@
         object-fit: cover;
         /* Ajustamos el max-height para controlar la altura total de la sección */
         max-height: 700px;
+    }
+
+    .whatsapp-fab {
+        bottom: 32px;
     }
 }
