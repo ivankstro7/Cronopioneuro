@@ -485,6 +485,54 @@
 }
 
 /* =========================================
+   11. SECCIÓN EQUIPO
+   ========================================= */
+
+#equipo h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#equipo .subtitle {
+    font-size: 1.125rem;
+}
+
+/* Estilo general para las tarjetas de equipo */
+.card-team {
+    background-color: var(--background-neutro-100);
+    border: 1px solid var(--color-stroke-light);
+}
+
+.team-grid .card-team h4 {
+    font-size: 1.125rem;
+}
+
+.team-grid .card-team .text-muted-custom {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+/* Estilo para las etiquetas/tags de especialidad */
+.tag {
+    background-color: var(--background-neutro-200);
+    color: var(--color-brand-primary);
+    border-radius: 0.75rem;
+}
+
+.tag-small {
+    font-size: 0.875rem;
+    background-color: var(--background-neutro-050);
+    border-radius: 0.5rem;
+}
+
+
+/* El texto secundario (e.g., • Psicóloga Clínica, Universidad) */
+.text-muted-custom {
+    color: var(--color-text-secondary);
+}
+
+/* =========================================
    FAB de WhatsApp
    ========================================= */
 
@@ -644,5 +692,15 @@
 
     #testimonialCarousel .carousel-inner .carousel-item .blockquote {
         min-height: 120px;
+    }
+
+    #equipo {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+
+    #equipo h2 {
+        font-size: 2.25rem;
+        line-height: 150%;
     }
 }
