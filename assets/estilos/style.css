@@ -516,7 +516,6 @@
 .team-grid .card-team .text-muted-custom {
     font-size: 1rem;
     font-weight: 400;
-    color: var(--text-secondary);
 }
 
 /* Estilo para las etiquetas/tags de especialidad */
@@ -574,6 +573,10 @@
         min-height: 250px;
         height: 100%;
     }
+
+    .alejandra-img {
+        width: 46%;
+    }
 }
 
 /* =========================================
@@ -610,8 +613,8 @@
 
     /* Imagen del profesional en el diseño horizontal */
     .team-img-horizontal {
-        width: 44%;
-        margin-bottom: 0 !important;
+        width: 35%;
+        max-height: 160px;
     }
 
     .team-content-horizontal {
@@ -620,8 +623,8 @@
         justify-content: flex-start;
     }
 
-    .team-content-horizontal small {
-        margin-bottom: 1rem !important;
+    .alejandra-img {
+        width: 100%;
     }
 }
 
@@ -629,7 +632,12 @@
     Large Desktops (1200px)
    ========================================= */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .team-img-horizontal {
+        width: 50%;
+        max-height: 256px;
+    }
+}
 
 /* =========================================
     Larger Desktops (1400px)
@@ -728,5 +736,9 @@
     #equipo h2 {
         font-size: 2.25rem;
         line-height: 150%;
+    }
+
+    .team-content-horizontal small {
+        margin-bottom: 1rem !important;
     }
 }
