@@ -41,6 +41,7 @@
 /* =========================================
    3. COMPONENTES PERSONALIZADOS
    ========================================= */
+
 /* A. Ajuste del Botón Primary (Oscuro) */
 .btn-primary {
     background-color: var(--color-brand-primary);
@@ -101,6 +102,26 @@
 .card {
     border-radius: 1rem;
     border: 1px solid var(--color-stroke-light);
+}
+
+/* F. Accordion */
+.accordion {
+    --bs-accordion-bg: var(--background-neutro-100);
+    --bs-accordion-border-color: var(--color-stroke-light);
+    --bs-accordion-border-radius: 1rem;
+    --bs-accordion-inner-border-radius: 1rem;
+    --bs-accordion-btn-color: var(--color-brand-primary);
+    --bs-accordion-active-color: var(--color-brand-primary);
+    --bs-accordion-active-bg: var(--background-neutro-200);
+}
+
+.accordion-button {
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.accordion-item {
+    color: var(--text-secondary);
 }
 
 /* =========================================
@@ -538,6 +559,19 @@
 }
 
 /* =========================================
+   12. SECCIÓN PREGUNTAS FRECUENTES (FAQ)
+   ========================================= */
+
+#faq h2 {
+    font-size: 1.5rem;
+}
+
+#faq .Paragraph {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+}
+
+/* =========================================
    FAB de WhatsApp
    ========================================= */
 
@@ -740,5 +774,19 @@
 
     .team-content-horizontal small {
         margin-bottom: 1rem !important;
+    }
+
+    #faq {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+
+    #faq h2 {
+        font-size: 2.25rem;
+        line-height: 150%;
+    }
+
+    #faq .Paragraph {
+        font-size: 1.25rem;
     }
 }
