@@ -425,6 +425,12 @@
     color: var(--text-secondary);
 }
 
+#pasos .card-steps {
+    border: 1px solid var(--color-stroke-light);
+    background-color: var(--background-neutro-100);
+    padding: 1rem;
+}
+
 /* =========================================
    10. SECCIÓN TESTIMONIOS Y DATOS DE CONFIANZA
    ========================================= */
