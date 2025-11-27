@@ -671,6 +671,10 @@
         height: 100%;
     }
 
+    #testimonialCarousel .carousel-inner .carousel-item .blockquote {
+        min-height: 120px;
+    }
+
     .alejandra-img {
         width: 46%;
     }
@@ -714,6 +718,10 @@
 
     .bg-accent-card img {
         width: 75%;
+    }
+
+    #testimonialCarousel .carousel-inner .carousel-item .blockquote {
+        min-height: 215px;
     }
 
     .card-team {
