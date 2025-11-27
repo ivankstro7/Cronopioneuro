@@ -425,10 +425,6 @@
     color: var(--text-secondary);
 }
 
-#pasos img {
-    border: 1px solid var(--color-stroke-light);
-}
-
 /* =========================================
    10. SECCIÓN TESTIMONIOS Y DATOS DE CONFIANZA
    ========================================= */
