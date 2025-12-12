@@ -27,7 +27,6 @@
 
     /* --- Tipografías --- */
     --font-principal: 'DM Sans', sans-serif;
-    --font-secundaria: 'Handlee', cursive;
 
     /* =========================================
    2. BOOTSTRAP OVERRIDES (El puente)
@@ -83,7 +82,9 @@
 
 /* C. Tipografía Secundaria */
 .font-alt {
-    font-family: var(--font-secundaria);
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-style: italic;
 }
 
 /* D. Badge */
@@ -169,7 +170,9 @@ body {
 
 #hero .price {
     font-size: 1.125rem;
-    font-family: var(--font-secundaria);
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-style: italic;
     color: var(--text-secondary);
     text-decoration: line-through;
 }
@@ -311,7 +314,9 @@ body {
 }
 
 #problema .paragraph {
-    font-family: var(--font-secundaria);
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-style: italic;
     font-size: 1.125rem;
     line-height: 150%;
 }
@@ -409,7 +414,9 @@ body {
 }
 
 #oferta .text-muted-custom-secundary {
-    font-family: var(--font-secundaria);
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-style: italic;
     font-size: 1.125rem;
 }
 
@@ -603,7 +610,9 @@ body {
 }
 
 .cta-final-text {
-    font-family: var(--font-secundaria);
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-style: italic;
 }
 
 /* =========================================
