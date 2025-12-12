@@ -127,7 +127,7 @@
 /* Evitar scroll horizontal */
 html,
 body {
-    overflow-x: hidden;
+    overflow-x: clip;
     width: 100%;
 }
 
@@ -633,7 +633,7 @@ body {
 /* Botón flotante personalizado */
 .whatsapp-fab {
     position: fixed;
-    right: max(12px, calc((100vw - 100%) / 2 + 12px));
+    right: max(12px, calc((100vw - 100%) / 2 + 14px));
     bottom: 16px;
     z-index: 1050;
     display: inline-flex;
