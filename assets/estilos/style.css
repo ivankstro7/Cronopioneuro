@@ -124,6 +124,13 @@
     color: var(--text-secondary);
 }
 
+/* Evitar scroll horizontal */
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 /* =========================================
    4. banner promocional
    ========================================= */
@@ -626,7 +633,7 @@
 /* Botón flotante personalizado */
 .whatsapp-fab {
     position: fixed;
-    right: 16px;
+    right: max(12px, calc((100vw - 100%) / 2 + 12px));
     bottom: 16px;
     z-index: 1050;
     display: inline-flex;
