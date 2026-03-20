@@ -226,17 +226,13 @@ body {
 }
 
 .data-card h3 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: var(--color-brand-primary);
 }
 
 .data-card p {
     font-size: 1rem;
     color: var(--text-primary);
-}
-
-.rating-stars {
-    background-color: var(--background-neutro-050);
 }
 
 .rating-stars .star-icon {
