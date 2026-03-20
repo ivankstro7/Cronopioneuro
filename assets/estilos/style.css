@@ -317,9 +317,8 @@ body {
 }
 
 #problema .paragraph {
-    font-family: var(--font-principal);
+    font-family: "Handlee", cursive;
     font-weight: 400;
-    font-style: italic;
     font-size: 1.125rem;
     line-height: 150%;
 }
