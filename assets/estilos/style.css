@@ -80,6 +80,13 @@
     filter: brightness(0.95);
 }
 
+.btn-link {
+    color: var(--color-brand-primary)!important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
 /* C. Tipografía Secundaria */
 .font-alt {
     font-family: var(--font-principal);
@@ -786,11 +793,11 @@ body {
     }
 
     #hero h1 {
-        font-size: 3.75rem;
+        font-size: 2.5rem;
     }
 
     #hero .paragraph {
-        font-size: 1.5rem;
+        font-size: 1.125rem;
     }
 
     .badge {

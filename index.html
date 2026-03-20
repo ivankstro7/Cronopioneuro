@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./assets/estilos/style.css">
 
     <!-- Código Schema para Cronopio) -->
-        <script type="application/ld+json">
+    <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "MedicalBusiness",
@@ -162,7 +162,11 @@
                     <p class="paragraph mb-3 mb-xxl-4">
                         No pierdas tiempo ni dinero adivinando qué servicio necesitas. Inicia con nuestra Sesión de
                         Conocimiento por $60.000 COP: analizamos tu motivo de consulta para definir si tu ruta ideal es
-                        la Psicoterapia (ACT) o la Neuropsicología, asignándote a la especialista exacta para tu caso.
+                        la Psicoterapia
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalACT">
+                            (ACT)
+                        </button>
+                        o la Neuropsicología, asignándote a la especialista exacta para tu caso.
                     </p>
                     <div class="col-12 col-md-auto">
                         <a class="zl-facility-url btn btn-promo py-3 px-5 mb-3"
@@ -171,7 +175,7 @@
                             data-zlw-facility="cronopio-centro-de-neurociencias-e-intervencion-clinica"
                             data-zlw-type="facility-simple-link-with-saas-only" data-zlw-saas-only="true"
                             data-zlw-a11y-title="Widget de reserva de citas médicas">
-                            Quiero mi plan por $60.000 COP
+                            Quiero mi ruta por $60.000 COP
                         </a>
                     </div>
                     <p class="price small mb-3 mb-xxl-4">
@@ -194,7 +198,7 @@
                             <img src="assets/img/01.hero_image/icon_check_circle.webp"
                                 alt="Ícono de verificación de seguridad para garantía sin compromiso."
                                 style="width: 24px; height: 24px;">
-                            <small>Plan incluido</small>
+                            <small>Ruta personalizada</small>
                         </div>
                     </div>
                 </div>
@@ -209,6 +213,48 @@
             </div>
         </div>
     </section>
+    <!-- Modal -->
+    <div class="modal fade" id="modalACT" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="modalACTLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalACTLabel">¿Qué es la Psicoterapia ACT?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body px-4 pb-4">
+                        <p class="mb-3">
+                            Es la <strong>Terapia de Aceptación y Compromiso (ACT)</strong>. A diferencia de las
+                            terapias tradicionales que buscan 'eliminar' los pensamientos negativos, en Cronopio usamos
+                            ACT para enseñarte a:
+                        </p>
+                        <ul class="list-unstyled custom-list mb-4">
+                            <li class="d-flex mb-2">
+                                <span class="badge-number me-2">1.</span>
+                                <span>Relacionarte de forma distinta con tu ansiedad o estrés.</span>
+                            </li>
+                            <li class="d-flex mb-2">
+                                <span class="badge-number me-2">2.</span>
+                                <span>Dejar de luchar contra lo que sientes y ganar energía para lo que importa.</span>
+                            </li>
+                            <li class="d-flex mb-0">
+                                <span class="badge-number me-2">3.</span>
+                                <span>Actuar según tus valores, incluso cuando hay miedo o duda.</span>
+                            </li>
+                        </ul>
+                        <p class="mb-0">
+                            Es un enfoque práctico, breve y con respaldo científico para recuperar el control de tu
+                            vida.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <section id="datos-confianza" class="pt-5 pb-0 text-center col-xxl-8 offset-xxl-2">
         <div class="container-fluid">
             <h2 class="mb-4 mb-md-5">
