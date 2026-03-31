@@ -81,7 +81,7 @@
 }
 
 .btn-link {
-    color: var(--color-brand-primary)!important;
+    color: var(--color-brand-primary) !important;
     font-weight: 600;
     transition: all 0.3s ease;
     padding: 0;
@@ -623,23 +623,34 @@ body {
 }
 
 /* =========================================
-   13. cta final
+   14. Footer
    ========================================= */
-#footer {
-    border-top: 1px solid var(--color-stroke-light);
-}
-
-.logo-container {
-    /* Ajusta el tamaño del ícono del cerebro */
-    max-width: 320px;
+.footer-cronopio {
+    background-color: var(--color-brand-primary);
+    /* Color oscuro del diseño */
 }
 
 .footer-logo {
-    width: 75%;
+    max-width: 180px;
 }
 
-.footer-copyright p {
-    color: var(--color-brand-primary);
+.x-small {
+    font-size: 0.75rem;
+}
+
+/* Efecto Hover en las portadas */
+.instagram-card {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.instagram-card:hover {
+    transform: scale(1.02);
+}
+
+/* Swiper Gap fix */
+.swiper-instagram {
+    padding: 10px 20px;
 }
 
 /* =========================================
