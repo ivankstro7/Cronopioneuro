@@ -634,23 +634,49 @@ body {
     max-width: 180px;
 }
 
+/* Contenedor del scroll horizontal */
+.instagram-scroll-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    /* Hace que las fotos "encajen" al scrollear */
+    padding: 0 1rem 1.5rem;
+    /* Padding lateral para que no pegue al borde */
+    scrollbar-width: none;
+    /* Oculta scrollbar en Firefox */
+    -ms-overflow-style: none;
+    /* Oculta scrollbar en IE/Edge */
+}
+
+/* Ocultar scrollbar en Chrome/Safari/Brave */
+.instagram-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Comportamiento de cada PORTADA */
+.instagram-item {
+    flex: 0 0 65%;
+    /* Ocupa el 65% del ancho para mostrar "la mitad" de la siguiente */
+    scroll-snap-align: center;
+    /* Se alinea al centro al soltar el scroll */
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.instagram-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
 .x-small {
     font-size: 0.75rem;
 }
 
-/* Efecto Hover en las portadas */
-.instagram-card {
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.instagram-card:hover {
-    transform: scale(1.02);
-}
-
-/* Swiper Gap fix */
-.swiper-instagram {
-    padding: 10px 20px;
+.footer-icon img {
+    max-width: 24px;
 }
 
 /* =========================================
@@ -721,8 +747,13 @@ body {
         border-radius: 0 1rem 1rem 1rem;
     }
 
+    .instagram-item {
+        flex: 0 0 30%;
+        /* Muestra 3 y un poco de la 4ta */
+    }
+
     .whatsapp-fab {
-        bottom: 80px;
+        bottom: 24px;
     }
 }
 
@@ -775,6 +806,20 @@ body {
     }
 
     .alejandra-img {
+        width: 100%;
+    }
+
+    .instagram-scroll-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        overflow-x: hidden;
+        /* Quitamos el scroll */
+        padding: 0;
+        gap: 1.5rem;
+    }
+
+    .instagram-item {
+        flex: none;
         width: 100%;
     }
 }
