@@ -236,8 +236,8 @@ body {
 }
 
 .rating-stars .star-icon {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
 }
 
 /* =========================================
@@ -547,19 +547,14 @@ body {
     border: 1px solid var(--color-stroke-light);
 }
 
-.team-grid .card-team h4 {
-    font-size: 1.125rem;
-}
-
-.team-img-horizontal {
-    width: 100%;
-    max-height: 225px;
+.team-grid .card-team .image {
+    min-height: 150px;
+    height: 100%;
     object-fit: cover;
 }
 
-.team-grid .card-team .text-muted-custom {
-    font-size: 1rem;
-    font-weight: 400;
+.team-grid .card-team h4 {
+    font-size: 1.125rem;
 }
 
 /* Estilo para las etiquetas/tags de especialidad */
