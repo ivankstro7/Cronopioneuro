@@ -98,6 +98,7 @@
 .badge {
     padding: .5rem 1rem;
     font-size: 0.875rem;
+    font-weight: normal;
     line-height: 150%;
     color: var(--color-brand-primary);
     background-color: var(--background-neutro-200);
@@ -164,7 +165,6 @@ body {
 
 #hero .discount p:first-child {
     font-size: 1.125rem;
-    font-weight: bolder;
     color: var(--color-brand-primary);
 }
 
