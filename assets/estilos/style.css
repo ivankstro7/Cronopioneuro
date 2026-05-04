@@ -5,13 +5,13 @@
     /* --- Color Brand --- */
     --color-brand-primary: #072929;
 
-    /* --- Color Action --- */
-    --bg-surface-promotional: #DBFF00;
+    /* --- Color Accent --- */
+    --color-accent: #DBFF00;
 
     /* --- Color Surface (Fondos) --- */
     --background-neutro-050: #FFFFFF;
-    --background-neutro-100: #F3F7F6;
-    --background-neutro-150: #F1F5F4;
+    --background-neutro-100: #F8F6ED;
+    --background-neutro-150: #E8E9DC;
     --background-neutro-200: #CED4D0;
     --background-neutro-300: #AEC8BB;
     --background-accent-tonal: #86AE3E;
@@ -19,22 +19,24 @@
 
     /* --- Color Content (Textos) --- */
     --text-primary: #000000;
-    --text-secondary: #49454F;
+    --color-text: #546256;
+    --color-text-light: #4F5852;
     --text-on-brand: #ffffff;
 
     /* --- Color Stroke (Contornos) --- */
-    --color-stroke-light: #DEE2E6;
+    --color-stroke-light: #DFDCD4;
 
     /* --- Tipografías --- */
-    --font-principal: 'DM Sans', sans-serif;
+    --font-primary: 'DM Sans', sans-serif;
+    --font-secondary: 'Inter', sans-serif;
 
     /* =========================================
-   2. BOOTSTRAP OVERRIDES (El puente)
+   2. BOOTSTRAP OVERRIDES
    ========================================= */
     --bs-primary: var(--color-brand-primary);
-    --bs-body-font-family: 'DM Sans', sans-serif;
+    --bs-body-font-family: var(--font-primary);
     --bs-body-color: var(--text-primary);
-    --bs-body-bg: var(--background-neutro-050);
+    --bs-body-bg: var(--background-neutro-100);
 }
 
 /* =========================================
@@ -63,8 +65,8 @@
 }
 
 /* B. boton Secundario */
-.btn-promo {
-    background-color: var(--bg-surface-promotional);
+.btn-secundary {
+    background-color: var(--color-accent);
     color: var(--color-brand-primary);
     font-weight: 700;
     border-color: var(--color-brand-primary);
@@ -72,9 +74,9 @@
     transition: all 0.3s ease;
 }
 
-.btn-promo:hover,
-.btn-promo:focus {
-    background-color: var(--bg-surface-promotional);
+.btn-secundary:hover,
+.btn-secundary:focus {
+    background-color: var(--color-accent) !important;
     border-color: var(--color-brand-primary);
     color: var(--color-brand-primary);
     filter: brightness(0.95);
@@ -89,7 +91,7 @@
 
 /* C. Tipografía Secundaria */
 .font-alt {
-    font-family: var(--font-principal);
+    font-family: var(--font-secondary);
     font-weight: 400;
     font-style: italic;
 }
@@ -146,7 +148,7 @@ body {
 
 /* --- Header --- */
 .header {
-    background-color: var(--bg-surface-promotional);
+    background-color: var(--color-accent);
     transition: all 0.3s ease;
     z-index: 1030;
 }
@@ -172,7 +174,7 @@ body {
 
 #hero .price {
     font-size: 1.125rem;
-    font-family: var(--font-principal);
+    font-family: var(--font-primary);
     font-weight: 400;
     font-style: italic;
     color: var(--text-secondary);
@@ -322,9 +324,7 @@ body {
     Large Desktops (1200px)
    ========================================= */
 
-@media (min-width: 1200px) {
-
-}
+@media (min-width: 1200px) {}
 
 /* =========================================
     Larger Desktops (1400px)
