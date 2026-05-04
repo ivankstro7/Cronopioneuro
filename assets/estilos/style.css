@@ -30,6 +30,9 @@
     --font-primary: 'DM Sans', sans-serif;
     --font-secondary: 'Inter', sans-serif;
 
+    /* --- Definición del Padding Centralizado --- */
+    --nav-padding-x: 1rem;
+
     /* =========================================
    2. BOOTSTRAP OVERRIDES
    ========================================= */
@@ -37,11 +40,15 @@
     --bs-body-font-family: var(--font-primary);
     --bs-body-color: var(--text-primary);
     --bs-body-bg: var(--background-neutro-100);
+    --bs-secondary-color: var(--color-text-light);
 }
 
 /* =========================================
    3. COMPONENTES PERSONALIZADOS
    ========================================= */
+.navbar-nav {
+    --bs-navbar-nav-link-padding-x: var(--nav-padding-x);
+}
 
 /* A. Ajuste del Botón Primary */
 .btn-primary {
@@ -99,12 +106,11 @@
 /* D. Nav link */
 .nav-link {
     font-family: var(--font-secondary);
-    color: var(--color-text-light) !important;
     padding: 8px 16px;
 }
 
-.active {
-    color: var(--color-brand-primary) !important;
+.navbar-nav .nav-link.active {
+    color: var(--color-brand-primary);
     font-weight: 600;
     border-bottom: 1px solid #072929;
 }
@@ -311,11 +317,7 @@ body {
    ========================================= */
 
 @media (min-width: 992px) {
-
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 1rem;
-        padding-left: 1rem;
-    }
+    
 
     .instagram-scroll-container {
         display: grid;
