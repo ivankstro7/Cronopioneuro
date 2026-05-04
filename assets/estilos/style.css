@@ -21,7 +21,7 @@
     --text-primary: #000000;
     --color-text: #546256;
     --color-text-light: #4F5852;
-    --text-on-brand: #ffffff;
+    --text-on-brand: #dbff00;
 
     /* --- Color Stroke (Contornos) --- */
     --color-stroke-light: #DFDCD4;
@@ -47,10 +47,10 @@
 .btn-primary {
     background-color: var(--color-brand-primary);
     color: var(--text-on-brand);
-    font-weight: 600;
+    font-weight: 500;
     padding: .5rem 1rem;
     border-color: var(--color-brand-primary);
-    border-radius: .5rem;
+    border-radius: 100px;
     transition: all 0.3s ease;
 }
 
@@ -155,6 +155,11 @@ body {
 
 .text-lime {
     color: var(--color-accent) !important;
+}
+
+/* --- Header / Navbar --- */
+.navbar {
+    background-color: var(--background-neutro-100);
 }
 
 /* --- Hero --- */
@@ -306,6 +311,11 @@ body {
    ========================================= */
 
 @media (min-width: 992px) {
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
 
     .instagram-scroll-container {
         display: grid;
