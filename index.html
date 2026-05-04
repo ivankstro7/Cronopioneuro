@@ -113,68 +113,99 @@
 </head>
 
 <body>
-    <section id="hero" class="py-5">
-        <div class="container-fluid">
-            <div class="row align-items-center justify-content-xxl-center gy-5">
-                <div class="title-description col-lg-6 col-xxl-5 mt-4" data-aos="fade-down" data-aos-delay="100">
-                    <div class="discount mb-3 mb-xxl-4">
-                        <p class="mb-2 mb-xxl-3">Primera sesión con tarifa preferencial</p>
-                        <p class="badge mb-0 rounded-md-pill">
-                            Define tu ruta de atención por solo $60.000.</p>
-                    </div>
-                    <h1 class="mb-3 mb-xxl-4">
-                        Neuropsicología y Psicología Clínica en Cali: Recupera el equilibrio con terapia basada en
-                        evidencia.
-                    </h1>
-                    <p class="paragraph mb-3 mb-xxl-4">
-                        No pierdas tiempo ni dinero adivinando qué servicio necesitas. Empieza con nuestra Sesión de
-                        Conocimiento donde analizamos tu motivo de consulta para definir si tu ruta ideal es
-                        la Psicoterapia
-                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalACT">
-                            (ACT)
-                        </button>
-                        o la Neuropsicología, asignándote a la especialista exacta para tu caso.
+    <!-- Topbar Promocional -->
+    <div class="top-bar text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center small">
+            <span class="d-none d-md-inline">Cronopio · Centro de Neurociencias e Intervención Clínica</span>
+            <span class="mx-auto mx-md-0">Primera Sesión de Orientación con tarifa preferencial · <strong
+                    class="text-lime">$60.000 COP</strong></span>
+        </div>
+    </div>
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo-cronopio.png" alt="Cronopio Logo" height="45">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Servicios</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Quienes
+                            somos</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Profesionales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Precios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-dark-custom">Agendar · $60.000 COP</a>
+                </div>
+            </div>
+        </div>
+    </nav><!-- Hero Section -->
+    <section class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Columna Texto -->
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <p class="text-uppercase small fw-bold text-muted mb-2 ls-1">CALI · CENTRO DE NEUROCIENCIAS E
+                        INTERVENCIÓN CLÍNICA</p>
+                    <h1 class="display-4 fw-bold mb-4 main-title">Psicología y Neuropsicología en Cali Basadas en
+                        Evidencia</h1>
+                    <p class="hero-description mb-5">
+                        Deja de adivinar qué necesitas. En Cronopio te conectamos con la especialista exacta para tu
+                        caso —ya sea Psicoterapia ACT, Evaluación Neuropsicológica o Rehabilitación Cognitiva— a través
+                        de un proceso claro, humano y respaldado por la ciencia.
                     </p>
-                    <div class="col-12 col-md-auto">
-                        <a class="zl-facility-url btn btn-promo py-3 px-5 mb-3"
-                            href="https://www.doctoralia.co/clinicas/cronopio-centro-de-neurociencias-e-intervencion-clinica"
-                            target="_blank" rel="nofollow"
-                            data-zlw-facility="cronopio-centro-de-neurociencias-e-intervencion-clinica"
-                            data-zlw-type="facility-simple-link-with-saas-only" data-zlw-saas-only="true"
-                            data-zlw-a11y-title="Widget de reserva de citas médicas">
-                            Quiero mi plan por $60.000 COP
-                        </a>
+
+                    <div class="d-flex flex-wrap align-items-center gap-4 mb-4">
+                        <a href="#" class="btn btn-lime-custom">Quiero mi plan por $60.000 COP</a>
+                        <a href="#"
+                            class="text-decoration-none text-dark fw-bold border-bottom border-dark pb-1">Conocer
+                            servicios <i class="bi bi-arrow-up-right"></i></a>
                     </div>
-                    <p class="price small mb-3 mb-xxl-4">
-                        Precio normal $110.000 COP
+
+                    <p class="small text-muted mb-4">
+                        <span class="text-decoration-line-through">Precio regular $110.000 COP</span> <span
+                            class="mx-2">•</span> <strong>45% OFF</strong> <span class="mx-2">•</span> <strong>Cupos
+                            semanales limitados</strong>
                     </p>
-                    <div class="d-flex gap-4 justify-content-between justify-content-md-start pt-2">
-                        <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-2">
-                            <img src="assets/img/01.hero_image/icon_check_circle.webp"
-                                alt="Ícono de verificación de seguridad para garantía sin compromiso."
-                                style="width: 24px; height: 24px;">
-                            <small>Sin compromiso de continuar</small>
+
+                    <!-- Lista de beneficios -->
+                    <div class="row g-3">
+                        <div class="col-sm-6 d-flex align-items-center gap-2">
+                            <i class="bi bi-check-circle-fill text-lime"></i> <span class="small fw-medium">Sin
+                                compromiso de continuar</span>
                         </div>
-                        <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-2">
-                            <img src="assets/img/01.hero_image/icon_check_circle.webp"
-                                alt="Ícono de verificación de seguridad para garantía sin compromiso."
-                                style="width: 24px; height: 24px;">
-                            <small>45 min para entender tu caso</small>
+                        <div class="col-sm-6 d-flex align-items-center gap-2">
+                            <i class="bi bi-check-circle-fill text-lime"></i> <span class="small fw-medium">45 min para
+                                entender tu caso</span>
                         </div>
-                        <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-2">
-                            <img src="assets/img/01.hero_image/icon_check_circle.webp"
-                                alt="Ícono de verificación de seguridad para garantía sin compromiso."
-                                style="width: 24px; height: 24px;">
-                            <small>Sales con una recomendación clara</small>
+                        <div class="col-sm-6 d-flex align-items-center gap-2">
+                            <i class="bi bi-check-circle-fill text-lime"></i> <span class="small fw-medium">Sales con
+                                una recomendación clara</span>
+                        </div>
+                        <div class="col-sm-6 d-flex align-items-center gap-2">
+                            <i class="bi bi-check-circle-fill text-lime"></i> <span class="small fw-medium">Match
+                                clínico humano (no algorítmico)</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-xxl-5 text-center position-relative mt-4 ps-xxl-5" data-aos="fade-left"
-                    data-aos-delay="100">
-                    <img src="assets/img/01.hero_image/equipo-psicologos-especialistas-ansiedad.webp"
-                        alt="Equipo profesional de psicólogas de Cronopio Neuro sonriendo, especialistas en terapia basada en evidencia"
-                        class="img-fluid rounded-4 position-relative z-1">
-                    <div class="blob-bg position-absolute top-50 start-50 translate-middle z-n1 d-none d-lg-block">
+
+                <!-- Columna Imagen -->
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="hero-image-container">
+                        <img src="assets/hero-team.jpg" alt="Equipo Cronopio" class="img-fluid rounded-5 shadow-sm">
                     </div>
                 </div>
             </div>
