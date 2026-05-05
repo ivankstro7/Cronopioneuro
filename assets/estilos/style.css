@@ -196,7 +196,6 @@
 /* I. Divider */
 .divider {
     border-top: 1px solid var(--color-stroke-light);
-    margin-bottom: 1.5rem;
 }
 
 /* Evitar scroll horizontal */
@@ -251,6 +250,19 @@ body {
 .seccion-confianza .numero {
     font-size: 0.875rem;
     margin-bottom: 5rem;
+}
+
+/* --- Sección de problema solución --- */
+.seccion-problema h2 {
+    font-size: 2rem;
+}
+
+.seccion-problema .tradicional .header-tradicional {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.seccion-problema .cronopio {
+    border-radius: 0 0 1rem 1rem;
 }
 
 /* --- Footer --- */
@@ -364,6 +376,7 @@ body {
 
 /* --- 768px Tablet --- */
 @media (min-width: 768px) {
+
     /* --- Home --- */
     .instagram-item {
         flex: 0 0 30%;
@@ -373,11 +386,32 @@ body {
     .whatsapp-fab {
         bottom: 24px;
     }
+
+    .seccion-problema ul li {
+        min-height: 81px;
+    }
+
+    .seccion-problema .tradicional {
+        border-radius: 0 0 0 1rem;
+    }
+
+    .seccion-problema .cronopio {
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    .seccion-problema .cronopio .header-cronopio {
+        border-radius: 0 1rem 0 0;
+    }
 }
 
 /* --- 992px Small Desktop --- */
 @media (min-width: 992px) {
+
     /* --- Home --- */
+    .seccion-problema ul li {
+        min-height: auto;
+    }
+
     .instagram-scroll-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -395,6 +429,7 @@ body {
 
 /* --- 1200px md Desktop --- */
 @media (min-width: 1200px) {
+
     /* --- Home --- */
     .navbar-expand-xl .navbar-nav .nav-link {
         padding: 0.5rem;
@@ -403,6 +438,7 @@ body {
 
 /* --- 1400px Larger Desktop --- */
 @media (min-width: 1400px) {
+
     /* --- Home --- */
     .navbar-expand-xl .navbar-nav .nav-link {
         padding: 0.5rem 1rem;
@@ -412,7 +448,8 @@ body {
         font-size: 3.5rem;
     }
 
-    .seccion-confianza h2 {
+    .seccion-confianza h2,
+    .seccion-problema h2 {
         font-size: 3rem;
     }
 
