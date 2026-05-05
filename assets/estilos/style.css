@@ -18,7 +18,7 @@
     --background-accent-subtle: #CED7A4;
 
     /* --- Color Content (Textos) --- */
-    --color-text-brand:#072929;
+    --color-text-brand: #072929;
     --color-text-primary: #000000;
     --color-text-secundary: #49454F;
     --color-text: #546256;
@@ -164,6 +164,41 @@
     color: var(--text-on-brand);
 }
 
+/* H. Color Surface (Fondos) */
+.background-neutro-050 {
+    background-color: var(--background-neutro-050);
+}
+
+.background-neutro-100 {
+    background-color: var(--background-neutro-100);
+}
+
+.background-neutro-150 {
+    background-color: var(--background-neutro-150);
+}
+
+.background-neutro-200 {
+    background-color: var(--background-neutro-200);
+}
+
+.background-neutro-300 {
+    background-color: var(--background-neutro-300);
+}
+
+.background-accent-tonal {
+    background-color: var(--background-accent-tonal);
+}
+
+.background-accent-subtle {
+    background-color: var(--background-accent-subtle);
+}
+
+/* I. Divider */
+.divider {
+    border-top: 1px solid var(--color-stroke-light);
+    margin-bottom: 1.5rem;
+}
+
 /* Evitar scroll horizontal */
 html,
 body {
@@ -193,7 +228,7 @@ body {
 
 /* --- Hero --- */
 .hero-section {
-    background: linear-gradient(135deg, rgba(248, 246, 237, 0.95) 0%, rgba(248, 246, 237, 0.75) 50%, rgba(248, 246, 237, 0) 100%);
+    background: linear-gradient(to right, rgba(248, 246, 237, 1) 0%, rgba(248, 246, 237, 0.75) 50%, rgba(248, 246, 237, 0) 100%);
 }
 
 .hero-section h1 {
@@ -208,9 +243,17 @@ body {
     color: var(--color-brand-primary);
 }
 
-/* =========================================
-   14. Footer
-   ========================================= */
+/* --- Sección de confianza --- */
+.seccion-confianza h2 {
+    font-size: 2rem;
+}
+
+.seccion-confianza .numero {
+    font-size: 0.875rem;
+    margin-bottom: 5rem;
+}
+
+/* --- Footer --- */
 .footer-cronopio {
     background-color: var(--color-brand-primary);
     /* Color oscuro del diseño */
@@ -265,10 +308,6 @@ body {
     max-width: 24px;
 }
 
-/* =========================================
-   FAB de WhatsApp
-   ========================================= */
-
 /* Botón flotante personalizado */
 .whatsapp-fab {
     position: fixed;
@@ -298,20 +337,34 @@ body {
 }
 
 /* =========================================
+   2. Servicios
+   ========================================= */
+/* =========================================
+   3. Servicio
+   ========================================= */
+/* =========================================
+   4. Quienes somos
+   ========================================= */
+/* =========================================
+   5. Profesionales
+   ========================================= */
+/* =========================================
+   6. Profesional
+   ========================================= */
+/* =========================================
+   7. Precios
+   ========================================= */
+
+/* =========================================
    Breakpoints Customizados
    ========================================= */
 
-/* =========================================
-   Landscape Phones (608px)
-   ========================================= */
-
+/* --- 608px landscape --- */
 @media (min-width: 608px) {}
 
-/* =========================================
-    Tablets (768px)
-   ========================================= */
-
+/* --- 768px Tablet --- */
 @media (min-width: 768px) {
+    /* --- Home --- */
     .instagram-item {
         flex: 0 0 30%;
         /* Muestra 3 y un poco de la 4ta */
@@ -322,13 +375,9 @@ body {
     }
 }
 
-/* =========================================
-    Desktops (992px)
-   ========================================= */
-
+/* --- 992px Small Desktop --- */
 @media (min-width: 992px) {
-
-
+    /* --- Home --- */
     .instagram-scroll-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -344,27 +393,27 @@ body {
     }
 }
 
-/* =========================================
-    Large Desktops (1200px)
-   ========================================= */
-
+/* --- 1200px md Desktop --- */
 @media (min-width: 1200px) {
+    /* --- Home --- */
     .navbar-expand-xl .navbar-nav .nav-link {
         padding: 0.5rem;
     }
 }
 
-/* =========================================
-    Larger Desktops (1400px)
-   ========================================= */
-
+/* --- 1400px Larger Desktop --- */
 @media (min-width: 1400px) {
+    /* --- Home --- */
     .navbar-expand-xl .navbar-nav .nav-link {
         padding: 0.5rem 1rem;
     }
 
     .hero-section h1 {
         font-size: 3.5rem;
+    }
+
+    .seccion-confianza h2 {
+        font-size: 3rem;
     }
 
     .whatsapp-fab {
