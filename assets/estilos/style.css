@@ -18,7 +18,9 @@
     --background-accent-subtle: #CED7A4;
 
     /* --- Color Content (Textos) --- */
-    --text-primary: #000000;
+    --color-text-brand:#072929;
+    --color-text-primary: #000000;
+    --color-text-secundary: #49454F;
     --color-text: #546256;
     --color-text-light: #4F5852;
     --text-on-brand: #dbff00;
@@ -46,9 +48,6 @@
 /* =========================================
    3. COMPONENTES PERSONALIZADOS
    ========================================= */
-.navbar-nav {
-    --bs-navbar-nav-link-padding-x: var(--nav-padding-x);
-}
 
 /* A. Ajuste del Botón Primary */
 .btn-primary {
@@ -106,7 +105,6 @@
 /* D. Nav link */
 .nav-link {
     font-family: var(--font-secondary);
-    padding: 8px 16px;
 }
 
 .navbar-nav .nav-link.active {
@@ -141,6 +139,31 @@
     color: var(--text-secondary);
 }
 
+/* G. Text Color classes */
+.color-text-brand {
+    color: var(--color-text-brand);
+}
+
+.color-text-primary {
+    color: var(--color-text-primary);
+}
+
+.color-text-secondary {
+    color: var(--color-text-secundary);
+}
+
+.color-text {
+    color: var(--color-text);
+}
+
+.color-text-light {
+    color: var(--color-text-light);
+}
+
+.color-text-on-brand {
+    color: var(--text-on-brand);
+}
+
 /* Evitar scroll horizontal */
 html,
 body {
@@ -169,33 +192,20 @@ body {
 }
 
 /* --- Hero --- */
-#hero {
-    background-color: var(--background-neutro-100);
+.hero-section {
+    background: linear-gradient(135deg, rgba(248, 246, 237, 0.95) 0%, rgba(248, 246, 237, 0.75) 50%, rgba(248, 246, 237, 0) 100%);
 }
 
-#hero .discount p:first-child {
-    font-size: 1.125rem;
+.hero-section h1 {
+    font-size: 2.5rem;
+}
+
+.hero-section .hero-description {
+    font-size: 1rem;
+}
+
+.hero-section .paragraph {
     color: var(--color-brand-primary);
-}
-
-#hero h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 120%;
-    color: var(--color-brand-primary);
-}
-
-#hero .price {
-    font-size: 1.125rem;
-    font-family: var(--font-primary);
-    font-weight: 400;
-    font-style: italic;
-    color: var(--text-secondary);
-    text-decoration: line-through;
-}
-
-#hero small {
-    color: var(--text-secondary);
 }
 
 /* =========================================
@@ -317,7 +327,7 @@ body {
    ========================================= */
 
 @media (min-width: 992px) {
-    
+
 
     .instagram-scroll-container {
         display: grid;
@@ -338,13 +348,25 @@ body {
     Large Desktops (1200px)
    ========================================= */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .navbar-expand-xl .navbar-nav .nav-link {
+        padding: 0.5rem;
+    }
+}
 
 /* =========================================
     Larger Desktops (1400px)
    ========================================= */
 
 @media (min-width: 1400px) {
+    .navbar-expand-xl .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+    }
+
+    .hero-section h1 {
+        font-size: 3.5rem;
+    }
+
     .whatsapp-fab {
         bottom: 32px;
     }
