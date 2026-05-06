@@ -13,6 +13,7 @@
     --background-neutro-100: #F8F6ED;
     --background-neutro-150: #E8E9DC;
     --background-neutro-200: #CED4D0;
+    --background-neutro-250: #F2F1E6;
     --background-neutro-300: #AEC8BB;
     --background-accent-tonal: #86AE3E;
     --background-accent-subtle: #CED7A4;
@@ -181,6 +182,10 @@
     background-color: var(--background-neutro-200);
 }
 
+.background-neutro-250 {
+    background-color: var(--background-neutro-250);
+}
+
 .background-neutro-300 {
     background-color: var(--background-neutro-300);
 }
@@ -263,6 +268,26 @@ body {
 
 .seccion-problema .cronopio {
     border-radius: 0 0 1rem 1rem;
+}
+
+/* --- Sección de problema solución --- */
+.seccion-problema h2 {
+    font-size: 2rem;
+}
+
+/* --- Sección pasos --- */
+.seccion-pasos h2 {
+    font-size: 2rem;
+}
+
+.seccion-pasos .numero {
+    font-size: 4.5rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.seccion-pasos .banner-cta {
+    border: 1px solid var(--color-stroke-light);
 }
 
 /* --- Footer --- */
@@ -449,7 +474,8 @@ body {
     }
 
     .seccion-confianza h2,
-    .seccion-problema h2 {
+    .seccion-problema h2,
+    .seccion-pasos h2 {
         font-size: 3rem;
     }
 
