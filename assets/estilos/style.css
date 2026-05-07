@@ -305,6 +305,10 @@ body {
     font-size: 2rem;
 }
 
+.seccion-servicios .link {
+    font-size: 1.125rem;
+}
+
 .seccion-servicios .numero {
     font-size: 0.875rem;
     margin-bottom: 5rem;
@@ -319,6 +323,16 @@ body {
     font-family: var(--font-primary);
     font-size: 1.5rem;
     color: #F8F6ED;
+}
+
+/* --- Sección equipo --- */
+.seccion-equipo h2 {
+    font-size: 2rem;
+}
+
+/* --- Sección equipo - modal --- */
+.modal .meta-reseña {
+    font-size: 0.75rem;
 }
 
 /* --- Sección equipo --- */
