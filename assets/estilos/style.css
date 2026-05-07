@@ -535,7 +535,8 @@ body {
     .seccion-confianza h2,
     .seccion-problema h2,
     .seccion-pasos h2,
-    .seccion-servicios h2 {
+    .seccion-servicios h2,
+    .seccion-equipo h2 {
         font-size: 3rem;
     }
 
