@@ -76,9 +76,10 @@
 .btn-secundary {
     background-color: var(--color-accent);
     color: var(--color-brand-primary);
-    font-weight: 700;
+    font-weight: 600;
     border-color: var(--color-brand-primary);
-    border-radius: .5rem;
+    border-radius: 100px;
+    padding: 1rem 1.5rem;
     transition: all 0.3s ease;
 }
 
@@ -305,6 +306,17 @@ body {
     margin-bottom: 5rem;
 }
 
+.banner-orientacion {
+    background-color: #011A1A;
+    border: 1px solid #F1FCFA;
+}
+
+.banner-orientacion p {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    color: #F8F6ED;
+}
+
 /* --- Footer --- */
 .footer-cronopio {
     background-color: var(--color-brand-primary);
@@ -490,7 +502,8 @@ body {
 
     .seccion-confianza h2,
     .seccion-problema h2,
-    .seccion-pasos h2 {
+    .seccion-pasos h2,
+    .seccion-servicios h2 {
         font-size: 3rem;
     }
 
