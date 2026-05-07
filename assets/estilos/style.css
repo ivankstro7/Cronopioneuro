@@ -24,7 +24,8 @@
     --color-text-secundary: #49454F;
     --color-text: #546256;
     --color-text-light: #4F5852;
-    --text-on-brand: #dbff00;
+    --text-on-brand-secundary: #dbff00;
+    --text-on-brand: #ffffff;
 
     /* --- Color Stroke (Contornos) --- */
     --color-stroke-light: #DFDCD4;
@@ -53,7 +54,7 @@
 /* A. Ajuste del Botón Primary */
 .btn-primary {
     background-color: var(--color-brand-primary);
-    color: var(--text-on-brand);
+    color: var(--text-on-brand-secundary);
     font-weight: 500;
     padding: .5rem 1rem;
     border-color: var(--color-brand-primary);
@@ -161,6 +162,10 @@
     color: var(--color-text-light);
 }
 
+.color-text-on-brand-secondary {
+    color: var(--text-on-brand-secundary);
+}
+
 .color-text-on-brand {
     color: var(--text-on-brand);
 }
@@ -196,6 +201,10 @@
 
 .background-accent-subtle {
     background-color: var(--background-accent-subtle);
+}
+
+.background-brand-primary {
+    background-color: var(--color-brand-primary);
 }
 
 /* I. Divider */
@@ -288,6 +297,12 @@ body {
 
 .seccion-pasos .banner-cta {
     border: 1px solid var(--color-stroke-light);
+}
+
+/* --- Sección servicios --- */
+.seccion-servicios .numero {
+    font-size: 0.875rem;
+    margin-bottom: 5rem;
 }
 
 /* --- Footer --- */
