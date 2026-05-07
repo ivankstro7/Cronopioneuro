@@ -301,6 +301,10 @@ body {
 }
 
 /* --- Sección servicios --- */
+.seccion-servicios h2 {
+    font-size: 2rem;
+}
+
 .seccion-servicios .numero {
     font-size: 0.875rem;
     margin-bottom: 5rem;
@@ -316,6 +320,34 @@ body {
     font-size: 1.5rem;
     color: #F8F6ED;
 }
+
+/* --- Sección equipo --- */
+.seccion-equipo h2 {
+    font-size: 2rem;
+}
+
+.nombre-profesional {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.especialidad-profesional {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.tag {
+    background-color: var(--background-neutro-200);
+    color: var(--color-brand-primary);
+    border-radius: 0.75rem;
+}
+
+.tag-small {
+    font-size: 0.875rem;
+    background-color: var(--background-neutro-050);
+    border-radius: 0.5rem;
+}
+
 
 /* --- Footer --- */
 .footer-cronopio {
