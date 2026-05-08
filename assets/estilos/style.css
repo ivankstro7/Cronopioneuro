@@ -321,7 +321,7 @@ body {
 
 .banner-orientacion p {
     font-family: var(--font-primary);
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     color: #F8F6ED;
 }
 
@@ -360,6 +360,58 @@ body {
     font-size: 0.875rem;
     background-color: var(--background-neutro-050);
     border-radius: 0.5rem;
+}
+
+/* --- Sección testimonios --- */
+.seccion-testimonios h2 {
+    font-size: 2rem;
+}
+
+#carruselTestimonios .card .body-card h3{
+    margin-bottom: 5rem;
+}
+
+/* Espacio para los botones en la parte inferior */
+.carrusel-testimonios {
+    padding-bottom: 56px;
+}
+
+.carrusel-testimonios .meta-reseña {
+    font-size: 0.75rem;
+}
+
+/* Cancelar el top:0 de Bootstrap y anclar al bottom */
+.carrusel-testimonios .carousel-control-prev,
+.carrusel-testimonios .carousel-control-next {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    transform: none;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #D9D6CF;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+/* Centrar con gap de 1rem (16px) entre los dos botones */
+.carrusel-testimonios .carousel-control-prev {
+    left: calc(50% - 40px - 8px);
+    right: auto;
+}
+
+.carrusel-testimonios .carousel-control-next {
+    right: calc(50% - 40px - 8px);
+    left: auto;
+}
+
+/* Íconos oscuros */
+.carrusel-testimonios .carousel-control-prev-icon,
+.carrusel-testimonios .carousel-control-next-icon {
+    width: 14px;
+    height: 14px;
+    filter: invert(1) brightness(0);
 }
 
 
@@ -500,6 +552,10 @@ body {
     .seccion-problema .cronopio .header-cronopio {
         border-radius: 0 1rem 0 0;
     }
+
+    .seccion-servicios .link {
+        font-size: 1.5rem;
+    }
 }
 
 /* --- 992px Small Desktop --- */
@@ -550,7 +606,8 @@ body {
     .seccion-problema h2,
     .seccion-pasos h2,
     .seccion-servicios h2,
-    .seccion-equipo h2 {
+    .seccion-equipo h2,
+    .seccion-testimonios h2 {
         font-size: 3rem;
     }
 
