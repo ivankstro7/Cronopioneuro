@@ -113,7 +113,9 @@
 .navbar-nav .nav-link.active {
     color: var(--color-brand-primary);
     font-weight: 600;
-    border-bottom: 1px solid #072929;
+    padding: 0.5rem 1rem;
+    background-color: var(--background-neutro-200);
+    border-radius: 2rem;
 }
 
 /* E. Card */
@@ -242,6 +244,24 @@ body {
 
 .navbar .dropdown-menu .columna-izquierda h3 {
     font-family: "Fraunces", serif;
+}
+
+.megamenu .dropdown-item h4:hover {
+    color: var(--color-brand-primary);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.megamenu .dropdown-item {
+    white-space: normal;
+    /* REGLA CLAVE: Permite que el texto salte de línea */
+    display: flex !important;
+    /* Mantiene la estructura de número a la izquierda */
+}
+
+.megamenu .row {
+    margin: 0;
+    /* Evita desbordes por gutters negativos de bootstrap */
 }
 
 /* --- Hero --- */
