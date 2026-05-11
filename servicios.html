@@ -25,54 +25,117 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/estilos/style.css">
 
-    <!-- Código Schema para Cronopio -->
+    <!-- Código Schema para Servicio) -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MedicalClinic",
-  "name": "Cronopio - Centro de Neurociencias e Intervención Clínica",
-  "url": "https://cronopioneuro.com/",
-  "logo": "https://cronopioneuro.com/assets/img/cronopio-neuro-logo.webp",
-  "image": "https://cronopioneuro.com/assets/img/imagen-clinica-principal.jpg",
-  "description": "Centro especializado en Psicología Clínica (ACT) y Neuropsicología en Cali, Colombia.",
-  "telephone": "+573142725677",
-  "email": "cronpioneuro@gmail.com",
-  "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Cra. 46 #9c-85",
-    "addressLocality": "Cali",
-    "addressRegion": "Valle del Cauca",
-    "postalCode": "760001",
-    "addressCountry": "CO"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "3.4516",
-    "longitude": "-76.5320"
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      "opens": "08:00",
-      "closes": "20:00"
-    }
-  ],
-  "contactPoint": [
-    {
-      "@type": "ContactPoint",
-      "contactType": "customer service",
-      "telephone": "+573142725677",
-      "email": "cronpioneuro@gmail.com",
-      "areaServed": "CO",
-      "availableLanguage": ["Spanish"]
-    }
-  ],
-  "sameAs": [
-    "https://www.instagram.com/cronpioneuro/",
-    "https://www.doctoralia.co/clinicas/cronopio-centro-de-neurociencias-e-intervencion-clinica"
-  ]
+  "@type": "MedicalWebPage",
+  "name": "Especialidades en Psicología y Neuropsicología - Cronopio Cali",
+  "description": "Explora nuestra oferta integral de servicios clínicos: Psicoterapia ACT, Evaluación Neuropsicológica, Psicología Infantil y Rehabilitación Cognitiva.",
+  "url": "https://cronopioneuro.com/servicios.html",
+  "lastReviewed": "2026-05-11",
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": 5,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "MedicalService",
+          "name": "Psicología ACT / Cognitivo-Conductual",
+          "url": "https://cronopioneuro.com/cognitivo-conductual.html",
+          "description": "Terapia clínica enfocada en flexibilidad psicológica y evidencia científica.",
+          "offers": [
+            {
+              "@type": "Offer",
+              "price": "110,000",
+              "priceCurrency": "COP",
+              "description": "Modalidad Virtual"
+            },
+            {
+              "@type": "Offer",
+              "price": "130,000",
+              "priceCurrency": "COP",
+              "description": "Modalidad Presencial en Cali"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "MedicalService",
+          "name": "Psicología Infantil",
+          "url": "https://cronopioneuro.com/psicologia-infantil.html",
+          "description": "Acompañamiento especializado para el desarrollo emocional de niños y adolescentes.",
+          "offers": {
+            "@type": "Offer",
+            "price": "130,000",
+            "priceCurrency": "COP",
+            "description": "Precio base por sesión presencial"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "MedicalService",
+          "name": "Evaluación Neuropsicológica",
+          "url": "https://cronopioneuro.com/neuropsicologia.html",
+          "description": "Estudio profundo de funciones cognitivas para diagnóstico preciso de TDAH, memoria y lenguaje.",
+          "offers": {
+            "@type": "Offer",
+            "price": "150,000",
+            "priceCurrency": "COP",
+            "description": "Precio base por sesión presencial"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "MedicalService",
+          "name": "Rehabilitación Cognitiva",
+          "url": "https://cronopioneuro.com/rehabilitacion-cognitiva.html",
+          "description": "Entrenamiento personalizado para fortalecer procesos cognitivos afectados."
+          "offers": [
+            {
+              "@type": "Offer",
+              "price": "110,000",
+              "priceCurrency": "COP",
+              "description": "Modalidad Virtual"
+            },
+            {
+              "@type": "Offer",
+              "price": "130,000",
+              "priceCurrency": "COP",
+              "description": "Modalidad Presencial en Cali"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "MedicalService",
+          "name": "Sesión de Conocimiento",
+          "url": "https://cronopioneuro.com/sesion-conocimiento.html",
+          "description": "Primer contacto para orientar tu proceso terapéutico y definir el especialista ideal.",
+          "offers":
+            {
+              "@type": "Offer",
+              "price": "60,000",
+              "priceCurrency": "COP"
+            }
+        }
+      }
+    ]
+  }
 }
 </script>
 </head>
@@ -99,9 +162,9 @@
             </button>
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link dropdown-toggle" href="servicios.html" role="button"
+                        <a class="nav-link dropdown-toggle active" href="servicios.html" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Servicios
                         </a>
