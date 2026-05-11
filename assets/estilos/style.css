@@ -533,6 +533,42 @@ body {
 /* =========================================
    2. Servicios
    ========================================= */
+
+/* --- Hero image --- */
+.hero-imagen-fondo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center right;
+    z-index: 0;
+}
+
+.hero-degradado::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top left,
+            rgba(248, 246, 237, 0) 0%,
+            /* Esquina inferior derecha: 0% opacidad */
+            rgba(248, 246, 237, 0) 25%,
+            /* Stop 25%: sigue al 0% opacidad */
+            rgba(248, 246, 237, 0.75) 50%,
+            /* Stop 50%: sube al 75% opacidad */
+            rgba(248, 246, 237, 1) 100%
+            /* Esquina superior izquierda: 100% opacidad */
+        );
+}
+
+.hero-degradado .text-small {
+    font-size: 1.5rem;
+}
+
+.hero-degradado h1 {
+    font-size: 2.5rem;
+}
+
 /* =========================================
    3. Servicio
    ========================================= */
@@ -587,6 +623,10 @@ body {
 
     .seccion-servicios .link {
         font-size: 1.5rem;
+    }
+
+    .hero-imagen-fondo {
+        object-position: center top;
     }
 }
 
@@ -661,5 +701,14 @@ body {
 
     .whatsapp-fab {
         bottom: 32px;
+    }
+
+    /* --- Servicios --- */
+    .hero-degradado .text-small {
+        font-size: 2.5rem;
+    }
+
+    .hero-degradado h1 {
+        font-size: 3.5rem;
     }
 }
