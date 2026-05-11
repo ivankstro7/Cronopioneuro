@@ -246,10 +246,9 @@ body {
     font-family: "Fraunces", serif;
 }
 
-.megamenu .dropdown-item h4:hover {
+.megamenu .dropdown-item-wrapper:hover {
+    background-color: #F2F1E6;
     color: var(--color-brand-primary);
-    font-weight: 600;
-    text-decoration: underline;
 }
 
 .megamenu .dropdown-item {
