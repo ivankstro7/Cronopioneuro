@@ -494,6 +494,10 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+.footer-cronopio .especialidad {
+    color: var(--text-on-brand);
+}
+
 .x-small {
     font-size: 0.75rem;
 }
