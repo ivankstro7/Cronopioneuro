@@ -592,6 +592,51 @@ body {
 /* =========================================
    3. Servicio
    ========================================= */
+
+/* --- sección  situaciones --- */
+.seccion-situaciones h2 {
+    font-size: 2rem;
+}
+
+.seccion-situaciones .card .ultima-fila {
+    border-top: 1px solid var(--color-stroke-light);
+}
+
+.seccion-situaciones .card img {
+    width: 7%;
+}
+
+.card-profesional img {
+    width: 50%;
+}
+
+/* --- sección  beneficios --- */
+.seccion-beneficios h2 {
+    font-size: 2rem;
+}
+
+.seccion-beneficios .card-titulo-beneficios {
+    border-radius: 0 0 1rem 1rem;
+    border: 1px solid var(--color-stroke-light);
+    margin-bottom: 0.25rem;
+}
+
+.seccion-beneficios .beneficios-lista .card-beneficio:first-child {
+    border-radius: 1rem 1rem 0 0;
+    border: 1px solid var(--color-stroke-light);
+}
+
+.seccion-beneficios .beneficios-lista .card-beneficio:last-child {
+    border-radius: 0 0 1rem 1rem;
+    border: 1px solid var(--color-stroke-light);
+}
+
+.seccion-beneficios .numero {
+    font-size: 0.875rem;
+    margin-bottom: 5rem;
+}
+
+
 /* =========================================
    4. Quienes somos
    ========================================= */
@@ -648,6 +693,34 @@ body {
     .hero-imagen-fondo {
         object-position: center top;
     }
+
+    /* --- Servicios --- */
+    .seccion-situaciones .card .ultima-fila {
+        border-top: 0;
+    }
+
+    /* --- Servicios --- */
+    .seccion-beneficios .card-titulo-beneficios {
+        border-radius: 0 1rem 1rem 0;
+        margin-bottom: 0;
+        margin-right: 0.25rem;
+    }
+
+    .seccion-beneficios .beneficios-lista .card-beneficio:first-child {
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .seccion-beneficios .beneficios-lista .card-beneficio {
+        border-radius: 1rem 0 0 1rem;
+        border: 1px solid var(--color-stroke-light);
+        margin-bottom: 0.25rem;
+    }
+
+    .seccion-beneficios .beneficios-lista .card-beneficio:last-child {
+        border-radius: 1rem 0 0 1rem;
+        margin-bottom: 0;
+    }
+
 }
 
 /* --- 992px Small Desktop --- */
@@ -696,6 +769,11 @@ body {
     .navbar-expand-xl .navbar-nav .nav-link {
         padding: 0.5rem;
     }
+
+    /* ---  Servicio --- */
+    .card-profesional img {
+        width: 25%;
+    }
 }
 
 /* --- 1400px Larger Desktop --- */
@@ -715,7 +793,9 @@ body {
     .seccion-pasos h2,
     .seccion-servicios h2,
     .seccion-equipo h2,
-    .seccion-testimonios h2 {
+    .seccion-testimonios h2,
+    .seccion-situaciones h2,
+    .seccion-beneficios h2 {
         font-size: 3rem;
     }
 
