@@ -93,7 +93,7 @@
 
 .btn-link {
     color: var(--color-brand-primary) !important;
-    font-weight: 600;
+    font-weight: 500;
     transition: all 0.3s ease;
     padding: 0;
 }
@@ -242,25 +242,13 @@ body {
     background-color: var(--background-neutro-100);
 }
 
-.navbar .dropdown-menu .columna-izquierda h3 {
+.dropdown-menu .number {
     font-family: "Fraunces", serif;
 }
 
-.megamenu .dropdown-item-wrapper:hover {
-    background-color: #F2F1E6;
-    color: var(--color-brand-primary);
-}
-
-.megamenu .dropdown-item {
-    white-space: normal;
-    /* REGLA CLAVE: Permite que el texto salte de línea */
-    display: flex !important;
-    /* Mantiene la estructura de número a la izquierda */
-}
-
-.megamenu .row {
-    margin: 0;
-    /* Evita desbordes por gutters negativos de bootstrap */
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: var(--background-neutro-150);
+    border-radius: 1rem;
 }
 
 /* --- Hero --- */
@@ -729,22 +717,6 @@ body {
     /* --- Home --- */
     .seccion-problema ul li {
         min-height: auto;
-    }
-
-    .nav-item.has-megamenu {
-        position: static;
-        /* Necesario para que el menu se extienda */
-    }
-
-    .megamenu {
-        left: 15% !important;
-        right: 5%;
-        width: 69vw;
-        margin-top: 0 !important;
-        overflow: hidden;
-        border-radius: 1.5rem;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        border: 1px solid var(--color-stroke-light);
     }
 
     .instagram-scroll-container {
