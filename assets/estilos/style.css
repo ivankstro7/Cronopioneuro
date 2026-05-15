@@ -746,6 +746,29 @@ body {
     .dropdown-menu {
         border: 1px solid var(--color-stroke-light);
     }
+
+    .navbar-collapse {
+        background: transparent;
+        border: 0;
+    }
+
+    /* --- Servicios --- */
+    .seccion-situaciones .card .ultima-fila {
+        border-top: 1px solid var(--color-stroke-light);
+    }
+
+    .seccion-beneficios .card-titulo-beneficios {
+        border-radius: 0 0 1rem 1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .seccion-beneficios .beneficios-lista .card-beneficio:first-child {
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .seccion-beneficios .beneficios-lista .card-beneficio:last-child {
+        border-radius: 0 0 1rem 1rem;
+    }
 }
 
 /* --- 1200px md Desktop --- */
