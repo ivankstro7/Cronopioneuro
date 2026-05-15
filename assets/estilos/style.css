@@ -242,12 +242,22 @@ body {
     background-color: var(--background-neutro-100);
 }
 
+.dropdown-menu {
+    border: 0;
+}
+
 .dropdown-menu .number {
     font-family: "Fraunces", serif;
 }
 
-.dropdown-item:focus, .dropdown-item:hover {
+.dropdown-item:focus,
+.dropdown-item:hover {
     background-color: var(--background-neutro-150);
+    border-radius: 1rem;
+}
+
+.navbar-collapse {
+    background: var(--background-neutro-050);
     border-radius: 1rem;
 }
 
@@ -731,6 +741,10 @@ body {
     .instagram-item {
         flex: none;
         width: 100%;
+    }
+
+    .dropdown-menu {
+        border: 1px solid var(--color-stroke-light);
     }
 }
 
