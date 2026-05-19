@@ -95,7 +95,9 @@
     color: var(--color-brand-primary) !important;
     font-weight: 500;
     transition: all 0.3s ease;
-    padding: 0;
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--color-stroke-light);
+    border-radius: 100px;
 }
 
 /* C. Tipografía Secundaria */
@@ -132,7 +134,7 @@
     --bs-accordion-inner-border-radius: 1rem;
     --bs-accordion-btn-color: var(--color-brand-primary);
     --bs-accordion-active-color: var(--color-brand-primary);
-    --bs-accordion-active-bg: var(--background-neutro-200);
+    --bs-accordion-active-bg: var(--background-neutro-150);
 }
 
 .accordion-button {
@@ -634,6 +636,11 @@ body {
     margin-bottom: 5rem;
 }
 
+/* --- sección  FAQ --- */
+.seccion-faq h2 {
+    font-size: 2rem;
+}
+
 
 /* =========================================
    4. Quienes somos
@@ -757,11 +764,6 @@ body {
         border-top: 1px solid var(--color-stroke-light);
     }
 
-    .seccion-beneficios .card-titulo-beneficios {
-        border-radius: 0 0 1rem 1rem;
-        margin-bottom: 0.25rem;
-    }
-
     .seccion-beneficios .beneficios-lista .card-beneficio:first-child {
         border-radius: 1rem 1rem 0 0;
     }
@@ -804,7 +806,9 @@ body {
     .seccion-equipo h2,
     .seccion-testimonios h2,
     .seccion-situaciones h2,
-    .seccion-beneficios h2 {
+    .seccion-beneficios h2,
+    .seccion-faq h2,
+    .seccion-cta h2{
         font-size: 3rem;
     }
 
