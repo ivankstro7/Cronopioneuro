@@ -17,6 +17,7 @@
     --background-neutro-300: #AEC8BB;
     --background-accent-tonal: #86AE3E;
     --background-accent-subtle: #CED7A4;
+    --background-accent-brand: #072929;
 
     /* --- Color Content (Textos) --- */
     --color-text-brand: #072929;
@@ -210,6 +211,10 @@
 
 .background-brand-primary {
     background-color: var(--color-brand-primary);
+}
+
+.background-accent-brand {
+    background-color: var(--background-accent-brand);
 }
 
 /* I. Divider */
@@ -649,6 +654,39 @@ body {
 /* =========================================
    4. Quienes somos
    ========================================= */
+
+/* --- sección  Cronopio --- */
+.seccion-split .card h2 {
+    font-size: 2rem;
+}
+
+.seccion-split .card .imagen-mascota img {
+    width: 100px;
+    height: auto;
+}
+
+.seccion-split .card .card-quote {
+    font-family: "Fraunces", serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+.imagen-por-que {
+    border-radius: 1.25rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    aspect-ratio: 1 / 1;
+    /* mobile */
+}
+
+.imagen-por-que img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 /* =========================================
    5. Profesionales
    ========================================= */
@@ -785,6 +823,11 @@ body {
     .card-profesional img {
         width: 25%;
     }
+
+    /* ---  Quienes somos --- */
+    .seccion-split .card .card-quote {
+        font-size: 1.5rem;
+    }
 }
 
 /* --- 1400px Larger Desktop --- */
@@ -808,7 +851,8 @@ body {
     .seccion-situaciones h2,
     .seccion-beneficios h2,
     .seccion-faq h2,
-    .seccion-cta h2 {
+    .seccion-cta h2,
+    .seccion-cronopio .card h2 {
         font-size: 3rem;
     }
 
