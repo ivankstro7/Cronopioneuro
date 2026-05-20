@@ -852,7 +852,7 @@ body {
     .seccion-beneficios h2,
     .seccion-faq h2,
     .seccion-cta h2,
-    .seccion-cronopio .card h2 {
+    .seccion-split .card h2 {
         font-size: 3rem;
     }
 
