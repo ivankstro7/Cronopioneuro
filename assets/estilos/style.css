@@ -763,14 +763,6 @@ body {
     .seccion-situaciones .card .ultima-fila {
         border-top: 1px solid var(--color-stroke-light);
     }
-
-    .seccion-beneficios .beneficios-lista .card-beneficio:first-child {
-        border-radius: 1rem 1rem 0 0;
-    }
-
-    .seccion-beneficios .beneficios-lista .card-beneficio:last-child {
-        border-radius: 0 0 1rem 1rem;
-    }
 }
 
 /* --- 1200px md Desktop --- */
