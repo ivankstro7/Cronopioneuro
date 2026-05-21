@@ -25,117 +25,45 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/estilos/style.css">
 
-    <!-- Código Schema para Servicio) -->
+    <!-- Código Schema para la página "Quienes somos" -->
     <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "MedicalWebPage",
-  "name": "Especialidades en Psicología y Neuropsicología - Cronopio Cali",
-  "description": "Explora nuestra oferta integral de servicios clínicos: Psicoterapia ACT, Evaluación Neuropsicológica, Psicología Infantil y Rehabilitación Cognitiva.",
-  "url": "https://cronopioneuro.com/servicios.html",
-  "lastReviewed": "2026-05-11",
-  "mainEntity": {
-    "@type": "ItemList",
-    "numberOfItems": 5,
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "item": {
-          "@type": "MedicalService",
-          "name": "Psicología ACT / Cognitivo-Conductual",
-          "url": "https://cronopioneuro.com/cognitivo-conductual.html",
-          "description": "Terapia clínica enfocada en flexibilidad psicológica y evidencia científica.",
-          "offers": [
-            {
-              "@type": "Offer",
-              "price": "110,000",
-              "priceCurrency": "COP",
-              "description": "Modalidad Virtual"
-            },
-            {
-              "@type": "Offer",
-              "price": "130,000",
-              "priceCurrency": "COP",
-              "description": "Modalidad Presencial en Cali"
-            }
-          ]
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "item": {
-          "@type": "MedicalService",
-          "name": "Psicología Infantil",
-          "url": "https://cronopioneuro.com/psicologia-infantil.html",
-          "description": "Acompañamiento especializado para el desarrollo emocional de niños y adolescentes.",
-          "offers": {
-            "@type": "Offer",
-            "price": "130,000",
-            "priceCurrency": "COP",
-            "description": "Precio base por sesión presencial"
-          }
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "item": {
-          "@type": "MedicalService",
-          "name": "Evaluación Neuropsicológica",
-          "url": "https://cronopioneuro.com/neuropsicologia.html",
-          "description": "Estudio profundo de funciones cognitivas para diagnóstico preciso de TDAH, memoria y lenguaje.",
-          "offers": {
-            "@type": "Offer",
-            "price": "150,000",
-            "priceCurrency": "COP",
-            "description": "Precio base por sesión presencial"
-          }
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "item": {
-          "@type": "MedicalService",
-          "name": "Rehabilitación Cognitiva",
-          "url": "https://cronopioneuro.com/rehabilitacion-cognitiva.html",
-          "description": "Entrenamiento personalizado para fortalecer procesos cognitivos afectados."
-          "offers": [
-            {
-              "@type": "Offer",
-              "price": "110,000",
-              "priceCurrency": "COP",
-              "description": "Modalidad Virtual"
-            },
-            {
-              "@type": "Offer",
-              "price": "130,000",
-              "priceCurrency": "COP",
-              "description": "Modalidad Presencial en Cali"
-            }
-          ]
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 5,
-        "item": {
-          "@type": "MedicalService",
-          "name": "Sesión de Conocimiento",
-          "url": "https://cronopioneuro.com/sesion-conocimiento.html",
-          "description": "Primer contacto para orientar tu proceso terapéutico y definir el especialista ideal.",
-          "offers":
-            {
-              "@type": "Offer",
-              "price": "60,000",
-              "priceCurrency": "COP"
-            }
-        }
+    "@context": "https://schema.org",
+    "@type": "MedicalOrganization",
+    "name": "Cronopio Neuro",
+    "description": "Especialistas en Ansiedad y TDAH. Plan de atención personalizado basado en evidencia científica.",
+    "url": "https://cronopioneuro.com",
+    "logo": "https://cronopioneuro.com/assets/img/cronopio-neuro-logo.webp",
+    "founder": {
+        "@type": "Person",
+        "name": "Tania Jaramillo",
+        "jobTitle": "Neuropsicóloga"
+    },
+    "employee": [
+        { "@type": "Person", "name": "Tania Jaramillo", "jobTitle": "Neuropsicóloga" },
+        { "@type": "Person", "name": "Natalia Zapata", "jobTitle": "Psicóloga clínica" },
+        { "@type": "Person", "name": "Isabela Carrejo", "jobTitle": "Psicóloga clínica" },
+        { "@type": "Person", "name": "Alejandra Abad", "jobTitle": "Psicóloga clínica" }
+    ],
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cali",
+        "addressCountry": "CO"
+    },
+    "provider": {
+      "@type": "MedicalClinic",
+      "name": "Cronopio - Centro de Neurociencias e Intervención Clínica",
+      "url": "https://cronopioneuro.com/",
+      "telephone": "+573142725677",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cra. 46 #9c-85",
+        "addressLocality": "Cali",
+        "addressRegion": "Valle del Cauca",
+        "postalCode": "760001",
+        "addressCountry": "CO"
       }
-    ]
-  }
+    }
 }
 </script>
 </head>
@@ -445,8 +373,10 @@
                             salarios justos y horarios flexibles.
                         </p>
                         <p class="d-none d-lg-block color-text-light">
-                            Cronopio tomó forma al unir el conocimiento clínico de Tania con la visión <br> en experiencia de
-                            usuario de Iván (diseñador UI/UX), y el compromiso de un grupo <br> de profesionales que creyeron
+                            Cronopio tomó forma al unir el conocimiento clínico de Tania con la visión <br> en
+                            experiencia de
+                            usuario de Iván (diseñador UI/UX), y el compromiso de un grupo <br> de profesionales que
+                            creyeron
                             en ofrecer atención de calidad con condiciones <br> laborales dignas para los especialistas:
                             salarios justos y horarios flexibles.
                         </p>
@@ -574,7 +504,7 @@
     <section class="seccion-accion grid-cards py-5">
         <div class="container">
             <div class="row g-4">
-                <a href="equipo.html" class="col-12 col-md-6 text-decoration-none">
+                <a href="profesionales.html" class="col-12 col-md-6 text-decoration-none">
                     <div class="card background-neutro-050 rounded-4 h-100">
                         <!-- Imagen derecha -->
                         <div class="imagen-profesionales col-12">
