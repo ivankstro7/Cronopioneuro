@@ -660,6 +660,21 @@ body {
 /* =========================================
    5. Profesionales
    ========================================= */
+
+/* --- sección  Cronopio --- */
+.seccion-equipo .imagen-profesional {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.seccion-equipo .imagen-profesional img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* =========================================
    6. Profesional
    ========================================= */
@@ -798,6 +813,12 @@ body {
 
     .seccion-beneficios .card-titulo-beneficios .imagen-mascota-beneficios {
         width: 50%;
+    }
+
+    /* --- profesionales --- */
+    .seccion-equipo .imagen-profesional {
+        width: 360px;
+        height: 360px;
     }
 }
 
