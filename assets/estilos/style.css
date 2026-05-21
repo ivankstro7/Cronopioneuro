@@ -74,7 +74,7 @@
 }
 
 /* B. boton Secundario */
-.btn-secundary {
+.btn-secondary {
     background-color: var(--color-accent);
     color: var(--color-brand-primary);
     font-weight: 600;
@@ -84,8 +84,8 @@
     transition: all 0.3s ease;
 }
 
-.btn-secundary:hover,
-.btn-secundary:focus {
+.btn-secondary:hover,
+.btn-secondary:focus {
     background-color: var(--color-accent) !important;
     border-color: var(--color-brand-primary);
     color: var(--color-brand-primary);
@@ -645,6 +645,21 @@ body {
 }
 
 .imagen-por-que img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.imagen-profesionales {
+    border-radius: 1.25rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    aspect-ratio: 1 / 1;
+    /* mobile */
+}
+
+.imagen-profesionales img {
     width: 100%;
     height: 100%;
     object-fit: cover;
