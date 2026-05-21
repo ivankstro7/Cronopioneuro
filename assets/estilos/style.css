@@ -286,11 +286,11 @@ body {
 }
 
 /* --- Sección de confianza --- */
-.seccion-confianza h2 {
+.grid-cards h2 {
     font-size: 2rem;
 }
 
-.seccion-confianza .numero {
+.grid-cards .numero {
     font-size: 0.875rem;
     margin-bottom: 5rem;
 }
@@ -308,37 +308,24 @@ body {
     border-radius: 0 0 1rem 1rem;
 }
 
-/* --- Sección de problema solución --- */
-.seccion-problema h2 {
-    font-size: 2rem;
-}
-
 /* --- Sección pasos --- */
-.seccion-pasos h2 {
-    font-size: 2rem;
-}
-
 .seccion-pasos .numero {
     font-size: 4.5rem;
     font-style: italic;
     margin-bottom: 1.5rem;
 }
 
-.seccion-pasos .banner-cta {
+.grid-cards .banner-cta {
     background-color: #F2F1E6;
     border: 1px solid var(--color-stroke-light);
 }
 
 /* --- Sección servicios --- */
-.seccion-servicios h2 {
-    font-size: 2rem;
-}
-
-.seccion-servicios .link {
+.grid-cards .link {
     font-size: 1.125rem;
 }
 
-.seccion-servicios .numero {
+.grid-cards .numero {
     font-size: 0.875rem;
     margin-bottom: 5rem;
 }
@@ -355,14 +342,6 @@ body {
 }
 
 /* --- Sección equipo --- */
-.seccion-equipo h2 {
-    font-size: 2rem;
-}
-
-.seccion-equipo h2 {
-    font-size: 2rem;
-}
-
 .nombre-profesional {
     font-size: 1.25rem;
     font-weight: 600;
@@ -388,11 +367,6 @@ body {
 /* --- Sección equipo - modal --- */
 .modal .meta-reseña {
     font-size: 0.75rem;
-}
-
-/* --- Sección testimonios --- */
-.seccion-testimonios h2 {
-    font-size: 2rem;
 }
 
 #carruselTestimonios .card .body-card h3 {
@@ -733,7 +707,7 @@ body {
         border-radius: 0 1rem 0 0;
     }
 
-    .seccion-servicios .link {
+    .grid-cards .link {
         font-size: 1.5rem;
     }
 
@@ -842,12 +816,8 @@ body {
         font-size: 3.5rem;
     }
 
-    .seccion-confianza h2,
+    .grid-cards h2,
     .seccion-problema h2,
-    .seccion-pasos h2,
-    .seccion-servicios h2,
-    .seccion-equipo h2,
-    .seccion-testimonios h2,
     .seccion-situaciones h2,
     .seccion-beneficios h2,
     .seccion-faq h2,
