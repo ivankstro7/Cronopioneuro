@@ -325,11 +325,6 @@ body {
     font-size: 1.125rem;
 }
 
-.grid-cards .numero {
-    font-size: 0.875rem;
-    margin-bottom: 5rem;
-}
-
 .banner-orientacion {
     background-color: #011A1A;
     border: 1px solid #F1FCFA;
@@ -561,11 +556,6 @@ body {
 /* --- sección  enfoque --- */
 .seccion-enfoque h2 {
     font-size: 1.5rem;
-}
-
-.seccion-enfoque .numero {
-    font-size: 0.875rem;
-    margin-bottom: 5rem;
 }
 
 /* =========================================
