@@ -313,87 +313,238 @@
     <!-- Información del perfil -->
     <div class="seccion-perfil py-5">
         <div class="container">
-            <div class="col-12 col-xl-8 offset-xl-2 d-flex flex-column gap-3">
+            <div class="col-12 col-xl-10 offset-xl-1 d-flex flex-column gap-3">
                 <!-- 1. Foto + datos clave -->
-                <div class="col-12 mt-0">
-                    <div
-                        class="card d-flex flex-column flex-lg-row align-items-lg-center p-4 h-100 background-neutro-050 gap-3 gap-lg-4">
+                <div class="card h-100 background-neutro-050">
+                    <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-3 gap-lg-4 mt-0 p-4">
                         <div class="imagen-profesional">
                             <img src="assets/img/08.profesionales/Tania-Jaramillo.webp" alt="Tania Jaramillo Gil">
                         </div>
                         <div class="card-body p-0">
-                            <div class="d-flex flex-column align-items-start mb-4">
-                                <p class="nombre-profesional mb-1">Tania Jaramillo Gil</p>
-                                <p class="especialidad-profesional color-text-secondary mb-1">Neuropsicóloga</p>
+                            <div class="d-flex flex-column flex-md-row justify-content-md-between">
+                                <div class="d-flex flex-column align-items-start mb-3 mb-md-0">
+                                    <h1 class="nombre-profesional mb-1">Tania Jaramillo Gil</h1>
+                                    <p class="especialidad-profesional color-text-secondary mb-1">Neuropsicóloga</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="https://wa.me/573042725677" target="_blank" rel="noopener noreferrer"
+                                        class="col-12 col-md-auto btn btn-primary text-on-brand"
+                                        aria-label="Contactar por WhatsApp" title="Contactar por WhatsApp">
+                                        Agendar cita</a>
+                                </div>
                             </div>
-                            <div class="d-flex flex-column flex-md-row align-items-center mt-auto pt-2 gap-3">
-                                <a href="https://wa.me/573042725677" target="_blank" rel="noopener noreferrer"
-                                    class="col-12 col-md-auto btn btn-primary text-on-brand"
-                                    aria-label="Contactar por WhatsApp" title="Contactar por WhatsApp">
-                                    Agendar cita</a>
-                            </div>
-                            <div class="d-flex flex-wrap gap-2 mt-1">
-                                <div class="perfil-stat">
-                                    <span class="stat-label color-text">Calificación</span>
-                                    <div class="d-flex align-items-center gap-1">
-                                        <span style="color:#4CAF50;">★</span>
-                                        <span class="stat-valor color-text-primary">5.0</span>
-                                        <a href="#" class="color-text-brand text-decoration-underline ms-1"
-                                            style="font-size:0.8rem;">8 opiniones</a>
+                            <div class="row g-2 mt-4">
+                                <div class="col-12 col-md-4">
+                                    <div class="card p-3 h-100">
+                                        <span class="small color-text-light text-uppercase">Calificación</span>
+                                        <div
+                                            class="body-card mt-3 d-flex align-items-center justify-content-between gap-1 flex-wrap">
+                                            <span class="fw-bold estrellas me-1 color-text-brand">★ 5.0</span>
+                                            <a href="#testimonios" class="btn btn-link fw-normal p-0 border-0">9
+                                                opiniones</a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="perfil-stat">
-                                    <span class="stat-label color-text">Experiencia</span>
-                                    <span class="stat-valor color-text-primary">+100 consultas</span>
+                                <div class="col-12 col-md-4">
+                                    <div class="card p-3 h-100 perfil-stat">
+                                        <span class="small color-text-light text-uppercase">Experiencia</span>
+                                        <span class="d-block fw-bold stat-valor color-text-brand mt-3">+100
+                                            consultas</span>
+                                    </div>
                                 </div>
-                                <div class="perfil-stat">
-                                    <span class="stat-label color-text">Modalidad</span>
-                                    <span class="stat-valor color-text-brand">Presencial Cali · Virtual</span>
+                                <div class="col-12 col-md-4">
+                                    <div class="card p-3 h-100 perfil-stat">
+                                        <span class="small color-text-light text-uppercase">Modalidad</span>
+                                        <span
+                                            class="d-block d-lg-none fw-bold stat-valor color-text-brand mt-3">Presencial
+                                            · Virtual</span>
+                                        <span
+                                            class="d-none d-lg-block fw-bold stat-valor color-text-brand mt-3">Presencial
+                                            Cali · Virtual</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- 2. Sobre mí -->
-                <div class="seccion-perfil">
-                    <span class="seccion-label color-text">Sobre mí</span>
-                    <p class="color-text">...</p>
-                    <a href="#" class="color-text-brand fw-semibold text-decoration-underline">Ver más</a>
+                    <div class="divider"></div>
+                    <!-- 2. Sobre mí -->
+                    <div class="seccion-perfil p-4">
+                        <h2 class="seccion-label fs-5 color-text-brand text-uppercase">Sobre mí</h2>
+                        <p class="color-text mt-5">Soy Tania Jaramillo, neuropsicóloga y psicóloga clínica egresada de
+                            la
+                            Universidad del Valle, con Maestría en Neuropsicología Clínica de la Universidad Icesi y
+                            Doctorado en Ciencias Biomédicas en curso en la Universidad del Valle.</p>
+                        <p class="color-text">Me especializo en evaluación neuropsicológica y en el diagnóstico de
+                            condiciones del neurodesarrollo y trastornos cognitivos en niños, adolescentes, adultos y
+                            adultos mayores. Trabajo con condiciones como TDAH, Autismo, discapacidad intelectual,
+                            demencias, Parkinson, Epilepsia y secuelas cognitivas por daño cerebral.</p>
+                        <p class="color-text">Desde la psicología clínica, acompaño procesos terapéuticos bajo el modelo
+                            de Terapia de Aceptación y Compromiso (ACT) con enfoque contextual cognitivo-conductual,
+                            promoviendo la flexibilidad psicológica y el bienestar emocional.</p>
+                        <p class="color-text">Fundé Cronopio porque creo profundamente que el sistema de salud puede
+                            hacerlo mejor. Que cada persona merece el tiempo, la atención y la ciencia que necesita para
+                            avanzar.</p>
+                        <button type="button" class="btn btn-link p-0 border-0" data-bs-toggle="modal"
+                            data-bs-target="#modalExperiencia">
+                            Ver experiencia
+                        </button>
+                    </div>
                 </div>
                 <!-- 3-5. Acordeones -->
-                <div class="accordion accordion-perfil d-flex flex-column gap-3" id="acordeonPerfil">
-                    <div class="accordion-item">
+                <div class="accordion accordion-perfil" id="acordeonPerfil">
+                    <div class="accordion-item mb-3 rounded-4 overflow-hidden">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#colapsarEnfoque" aria-expanded="false" aria-controls="colapsarEnfoque">
+                            <button class="accordion-button text-uppercase" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#colapsarEnfoque" aria-expanded="true" aria-controls="colapsarEnfoque">
                                 ¿Qué esperar en la primera sesión?
                             </button>
                         </h2>
-                        <div id="colapsarEnfoque" class="accordion-collapse collapse" data-bs-parent="#acordeonPerfil">
-                            <div class="accordion-body"><!-- contenido --></div>
+                        <div id="colapsarEnfoque" class="accordion-collapse collapse show background-neutro-050"
+                            data-bs-parent="#acordeonPerfil">
+                            <div class="accordion-body p-4">
+                                <p class="color-text">La primera sesión es un espacio seguro y cálido para compartir
+                                    aquello que te trae a consulta. Me enfocaré en comprender tus necesidades y tus
+                                    expectativas respecto al proceso terapéutico. Es un momento para resolver tus
+                                    dudas y representa el punto de partida de un camino significativo, en el que
+                                    podrás comenzar a experimentar cambios positivos desde el inicio.
+                                </p>
+                                <div class="divider mb-4"></div>
+                                <h3 class="seccion-label color-text-brand text-uppercase fs-6">Estilo de
+                                    consulta</h3>
+                                <p class="color-text mt-5 mb-0">Mi enfoque terapéutico es psicodinámico e
+                                    integrativo. Juntos exploraremos cómo tus experiencias han moldeado tus
+                                    emociones y relaciones actuales, identificando aquellos factores que influyen en
+                                    tu presente y que pueden estar generando obstáculos. Mi objetivo es acompañarte en
+                                    la comprensión de tu mundo interno, promoviendo una vida con mayor libertad,
+                                    autenticidad y bienestar.</p>
+                            </div>
                         </div>
                     </div>
-                    <!-- Repetir para Especialidades y Formación -->
+                    <!-- Acordeon Especialidades -->
+                    <div class="accordion-item mb-3 rounded-4 overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed text-uppercase" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#colapsarEspecialidades" aria-expanded="false"
+                                aria-controls="colapsarEspecialidades">
+                                Especialidades y áreas de atención
+                            </button>
+                        </h2>
+                        <div id="colapsarEspecialidades" class="accordion-collapse collapse background-neutro-050"
+                            data-bs-parent="#acordeonPerfil">
+                            <div class="accordion-body p-4">
+                                <ul class="list-group list-group-numbered">
+                                    <li class="list-group-item background-neutro-050 border-0 color-text mb-3 p-0">
+                                        Evaluación Neuropsicológica (infantil, adolescente, adulta, adulto mayor)</li>
+                                    <li class="list-group-item background-neutro-050 border-0 color-text mb-3 p-0">
+                                        Diagnóstico de TDAH, TEA, discapacidad intelectual y trastornos del
+                                        neurodesarrollo</li>
+                                    <li class="list-group-item background-neutro-050 border-0 color-text mb-3 p-0">
+                                        Demencias, Alzheimer, Parkinson y deterioro cognitivo</li>
+                                    <li class="list-group-item background-neutro-050 border-0 color-text mb-3 p-0">
+                                        Epilepsia y secuelas cognitivas por daño cerebral</li>
+                                    <li class="list-group-item background-neutro-050 border-0 color-text mb-3 p-0">
+                                        Rehabilitación Neuropsicológica</li>
+                                    <li class="list-group-item background-neutro-050 border-0 color-text p-0">
+                                        Psicoterapia ACT (ansiedad, depresión, regulación emocional)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Acordeon Formación -->
+                    <div class="accordion-item mb-3 rounded-4 overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed text-uppercase" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#colapsarFormación" aria-expanded="false"
+                                aria-controls="colapsarFormación">
+                                Formación
+                            </button>
+                        </h2>
+                        <div id="colapsarFormación" class="accordion-collapse collapse background-neutro-050"
+                            data-bs-parent="#acordeonPerfil">
+                            <div class="accordion-body p-4">
+                                <ul class="list-group list-group-numbered">
+                                    <li class="list-group-item background-neutro-050 border-0 color-text mb-3 p-0">
+                                        Universidad del Valle, Pregrado en Psicología</li>
+                                    <li class="list-group-item background-neutro-050 border-0 color-text mb-3 p-0">
+                                        Universidad del Tolima a Distancia (IDEAD), Especialización en Diversidad en la
+                                        infancia</li>
+                                    <li class="list-group-item background-neutro-050 border-0 color-text mb-3 p-0">
+                                        Universidad Icesi, Maestría en Neuropsicología</li>
+                                    <li class="list-group-item background-neutro-050 border-0 color-text p-0">
+                                        Universidad del Valle, Doctorado en Ciencias Biomédicas (En curso)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- 6. Tabla procesos -->
-                <div class="seccion-perfil">
-                    <span class="seccion-label color-text">Procesos disponibles con Tania.</span>
-                    <div class="fila-proceso d-flex justify-content-between align-items-start gap-3">
-                        <div>
-                            <p class="proceso-nombre">Evaluación Neuropsicológica</p>
-                            <p class="proceso-descripcion color-text">Este servicio te da la base científica y el "por
-                                qué"
-                                de tus desafíos.</p>
+                <div class="accordion accordion-perfil" id="acordeonPrecios">
+                    <div class="accordion-item rounded-4 overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button text-uppercase" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#colapsarPrecios" aria-expanded="true" aria-controls="colapsarPrecios">
+                                Procesos disponibles con Tania.
+                            </button>
+                        </h2>
+                        <div id="colapsarPrecios" class="accordion-collapse collapse show background-neutro-050"
+                            data-bs-parent="#acordeonPrecios">
+
+                            <!-- Item 1 -->
+                            <div class="accordion-body p-4 row g-3 align-items-center m-0">
+                                <!-- Ocupa 12 cols en móvil y 6 cols (la mitad) en md en adelante -->
+                                <div class="accordion-title col-12 col-md-6 mt-0 p-0">
+                                    <h3 class="fs-6 color-text-brand fw-bold">Evaluación Neuropsicológica</h3>
+                                    <p class="color-text mb-0">Este servicio te da la base científica y el "por qué" de
+                                        tus desafíos.</p>
+                                </div>
+                                <!-- Ocupa 12 cols en móvil y 6 cols (la mitad) con alineación a la derecha en md -->
+                                <div class="col-12 col-md-6 p-0 text-md-end">
+                                    <span class="proceso-precio color-text-brand d-inline-block">150.000 $ ·
+                                        Presencial</span>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <!-- Item 2 -->
+                            <div class="accordion-body p-4 row g-3 align-items-center m-0">
+                                <div class="accordion-title col-12 col-md-6 mt-0 p-0">
+                                    <h3 class="fs-6 color-text-brand fw-bold">Pruebas Cognitivas</h3>
+                                    <p class="color-text mb-0">Obtén una medición objetiva y precisa de tus habilidades
+                                        de atención, memoria, procesamiento de información y razonamiento.</p>
+                                </div>
+                                <div class="col-12 col-md-6 p-0 text-md-end">
+                                    <span class="proceso-precio color-text-brand d-inline-block">150.000 $ ·
+                                        Presencial</span>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <!-- Item 3 -->
+                            <div class="accordion-body p-4 row g-3 align-items-center m-0">
+                                <div class="accordion-title col-12 col-md-6 mt-0 p-0">
+                                    <h3 class="fs-6 color-text-brand fw-bold">Terapia de Rehabilitación Cognitiva</h3>
+                                    <p class="color-text mb-0">Este servicio te proporciona estrategias y ejercicios
+                                        prácticos para mejorar habilidades cognitivas específicas (velocidad de
+                                        procesamiento, memoria de trabajo).</p>
+                                </div>
+                                <div class="col-12 col-md-6 p-0 text-md-end">
+                                    <span class="proceso-precio color-text-brand d-inline-block">150.000 $ ·
+                                        Presencial</span>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="accordion-body">
+                                <button type="button" class="btn btn-link fw-normal p-0 border-0" data-bs-toggle="modal"
+                                    data-bs-target="#modalServicios">
+                                    Ver todos los servicios
+                                </button>
+                            </div>
                         </div>
-                        <span class="proceso-precio color-text">150.000 $ · Presencial</span>
                     </div>
-                    <!-- Repetir filas -->
                 </div>
             </div>
         </div>
     </div>
     <!-- Sección de testimonios -->
-    <section class="seccion-testimonios grid-cards py-5">
+    <section id="testimonios" class="seccion-testimonios grid-cards py-5">
         <div class="container">
             <h2 class="mb-5 d-block d-md-none">
                 Historias reales de personas
@@ -668,8 +819,8 @@
     <section class="seccion-faq py-5">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-xxl-8">
-                    <span class="text-uppercase small text-muted mb-2 ls-1">Preguntas Frecuentes (FAQ)</span>
+                <div class="col-12 col-xl-10">
+                    <span class="text-uppercase small text-muted mb-2">Preguntas Frecuentes (FAQ)</span>
                     <h2 class="mb-5">
                         Resolviendo tus dudas <br>
                         <strong class="color-text-brand">sobre el Primer Paso.</strong>

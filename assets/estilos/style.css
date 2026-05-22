@@ -692,6 +692,10 @@ body {
     object-fit: cover;
 }
 
+.seccion-perfil .accordion-button {
+    background-color: var(--background-neutro-150);
+}
+
 /* =========================================
    7. Precios
    ========================================= */
