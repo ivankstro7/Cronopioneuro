@@ -678,6 +678,20 @@ body {
 /* =========================================
    6. Profesional
    ========================================= */
+/* --- sección  perfil --- */
+.seccion-perfil .imagen-profesional {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.seccion-perfil .imagen-profesional img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* =========================================
    7. Precios
    ========================================= */
@@ -819,6 +833,12 @@ body {
     .seccion-equipo .imagen-profesional {
         width: 360px;
         height: 360px;
+    }
+
+    /* --- perfil --- */
+    .seccion-perfil .imagen-profesional {
+        width: 260px;
+        height: 260px;
     }
 }
 
