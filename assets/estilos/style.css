@@ -605,6 +605,17 @@ body {
     font-size: 2rem;
 }
 
+.seccion-faq .accordion-item {
+    background-color: var(--background-neutro-050);
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.seccion-faq .accordion-button {
+    background-color: var(--background-neutro-150);
+}
+
 
 /* =========================================
    4. Quienes somos
