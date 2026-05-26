@@ -29,113 +29,141 @@
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MedicalWebPage",
-  "name": "Especialidades en Psicología y Neuropsicología - Cronopio Cali",
-  "description": "Explora nuestra oferta integral de servicios clínicos: Psicoterapia ACT, Evaluación Neuropsicológica, Psicología Infantil y Rehabilitación Cognitiva.",
-  "url": "https://cronopioneuro.com/servicios.html",
-  "lastReviewed": "2026-05-11",
-  "mainEntity": {
-    "@type": "ItemList",
-    "numberOfItems": 5,
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "item": {
-          "@type": "MedicalService",
-          "name": "Psicología ACT / Cognitivo-Conductual",
-          "url": "https://cronopioneuro.com/cognitivo-conductual.html",
-          "description": "Terapia clínica enfocada en flexibilidad psicológica y evidencia científica.",
-          "offers": [
-            {
-              "@type": "Offer",
-              "price": "110,000",
-              "priceCurrency": "COP",
-              "description": "Modalidad Virtual"
-            },
-            {
-              "@type": "Offer",
-              "price": "130,000",
-              "priceCurrency": "COP",
-              "description": "Modalidad Presencial en Cali"
-            }
-          ]
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://cronopioneuro.com/tania-jaramillo#professional",
+      "name": "Tania Jaramillo Gil",
+      "jobTitle": "Neuropsicóloga",
+      "image": "https://cronopioneuro.com/assets/img/08.profesionales/Tania-Jaramillo.webp",
+      "description": "Neuropsicóloga y psicóloga clínica egresada de la Universidad del Valle, con Maestría en Neuropsicología Clínica de la Universidad Icesi y Doctorado en Ciencias Biomédicas en curso en la Universidad del Valle. Especialista en evaluación neuropsicológica en el neurodesarrollo, condiciones del espectro autista, trastornos cognitivos y terapia de Aceptación y Compromiso (ACT).",
+      "url": "https://cronopioneuro.com/tania-jaramillo",
+      "worksFor": {
+        "@type": "MedicalBusiness",
+        "name": "Cronopio - Centro de Neurociencias e Intervención Clínica",
+        "url": "https://cronopioneuro.com/",
+        "logo": "https://cronopioneuro.com/assets/img/logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Cra. 46 #9c-85",
+          "addressLocality": "Cali",
+          "addressRegion": "Valle del Cauca",
+          "addressCountry": "CO"
         }
       },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "item": {
-          "@type": "MedicalService",
-          "name": "Psicología Infantil",
-          "url": "https://cronopioneuro.com/psicologia-infantil.html",
-          "description": "Acompañamiento especializado para el desarrollo emocional de niños y adolescentes.",
-          "offers": {
-            "@type": "Offer",
-            "price": "130,000",
-            "priceCurrency": "COP",
-            "description": "Precio base por sesión presencial"
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Universidad del Valle"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Universidad Icesi"
+        }
+      ],
+      "knowsAbout": [
+        "Evaluación Neuropsicológica (Infantil, adolescente, adulto, adulto mayor)",
+        "Diagnóstico de TDAH, TEA, discapacidad intelectual y trastornos del neurodesarrollo",
+        "Demencias, Alzheimer, Parkinson y deterioro cognitivo",
+        "Epilepsia y secuelas cognitivas por daño cerebral",
+        "Rehabilitación Neuropsicológica",
+        "Psicoterapia ACT (ansiedad, depresión, regulación emocional)"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "9",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "María Daniela"
+          },
+          "datePublished": "2026-03-12",
+          "reviewBody": "Una profesional muy dedicada y humana. Explica con claridad y fomenta un espacio muy cómodo en consulta. Gracias Dra.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Carlos C."
+          },
+          "datePublished": "2026-03-07",
+          "reviewBody": "Para mi proceso estoy experimentando profesionalismo en las citas.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Leonardo Z."
+          },
+          "datePublished": "2026-02-21",
+          "reviewBody": "Una excelente sesión, se nota la experiencia en el campo, su empatía con el paciente y una muy buena educación, totalmente recomendada.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
           }
         }
+      ]
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://cronopioneuro.com/profesionales/tania-jaramillo",
+      "url": "https://cronopioneuro.com/profesionales/tania-jaramillo",
+      "name": "Perfil Profesional de la Dra. Tania Jaramillo Gil | Cronopio Cali",
+      "description": "Agenda tu cita con la Dra. Tania Jaramillo Gil, Neuropsicóloga experta en evaluación cognitiva, diagnóstico de TDAH, TEA y rehabilitación en Cali y consulta virtual.",
+      "mainEntity": {
+        "@id": "https://cronopioneuro.com/profesionales/tania-jaramillo#professional"
       },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "item": {
-          "@type": "MedicalService",
+      "hasPart": [
+        {
+          "@type": "MedicalProcedure",
           "name": "Evaluación Neuropsicológica",
-          "url": "https://cronopioneuro.com/neuropsicologia.html",
-          "description": "Estudio profundo de funciones cognitivas para diagnóstico preciso de TDAH, memoria y lenguaje.",
+          "description": "Este servicio te da la base científica y el 'por qué' de tus desafíos.",
           "offers": {
             "@type": "Offer",
-            "price": "150,000",
+            "price": "150000",
             "priceCurrency": "COP",
-            "description": "Precio base por sesión presencial"
+            "availableDeliveryMethod": "https://schema.org/OnSitePickup"
+          }
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Pruebas Cognitivas",
+          "description": "Obtén una medición objetiva y precisa de tus habilidades de atención, memoria, procesamiento de información y razonamiento.",
+          "offers": {
+            "@type": "Offer",
+            "price": "150000",
+            "priceCurrency": "COP",
+            "availableDeliveryMethod": "https://schema.org/OnSitePickup"
+          }
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Terapia de Rehabilitación Cognitiva",
+          "description": "Este servicio te proporciona estrategias y ejercicios prácticos para mejorar habilidades cognitivas específicas.",
+          "offers": {
+            "@type": "Offer",
+            "price": "150000",
+            "priceCurrency": "COP",
+            "availableDeliveryMethod": "https://schema.org/OnSitePickup"
           }
         }
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "item": {
-          "@type": "MedicalService",
-          "name": "Rehabilitación Cognitiva",
-          "url": "https://cronopioneuro.com/rehabilitacion-cognitiva.html",
-          "description": "Entrenamiento personalizado para fortalecer procesos cognitivos afectados."
-          "offers": [
-            {
-              "@type": "Offer",
-              "price": "110,000",
-              "priceCurrency": "COP",
-              "description": "Modalidad Virtual"
-            },
-            {
-              "@type": "Offer",
-              "price": "130,000",
-              "priceCurrency": "COP",
-              "description": "Modalidad Presencial en Cali"
-            }
-          ]
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 5,
-        "item": {
-          "@type": "MedicalService",
-          "name": "Sesión de Conocimiento",
-          "url": "https://cronopioneuro.com/sesion-conocimiento.html",
-          "description": "Primer contacto para orientar tu proceso terapéutico y definir el especialista ideal.",
-          "offers":
-            {
-              "@type": "Offer",
-              "price": "60,000",
-              "priceCurrency": "COP"
-            }
-        }
-      }
-    ]
-  }
+      ]
+    }
+  ]
 }
 </script>
 </head>
