@@ -29,113 +29,124 @@
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MedicalWebPage",
-  "name": "Especialidades en Psicología y Neuropsicología - Cronopio Cali",
-  "description": "Explora nuestra oferta integral de servicios clínicos: Psicoterapia ACT, Evaluación Neuropsicológica, Psicología Infantil y Rehabilitación Cognitiva.",
-  "url": "https://cronopioneuro.com/servicios.html",
-  "lastReviewed": "2026-05-11",
-  "mainEntity": {
-    "@type": "ItemList",
-    "numberOfItems": 5,
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "item": {
-          "@type": "MedicalService",
-          "name": "Psicología ACT / Cognitivo-Conductual",
-          "url": "https://cronopioneuro.com/cognitivo-conductual.html",
-          "description": "Terapia clínica enfocada en flexibilidad psicológica y evidencia científica.",
-          "offers": [
-            {
-              "@type": "Offer",
-              "price": "110,000",
-              "priceCurrency": "COP",
-              "description": "Modalidad Virtual"
-            },
-            {
-              "@type": "Offer",
-              "price": "130,000",
-              "priceCurrency": "COP",
-              "description": "Modalidad Presencial en Cali"
-            }
-          ]
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://cronopioneuro.com/profesionales/natalia-zapata#professional",
+      "name": "Natalia Zapata Posso",
+      "jobTitle": "Psicóloga Clínica",
+      "image": "https://cronopioneuro.com/assets/img/08.profesionales/Natalia-Zapata.webp",
+      "description": "Psicóloga egresada de la Universidad del Valle, con énfasis en psicología clínica y Terapia de Aceptación y Compromiso (ACT). Mi trayectoria abarca entornos de investigación, hospitalarios y comunitarios, lo que me ha dado una visión integral del ser humano y de los contextos que lo moldean.",
+      "url": "https://cronopioneuro.com/natalia-zapata",
+      "worksFor": {
+        "@type": "MedicalBusiness",
+        "name": "Cronopio - Centro de Neurociencias e Intervención Clínica",
+        "url": "https://cronopioneuro.com/",
+        "logo": "https://cronopioneuro.com/assets/img/logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Cra. 46 #9c-85",
+          "addressLocality": "Cali",
+          "addressRegion": "Valle del Cauca",
+          "addressCountry": "CO"
         }
       },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "item": {
-          "@type": "MedicalService",
-          "name": "Psicología Infantil",
-          "url": "https://cronopioneuro.com/psicologia-infantil.html",
-          "description": "Acompañamiento especializado para el desarrollo emocional de niños y adolescentes.",
-          "offers": {
-            "@type": "Offer",
-            "price": "130,000",
-            "priceCurrency": "COP",
-            "description": "Precio base por sesión presencial"
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Universidad del Valle"
+        }
+      ],
+      "knowsAbout": [
+        "Psicoterapia individual para adolescentes y adultos",
+        "Terapia de Aceptación y Compromiso (ACT)",
+        "Terapia Dialéctica Conductual (DBT)",
+        "Intervención en crisis y regulación emocional",
+        "Ansiedad, depresión y dificultades relacionales",
+        "Procesos adaptativos y transiciones de vida"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "9",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "María E."
+          },
+          "datePublished": "2026-05-7",
+          "reviewBody": "La Dra tiene un aura muy linda , fue muy gentil y explicó a detallado lo que me está sucediendo. Se nota que realiza su profesión con mucha pasión",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Luis E."
+          },
+          "datePublished": "2026-04-13",
+          "reviewBody": "Es muy humana, pero jamás deja de ser técnica y precisa en sus palabras, hace sentir segura la terapia y te deja ser sin incomodidad",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
           }
         }
+      ]
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://cronopioneuro.com/profesionales/natalia-zapata",
+      "url": "https://cronopioneuro.com/profesionales/natalia-zapata",
+      "name": "Perfil Profesional de la Psicóloga Natalia Zapata Posso | Cronopio",
+      "description": "Agenda tu consulta con Natalia Zapata Posso, Psicóloga Clínica experta en Terapias de Tercera Generación (ACT y DBT) para adolescentes y adultos en Cali y modalidad virtual.",
+      "mainEntity": {
+        "@id": "https://cronopioneuro.com/profesionales/natalia-zapata#professional"
       },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "item": {
-          "@type": "MedicalService",
-          "name": "Evaluación Neuropsicológica",
-          "url": "https://cronopioneuro.com/neuropsicologia.html",
-          "description": "Estudio profundo de funciones cognitivas para diagnóstico preciso de TDAH, memoria y lenguaje.",
+      "hasPart": [
+        {
+          "@type": "MedicalProcedure",
+          "name": "Primera consulta de psicología",
+          "description": "Elimina la incertidumbre y garantiza que iniciarás el tratamiento correcto desde el primer día. El principal beneficio es evitar terapias de ensayo y error.",
           "offers": {
             "@type": "Offer",
-            "price": "150,000",
+            "price": "60000",
             "priceCurrency": "COP",
-            "description": "Precio base por sesión presencial"
+            "availableDeliveryMethod": "https://schema.org/DeliveryMethod"
+          }
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Psicoterapia Individual",
+          "description": "Procesos terapéuticos basados en evidencia científica para abordar desafíos emocionales, conductuales y relacionales bajo un enfoque ACT.",
+          "offers": {
+            "@type": "Offer",
+            "price": "110000",
+            "priceCurrency": "COP",
+            "availableDeliveryMethod": "https://schema.org/OnSitePickup"
+          }
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Psicoterapia para adolescentes",
+          "description": "Ayuda a tu hijo adolescente a gestionar la ansiedad escolar, los conflictos familiares o las presiones sociales con un enfoque clínico y basado en evidencia.",
+          "offers": {
+            "@type": "Offer",
+            "price": "110000",
+            "priceCurrency": "COP",
+            "availableDeliveryMethod": "https://schema.org/OnSitePickup"
           }
         }
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "item": {
-          "@type": "MedicalService",
-          "name": "Rehabilitación Cognitiva",
-          "url": "https://cronopioneuro.com/rehabilitacion-cognitiva.html",
-          "description": "Entrenamiento personalizado para fortalecer procesos cognitivos afectados."
-          "offers": [
-            {
-              "@type": "Offer",
-              "price": "110,000",
-              "priceCurrency": "COP",
-              "description": "Modalidad Virtual"
-            },
-            {
-              "@type": "Offer",
-              "price": "130,000",
-              "priceCurrency": "COP",
-              "description": "Modalidad Presencial en Cali"
-            }
-          ]
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 5,
-        "item": {
-          "@type": "MedicalService",
-          "name": "Sesión de Conocimiento",
-          "url": "https://cronopioneuro.com/sesion-conocimiento.html",
-          "description": "Primer contacto para orientar tu proceso terapéutico y definir el especialista ideal.",
-          "offers":
-            {
-              "@type": "Offer",
-              "price": "60,000",
-              "priceCurrency": "COP"
-            }
-        }
-      }
-    ]
-  }
+      ]
+    }
+  ]
 }
 </script>
 </head>
