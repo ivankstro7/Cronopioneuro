@@ -29,113 +29,124 @@
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MedicalWebPage",
-  "name": "Especialidades en Psicología y Neuropsicología - Cronopio Cali",
-  "description": "Explora nuestra oferta integral de servicios clínicos: Psicoterapia ACT, Evaluación Neuropsicológica, Psicología Infantil y Rehabilitación Cognitiva.",
-  "url": "https://cronopioneuro.com/servicios.html",
-  "lastReviewed": "2026-05-11",
-  "mainEntity": {
-    "@type": "ItemList",
-    "numberOfItems": 5,
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "item": {
-          "@type": "MedicalService",
-          "name": "Psicología ACT / Cognitivo-Conductual",
-          "url": "https://cronopioneuro.com/cognitivo-conductual.html",
-          "description": "Terapia clínica enfocada en flexibilidad psicológica y evidencia científica.",
-          "offers": [
-            {
-              "@type": "Offer",
-              "price": "110,000",
-              "priceCurrency": "COP",
-              "description": "Modalidad Virtual"
-            },
-            {
-              "@type": "Offer",
-              "price": "130,000",
-              "priceCurrency": "COP",
-              "description": "Modalidad Presencial en Cali"
-            }
-          ]
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://cronopioneuro.com/profesionales/isabela-carrejo#professional",
+      "name": "Isabela Carrejo",
+      "jobTitle": "Psicóloga Clínica",
+      "image": "https://cronopioneuro.com/assets/img/08.profesionales/Isabela-Carrejo.webp",
+      "description": "Psicóloga clínica titulada de la Universidad del Valle, con formación y experiencia en evaluación e intervención de problemáticas emocionales y conductuales en niños, adolescentes y adultos. Especialista en Terapia de Aceptación y Compromiso (ACT) con perspectiva conductual, contextual e inclusiva.",
+      "url": "https://cronopioneuro.com/isabela-carrejo",
+      "worksFor": {
+        "@type": "MedicalBusiness",
+        "name": "Cronopio - Centro de Neurociencias e Intervención Clínica",
+        "url": "https://cronopioneuro.com/",
+        "logo": "https://cronopioneuro.com/assets/img/logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Cra. 46 #9c-85",
+          "addressLocality": "Cali",
+          "addressRegion": "Valle del Cauca",
+          "addressCountry": "CO"
         }
       },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "item": {
-          "@type": "MedicalService",
-          "name": "Psicología Infantil",
-          "url": "https://cronopioneuro.com/psicologia-infantil.html",
-          "description": "Acompañamiento especializado para el desarrollo emocional de niños y adolescentes.",
-          "offers": {
-            "@type": "Offer",
-            "price": "130,000",
-            "priceCurrency": "COP",
-            "description": "Precio base por sesión presencial"
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Universidad del Valle"
+        }
+      ],
+      "knowsAbout": [
+        "Psicología clínica para niños y adolescentes",
+        "Terapia de Aceptación y Compromiso (ACT)",
+        "Regulación emocional y conductual",
+        "Evaluación e intervención en dificultades escolares",
+        "Adicciones y conductas problemáticas",
+        "Perspectiva de género y diversidad"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "6",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Lina R."
+          },
+          "datePublished": "2026-04-8",
+          "reviewBody": "Gracias Doctora Isabela, sé que es el inicio de un proceso pero que llegaremos al éxito. Gracias por escucharme.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Luz M."
+          },
+          "datePublished": "2026-02-14",
+          "reviewBody": "Fue de gran ayuda en mi triste situación, me siento mejor por apoyarme en como enfrentar mi duelo. Me enseñó a realizar una mejor respiración.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
           }
         }
+      ]
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://cronopioneuro.com/profesionales/isabela-carrejo",
+      "url": "https://cronopioneuro.com/profesionales/isabela-carrejo",
+      "name": "Perfil Profesional de la Psicóloga Isabela Carrejo | Cronopio",
+      "description": "Agenda tu consulta con Isabela Carrejo, Psicóloga Clínica experta en Terapia de Aceptación y Compromiso (ACT) para niños, adolescentes y adultos en Cali y modalidad virtual.",
+      "mainEntity": {
+        "@id": "https://cronopioneuro.com/profesionales/isabela-carrejo#professional"
       },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "item": {
-          "@type": "MedicalService",
-          "name": "Evaluación Neuropsicológica",
-          "url": "https://cronopioneuro.com/neuropsicologia.html",
-          "description": "Estudio profundo de funciones cognitivas para diagnóstico preciso de TDAH, memoria y lenguaje.",
+      "hasPart": [
+        {
+          "@type": "MedicalProcedure",
+          "name": "Primera consulta de psicología",
+          "description": "Elimina la incertidumbre y garantiza que iniciarás el tratamiento correcto desde el primer día.",
           "offers": {
             "@type": "Offer",
-            "price": "150,000",
+            "price": "60000",
             "priceCurrency": "COP",
-            "description": "Precio base por sesión presencial"
+            "availableDeliveryMethod": "https://schema.org/DeliveryMethod"
+          }
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Consulta por psicoterapia",
+          "description": "Logra cambiar los patrones de pensamiento destructivos que te limitan y obtén herramientas concretas para manejar tus emociones, evitando que la ansiedad, la depresión o el estrés te controlen.",
+          "offers": {
+            "@type": "Offer",
+            "price": "110000",
+            "priceCurrency": "COP",
+            "availableDeliveryMethod": "https://schema.org/OnSitePickup"
+          }
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Duelo por ruptura de pareja",
+          "description": "Supera el dolor y la confusión después de una separación con apoyo profesional y basado en evidencia.",
+          "offers": {
+            "@type": "Offer",
+            "price": "110000",
+            "priceCurrency": "COP",
+            "availableDeliveryMethod": "https://schema.org/OnSitePickup"
           }
         }
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "item": {
-          "@type": "MedicalService",
-          "name": "Rehabilitación Cognitiva",
-          "url": "https://cronopioneuro.com/rehabilitacion-cognitiva.html",
-          "description": "Entrenamiento personalizado para fortalecer procesos cognitivos afectados."
-          "offers": [
-            {
-              "@type": "Offer",
-              "price": "110,000",
-              "priceCurrency": "COP",
-              "description": "Modalidad Virtual"
-            },
-            {
-              "@type": "Offer",
-              "price": "130,000",
-              "priceCurrency": "COP",
-              "description": "Modalidad Presencial en Cali"
-            }
-          ]
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 5,
-        "item": {
-          "@type": "MedicalService",
-          "name": "Sesión de Conocimiento",
-          "url": "https://cronopioneuro.com/sesion-conocimiento.html",
-          "description": "Primer contacto para orientar tu proceso terapéutico y definir el especialista ideal.",
-          "offers":
-            {
-              "@type": "Offer",
-              "price": "60,000",
-              "priceCurrency": "COP"
-            }
-        }
-      }
-    ]
-  }
+      ]
+    }
+  ]
 }
 </script>
 </head>
@@ -323,7 +334,7 @@
                         <div class="card-body p-0">
                             <div class="d-flex flex-column flex-md-row justify-content-md-between">
                                 <div class="d-flex flex-column align-items-start mb-3 mb-md-0">
-                                    <h1 class="nombre-profesional mb-1">Natalia Zapata Posso</h1>
+                                    <h1 class="nombre-profesional mb-1">Isabela Carrejo</h1>
                                     <p class="especialidad-profesional color-text-secondary mb-1">Psicóloga Clínica ACT
                                         en Cali </p>
                                 </div>
@@ -342,8 +353,8 @@
                                             class="body-card mt-3 d-flex align-items-center justify-content-between gap-1 flex-wrap">
                                             <span class="fw-bold estrellas me-1 color-text-brand">★ 5.0</span>
                                             <button type="button" class="btn btn-link fw-normal p-0 border-0"
-                                                data-bs-toggle="modal" data-bs-target="#modalTestimoniosNatalia">
-                                                9 opiniones
+                                                data-bs-toggle="modal" data-bs-target="#modalTestimoniosIsabela">
+                                                6 opiniones
                                             </button>
                                         </div>
                                     </div>
@@ -373,17 +384,18 @@
                     <!-- 2. Sobre mí -->
                     <div class="seccion-perfil p-4">
                         <h2 class="seccion-label fs-5 color-text-brand text-uppercase">Sobre mí</h2>
-                        <p class="color-text mt-5">Soy Natalia Zapata, psicóloga egresada de la Universidad del Valle,
-                            con énfasis en psicología clínica y Terapia de Aceptación y Compromiso (ACT). Mi trayectoria
-                            abarca entornos de investigación, hospitalarios y comunitarios, lo que me ha dado una visión
-                            integral del ser humano y de los contextos que lo moldean.</p>
-                        <p class="color-text">Mi práctica se sostiene sobre tres pilares: la adaptabilidad, la
-                            diversidad y la inclusividad. Integro la perspectiva social e interseccional con la
-                            psicología basada en evidencia y el manejo de instrumentos psicométricos. Creo que cada
-                            persona merece una atención que la vea completa.
+                        <p class="color-text mt-5">Soy Isabela Carrejo, psicóloga clínica titulada de la Universidad del
+                            Valle, con formación y experiencia en evaluación e intervención de problemáticas emocionales
+                            y conductuales en niños, adolescentes y adultos.</p>
+                        <p class="color-text">Mi práctica se fundamenta en la psicología basada en evidencia, con una
+                            perspectiva conductual, contextual e inclusiva. Creo profundamente en una ciencia adaptada a
+                            la persona —no al revés—, sensible a las variables individuales y a los contextos sociales
+                            que atraviesan la vida de cada quien.
                         </p>
-                        <p class="color-text">Gracias por confiar en tu salud mental. Es un privilegio acompañarte en
-                            ese proceso.</p>
+                        <p class="color-text">Mi propósito es acompañarte en el camino hacia una vida plena y con
+                            sentido. Porque el bienestar no es la ausencia de dificultades: es la capacidad de avanzar a
+                            pesar de ellas.
+                        </p>
                         <button type="button" class="btn btn-link p-0 border-0" data-bs-toggle="modal"
                             data-bs-target="#modalExperiencia">
                             Ver experiencia
@@ -434,15 +446,17 @@
                             <div class="accordion-body p-4">
                                 <ul class="list-group list-group-numbered">
                                     <li class="list-group-item background-neutro-050 border-0 color-text mb-3 p-0">
-                                        Psicología clínica para niños, adolescentes y adultos</li>
+                                        Psicología clínica para niños y adolescentes</li>
                                     <li class="list-group-item background-neutro-050 border-0 color-text mb-3 p-0">
-                                        Terapia ACT (ansiedad, depresión, regulación emocional)</li>
+                                        Terapia ACT (ansiedad, depresión, baja autoestima)</li>
                                     <li class="list-group-item background-neutro-050 border-0 color-text mb-3 p-0">
-                                        Abordaje integral: clínico, social y neuropsicológico</li>
+                                        Regulación emocional y conductual</li>
                                     <li class="list-group-item background-neutro-050 border-0 color-text mb-3 p-0">
-                                        Atención basada en evidencia con perspectiva de género e interseccional</li>
+                                        Evaluación e intervención en dificultades escolares</li>
+                                    <li class="list-group-item background-neutro-050 border-0 color-text mb-3 p-0">
+                                        Adicciones y conductas problemáticas</li>
                                     <li class="list-group-item background-neutro-050 border-0 color-text p-0">
-                                        Instrumentos psicométricos para evaluación clínica</li>
+                                        Perspectiva de género y diversidad</li>
                                 </ul>
                             </div>
                         </div>
@@ -461,11 +475,21 @@
                             <div class="accordion-body p-4">
                                 <ul class="list-group list-group-numbered">
                                     <li class="list-group-item background-neutro-050 border-0 color-text mb-3 p-0">
-                                        Pregrado en Psicología — Universidad del Valle</li>
+                                        Psicóloga - Universidad del Valle</li>
                                     <li class="list-group-item background-neutro-050 border-0 color-text mb-3 p-0">
-                                        Énfasis en Psicología Clínica con formación en Terapia ACT</li>
+                                        Diplomado en Terapias Conductuales y Contextuales - ITECOC (En curso)</li>
+                                    <li class="list-group-item background-neutro-050 border-0 color-text mb-3 p-0">
+                                        Curso: Terapia de Aceptación y compromiso (ACT): Comprensión de sus fundamentos
+                                        y aplicación - ADIPA</li>
+                                    <li class="list-group-item background-neutro-050 border-0 color-text mb-3 p-0">
+                                        Primera ayuda psicológica (PAP) en el manejo de emergencias - Organización
+                                        Panamericana de la Salud</li>
+                                    <li class="list-group-item background-neutro-050 border-0 color-text mb-3 p-0">
+                                        Curso de Atención Integral a Víctimas de Violencia Sexual - Fundación Nuestra
+                                        Señora de la Esperanza</li>
                                     <li class="list-group-item background-neutro-050 border-0 color-text p-0">
-                                        Experiencia en investigación clínica y entornos hospitalarios</li>
+                                        Good Clinical Practice - NIDA Clinical Trials Network
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -477,7 +501,7 @@
                         <h2 class="accordion-header">
                             <button class="accordion-button text-uppercase" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#colapsarPrecios" aria-expanded="true" aria-controls="colapsarPrecios">
-                                Procesos disponibles con Natalia.
+                                Procesos disponibles con Isabela.
                             </button>
                         </h2>
                         <div id="colapsarPrecios" class="accordion-collapse collapse show background-neutro-050"
@@ -486,41 +510,42 @@
                             <div class="accordion-body p-4 row g-3 align-items-center m-0">
                                 <!-- Ocupa 12 cols en móvil y 6 cols (la mitad) en md en adelante -->
                                 <div class="accordion-title col-12 col-md-6 mt-0 p-0">
-                                    <h3 class="fs-6 color-text-brand fw-bold">Primera consulta de psicología</h3>
-                                    <p class="color-text mb-0">Elimina la incertidumbre y garantiza que iniciarás el
-                                        tratamiento correcto desde el primer día. El principal beneficio es evitar
-                                        terapias de ensayo y error.</p>
+                                    <h3 class="fs-6 color-text-brand fw-bold">Consulta por psicoterapia</h3>
+                                    <p class="color-text mb-0">Logra cambiar los patrones de pensamiento destructivos
+                                        que te limitan y obtén herramientas concretas para manejar tus emociones,
+                                        evitando que la ansiedad, la depresión o el estrés te controlen.</p>
                                 </div>
                                 <!-- Ocupa 12 cols en móvil y 6 cols (la mitad) con alineación a la derecha en md -->
                                 <div class="col-12 col-md-6 p-0 text-md-end">
-                                    <span class="proceso-precio color-text-brand d-inline-block">60.000 $ ·
-                                        Virtual</span>
+                                    <span class="proceso-precio color-text-brand d-inline-block">Desde $ 110 000 ·
+                                        Presencial · Virtual
+                                    </span>
                                 </div>
                             </div>
                             <div class="divider"></div>
                             <!-- Item 2 -->
                             <div class="accordion-body p-4 row g-3 align-items-center m-0">
                                 <div class="accordion-title col-12 col-md-6 mt-0 p-0">
-                                    <h3 class="fs-6 color-text-brand fw-bold">Psicoterapia Individual virtual</h3>
-                                    <p class="color-text mb-0">Este es tu espacio seguro para superar la ansiedad, la
-                                        depresión, el estrés o los conflictos personales. </p>
+                                    <h3 class="fs-6 color-text-brand fw-bold">Duelo por ruptura de pareja</h3>
+                                    <p class="color-text mb-0">Supera el dolor y la confusión después de una separación.
+                                    </p>
                                 </div>
                                 <div class="col-12 col-md-6 p-0 text-md-end">
-                                    <span class="proceso-precio color-text-brand d-inline-block">Desde 110.000 $ ·
-                                        Virtual · Presencial</span>
+                                    <span class="proceso-precio color-text-brand d-inline-block">Desde $ 110 000 ·
+                                        Presencial · Virtual</span>
                                 </div>
                             </div>
                             <div class="divider"></div>
                             <!-- Item 3 -->
                             <div class="accordion-body p-4 row g-3 align-items-center m-0">
                                 <div class="accordion-title col-12 col-md-6 mt-0 p-0">
-                                    <h3 class="fs-6 color-text-brand fw-bold">Psicoterapia para adolescentes</h3>
-                                    <p class="color-text mb-0">Ayuda a tu hijo adolescente a gestionar la ansiedad
-                                        escolar, los conflictos familiares o las presiones sociales.</p>
+                                    <h3 class="fs-6 color-text-brand fw-bold">Primera consulta de psicología</h3>
+                                    <p class="color-text mb-0">Elimina la incertidumbre y garantiza que iniciarás el
+                                        tratamiento correcto desde el primer día.</p>
                                 </div>
                                 <div class="col-12 col-md-6 p-0 text-md-end">
-                                    <span class="proceso-precio color-text-brand d-inline-block">Desde 110.000 $ ·
-                                        Virtual · Presencial</span>
+                                    <span class="proceso-precio color-text-brand d-inline-block">$ 60.000 ·
+                                        Virtual</span>
                                 </div>
                             </div>
                             <div class="divider"></div>
@@ -542,20 +567,20 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalExperienciaLabel">Experiencia Tania Jaramillo</h1>
+                    <h1 class="modal-title fs-5" id="modalExperienciaLabel">Experiencia Isabela Carrejo</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="col-12">
                         <div class="card p-3 h-100 background-neutro-100">
                             <div class="d-flex flex-column flex-md-row gap-3 align-items-start align-items-md-center">
-                                <img src="assets/img/03.equipo/natalia-zapata.webp" alt="Natalia Zapata"
+                                <img src="assets/img/03.equipo/isabela-carrejo.webp" alt="Natalia Zapata"
                                     style="width:100px;height:110px;border-radius:0.75rem;object-fit:cover;flex-shrink:0;">
                                 <div>
-                                    <p class="nombre-profesional mb-1">Natalia Zapata</p>
+                                    <p class="nombre-profesional mb-1">Isabela Carrejo</p>
                                     <p class="especialidad-profesional color-text-secondary mb-1">Psicóloga Clínica ACT
                                         en Cali</p>
-                                    <span class="estrellas me-1 color-text-brand">★★★★★ 9 opiniones</span>
+                                    <span class="estrellas me-1 color-text-brand">★★★★★ 6 opiniones</span>
                                 </div>
                             </div>
                         </div>
@@ -564,7 +589,13 @@
                         <h3 class="fs-6 mb-4 fw-bold color-text-brand">Experiencia profesional</h3>
                         <ul>
                             <li class="border-0 color-text mb-3 p-0">
-                                Cronopio 2025
+                                Psicóloga en Cronopio, Centro de Neurociencias e Intervención Clínica (2025)
+                            </li>
+                            <li class="border-0 color-text mb-3 p-0">
+                                Terapeuta ABA en Clínica ANI, Atención Neurológica Integral (2025)
+                            </li>
+                            <li class="border-0 color-text mb-3 p-0">
+                                Practicante Profesional de Neuropsicología en Clínica Neurólogos de Occidente (2024)
                             </li>
                         </ul>
                     </div>
@@ -572,8 +603,6 @@
                     <div class="listado-idioma my-4">
                         <h3 class="fs-6 mb-4 fw-bold color-text-brand">Idiomas</h3>
                         <ul>
-                            <li class="border-0 color-text mb-3 p-0">
-                                Inglés</li>
                             <li class="border-0 color-text mb-3 p-0">
                                 Español</li>
                         </ul>
@@ -583,33 +612,30 @@
                         <h3 class="fs-6 mb-4 fw-bold color-text-brand">Enfermedades tratadas</h3>
                         <ul>
                             <li class="border-0 color-text mb-3 p-0">
-                                Abuso del alcohol y alcoholismo (dependencia del alcohol)</li>
+                                Ansiedad</li>
                             <li class="border-0 color-text mb-3 p-0">
-                                Parafilias
+                                Depresión
                             </li>
                             <li class="border-0 color-text mb-3 p-0">
-                                Síndrome de Asperger
+                                Baja autoestima
                             </li>
                             <li class="border-0 color-text mb-3 p-0">
-                                Trastorno de Conducta
+                                Adicciones
                             </li>
                             <li class="border-0 color-text mb-3 p-0">
-                                Trastorno de ansiedad (fobia social)
+                                Alteraciones del estado de ánimo
                             </li>
                             <li class="border-0 color-text mb-3 p-0">
-                                Trastorno de pánico
+                                Celopatía
                             </li>
                             <li class="border-0 color-text mb-3 p-0">
-                                Trastorno del espectro autista (TEA)
+                                Dependencia emocional
                             </li>
                             <li class="border-0 color-text mb-3 p-0">
-                                Trastorno obsesivo compulsivo (TOC)
+                                Estrés
                             </li>
                             <li class="border-0 color-text mb-3 p-0">
-                                Trastorno por Déficit de Atención (ADD)
-                            </li>
-                            <li class="border-0 color-text mb-3 p-0">
-                                Situaciones de conflicto personales
+                                Fobia específica o simple
                             </li>
                         </ul>
                     </div>
@@ -634,14 +660,14 @@
                     <div>
                         <!-- Ocupa 12 cols en móvil y 6 cols (la mitad) en md en adelante -->
                         <div class="accordion-title col-12 mt-0 p-0">
-                            <h3 class="fs-6 color-text-brand fw-bold">Primera consulta de psicología</h3>
-                            <p class="color-text mb-3">Elimina la incertidumbre y garantiza que iniciarás el tratamiento
-                                correcto desde el primer día. El principal beneficio es evitar terapias de ensayo y
-                                error.</p>
+                            <h3 class="fs-6 color-text-brand fw-bold">Consulta por psicoterapia</h3>
+                            <p class="color-text mb-3">Logra cambiar los patrones de pensamiento destructivos que te
+                                limitan y obtén herramientas concretas para manejar tus emociones, evitando que la
+                                ansiedad, la depresión o el estrés te controlen. </p>
                         </div>
                         <!-- Ocupa 12 cols en móvil y 6 cols (la mitad) con alineación a la derecha en md -->
                         <div class="col-12 mb-4 p-0">
-                            <span class="proceso-precio color-text-brand d-inline-block">$ 60.000 ·
+                            <span class="proceso-precio color-text-brand d-inline-block">Desde $ 110 000 · Presencial ·
                                 Virtual</span>
                         </div>
                     </div>
@@ -649,39 +675,37 @@
                     <!-- Item 2 -->
                     <div>
                         <div class="accordion-title col-12 mt-0 p-0">
-                            <h3 class="fs-6 color-text-brand fw-bold">Psicoterapia Individual virtual</h3>
-                            <p class="color-text mb-3">Este es tu espacio seguro para superar la ansiedad, la depresión,
-                                el estrés o los conflictos personales.</p>
+                            <h3 class="fs-6 color-text-brand fw-bold">Duelo por ruptura de pareja</h3>
+                            <p class="color-text mb-3">Supera el dolor y la confusión después de una separación.</p>
                         </div>
                         <div class="col-12 mb-4 p-0">
-                            <span class="proceso-precio color-text-brand d-inline-block">Desde $ 110.000 ·
-                                Virtual · Presencial</span>
+                            <span class="proceso-precio color-text-brand d-inline-block">Desde $ 110 000 · Presencial ·
+                                Virtual</span>
                         </div>
                     </div>
                     <div class="divider mb-4"></div>
                     <!-- Item 3 -->
                     <div>
                         <div class="accordion-title col-12 mt-0 p-0">
-                            <h3 class="fs-6 color-text-brand fw-bold">Psicoterapia para adolescentes</h3>
-                            <p class="color-text mb-3">Ayuda a tu hijo adolescente a gestionar la ansiedad escolar, los
-                                conflictos familiares o las presiones sociales.</p>
+                            <h3 class="fs-6 color-text-brand fw-bold">Primera consulta de psicología</h3>
+                            <p class="color-text mb-3">Elimina la incertidumbre y garantiza que iniciarás el tratamiento
+                                correcto desde el primer día.</p>
                         </div>
                         <div class="col-12 mb-4 p-0">
-                            <span class="proceso-precio color-text-brand d-inline-block">$ Desde 110.000 ·
-                                Virtual · Presencial</span>
+                            <span class="proceso-precio color-text-brand d-inline-block">$ 60.000 ·
+                                Virtual</span>
                         </div>
                     </div>
                     <div class="divider mb-4"></div>
                     <!-- Item 4 -->
                     <div>
                         <div class="accordion-title col-12 mt-0 p-0">
-                            <h3 class="fs-6 color-text-brand fw-bold">Psicoterapia de pareja</h3>
-                            <p class="color-text mb-3">Encuentren un espacio neutral para detener los conflictos
-                                crónicos y la mala comunicación. El beneficio clave es que obtendrán estrategias
-                                prácticas para manejar las expectativas</p>
+                            <h3 class="fs-6 color-text-brand fw-bold">Evaluación psicológica</h3>
+                            <p class="color-text mb-3">Este servicio te ofrece una comprensión global y profesional de
+                                tu estado emocional y conductual actual.</p>
                         </div>
                         <div class="col-12 mb-4 p-0">
-                            <span class="proceso-precio color-text-brand d-inline-block">Desde $ 130.000 · Virtual ·
+                            <span class="proceso-precio color-text-brand d-inline-block">Desde $ 110.000 · Virtual ·
                                 Presencial</span>
                         </div>
                     </div>
@@ -689,9 +713,9 @@
                     <!-- Item 5 -->
                     <div>
                         <div class="accordion-title col-12 mt-0 p-0">
-                            <h3 class="fs-6 color-text-brand fw-bold">Psicoterapia de duelo</h3>
-                            <p class="color-text mb-3">Recibe un acompañamiento profesional para transitar el dolor de
-                                una pérdida (ser querido, empleo, etapa de vida).</p>
+                            <h3 class="fs-6 color-text-brand fw-bold">Psicoterapia Individual</h3>
+                            <p class="color-text mb-3">Este es tu espacio seguro para superar la ansiedad, la depresión,
+                                el estrés o los conflictos personales.</p>
                         </div>
                         <div class="col-12 mb-4 p-0">
                             <span class="proceso-precio color-text-brand d-inline-block">Desde $ 110.000 · Virtual ·
@@ -702,8 +726,11 @@
                     <!-- Item 6 -->
                     <div>
                         <div class="accordion-title col-12 mt-0 p-0">
-                            <h3 class="fs-6 color-text-brand fw-bold">Psicología para niños, adolescentes y adultos</h3>
+                            <h3 class="fs-6 color-text-brand fw-bold">Terapia cognitiva del comportamiento (TCC)</h3>
                         </div>
+                        <p class="color-text mb-3">Accede a la metodología más respaldada científicamente para
+                            transformar el malestar
+                            emocional. </p>
                         <div class="col-12 mb-4 p-0">
                             <span class="proceso-precio color-text-brand d-inline-block">Desde $ 110.000 · Virtual ·
                                 Presencial</span>
@@ -713,9 +740,10 @@
                     <!-- Item 7 -->
                     <div>
                         <div class="accordion-title col-12 mt-0 p-0">
-                            <h3 class="fs-6 color-text-brand fw-bold">Terapia cognitiva del comportamiento (TCC)</h3>
-                            <p class="color-text mb-3">Accede a la metodología más respaldada científicamente para
-                                transformar el malestar emocional.</p>
+                            <h3 class="fs-6 color-text-brand fw-bold">Asesoría psicológica y psicoeducación</h3>
+                            <p class="color-text mb-3">Deja de buscar información ambigua en internet y obtén respuestas
+                                directas y estrategias concretas de un experto para manejar un problema específico o una
+                                crisis puntual.</p>
                         </div>
                         <div class="col-12 mb-4 p-0">
                             <span class="proceso-precio color-text-brand d-inline-block">Desdee $ 110.000 · Virtual ·
@@ -724,6 +752,19 @@
                     </div>
                     <div class="divider mb-4"></div>
                     <!-- Item 8 -->
+                    <div>
+                        <div class="accordion-title col-12 mt-0 p-0">
+                            <h3 class="fs-6 color-text-brand fw-bold">Psicoterapia de duelo</h3>
+                            <p class="color-text mb-3">Recibe un acompañamiento profesional para transitar el dolor de
+                                una pérdida (ser querido, empleo, etapa de vida). </p>
+                        </div>
+                        <div class="col-12 mb-4 p-0">
+                            <span class="proceso-precio color-text-brand d-inline-block">Desde $ 110.000 · Virtual ·
+                                Presencial</span>
+                        </div>
+                    </div>
+                    <div class="divider mb-4"></div>
+                    <!-- Item 9 -->
                     <div>
                         <div class="accordion-title col-12 mt-0 p-0">
                             <h3 class="fs-6 color-text-brand fw-bold">Psicoterapia para adolescentes</h3>
@@ -735,18 +776,6 @@
                                 Presencial</span>
                         </div>
                     </div>
-                    <div class="divider mb-4"></div>
-                    <!-- Item 9 -->
-                    <div>
-                        <div class="accordion-title col-12 mt-0 p-0">
-                            <h3 class="fs-6 color-text-brand fw-bold">Pautas de crianza</h3>
-                            <p class="color-text mb-3">Deja de sentir que pierdes la paciencia y obtén estrategias
-                                efectivas y claras para manejar los desafíos de conducta de tus hijos.</p>
-                        </div>
-                        <div class="col-12 mb-4 p-0">
-                            <span class="proceso-precio color-text-brand d-inline-block">$ 130.000 · Presencial</span>
-                        </div>
-                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -754,118 +783,71 @@
             </div>
         </div>
     </div>
-    <!-- Modal testimonios Natalia -->
-    <div class="modal fade" id="modalTestimoniosNatalia" data-bs-backdrop="static" data-bs-keyboard="false"
-        tabindex="-1" aria-labelledby="modalTestimoniosNataliaLabel" aria-hidden="true">
+    <!-- Modal testimonios Isabela -->
+    <div class="modal fade" id="modalTestimoniosIsabela" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="modalTestimoniosIsabelaLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalTestimoniosNataliaLabel">9 Opiniones</h1>
+                    <h1 class="modal-title fs-5" id="modalTestimoniosIsabelaLabel">6 Opiniones</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="tarjeta-testimonio">
                         <div class="body-card">
-                            <h3 class="fs-6 mb-4 fw-bold color-text-brand">Maria E.</h3>
-                            <p class="mb-3">La Dra tiene un aura muy linda , fue muy gentil y explicó a detallado lo que
-                                me está sucediendo. Se nota que realiza su profesión con mucha pasión</p>
+                            <h3 class="fs-6 mb-4 fw-bold color-text-brand">Lina R.</h3>
+                            <p class="mb-3">Gracias Doctora Isabela, sé que es el inicio de un proceso pero que
+                                llegaremos al éxito. Gracias por escucharme.</p>
                             <div class="divider mb-3"></div>
-                            <p class="meta-reseña color-text">7 de mayo de 2026
-                                • Cronopio centro de neurociencias e intervención clínica • Consulta por psicología</p>
+                            <p class="meta-reseña color-text">8 de abril de 2026 • Consulta en línea</p>
                         </div>
                     </div>
                     <div class="tarjeta-testimonio">
                         <div class="body-card">
-                            <h3 class="fs-6 mb-4 fw-bold color-text-brand">Luis Eduardo</h3>
-                            <p class="mb-3">Es muy humana, pero jamás deja de ser técnica y precisa en sus palabras,
-                                hace sentir segura la terapia y te deja ser sin incomodidad</p>
+                            <h3 class="fs-6 mb-4 fw-bold color-text-brand">Luz Mary M.</h3>
+                            <p class="mb-3">Fue de gran ayuda en mi triste situación, me siento mejor por apoyarme en
+                                como enfrentar mi duelo. Me enseñó a realizar una mejor respiración.</p>
                             <div class="divider mb-3"></div>
-                            <p class="meta-reseña color-text">13 de abril de 2026
-                                • Cronopio centro de neurociencias e intervención clínica • Evaluación psicológica
-                            </p>
-                        </div>
-                    </div>
-                    <div class="tarjeta-testimonio">
-                        <div class="body-card">
-                            <h3 class="fs-6 mb-4 fw-bold color-text-brand">AV</h3>
-                            <p class="mb-3">Excelente consulta. Gracias a la doctora por atenderme.</p>
-                            <div class="divider mb-3"></div>
-                            <p class="meta-reseña color-text">26 de marzo de 2026
-                                • Cronopio centro de neurociencias e intervención clínica • Consulta por psicología
+                            <p class="meta-reseña color-text">4 de febrero de 2026 • Consulta por psicología
                             </p>
                         </div>
                     </div>
                     <div class="tarjeta-testimonio">
                         <div class="body-card">
-                            <h3 class="fs-6 mb-4 fw-bold color-text-brand">Camila</h3>
-                            <p class="mb-3">Muy buena la atención muy entregada en lo que hace.</p>
+                            <h3 class="fs-6 mb-4 fw-bold color-text-brand">W f</h3>
+                            <p class="mb-3">Me gustó la dedicación de la profesional dispuesto a asister a una próxima
+                                cita</p>
                             <div class="divider mb-3"></div>
-                            <p class="meta-reseña color-text">19 de febrero de 2026
-                                • Cronopio centro de neurociencias e intervención clínica • Evaluación psicológica
+                            <p class="meta-reseña color-text">9 de febrero de 2026 • Consulta por psicología
                             </p>
                         </div>
                     </div>
                     <div class="tarjeta-testimonio">
                         <div class="body-card">
-                            <h3 class="fs-6 mb-4 fw-bold color-text-brand">avv</h3>
-                            <p class="mb-3">Fue muy clara en la primera consulta , explica bien las cosas y genera
-                                seguridad .</p>
+                            <h3 class="fs-6 mb-4 fw-bold color-text-brand">Emily</h3>
+                            <p class="mb-3">Genera confianza y es muy atenta. Me sentí escuchada</p>
                             <div class="divider mb-3"></div>
-                            <p class="meta-reseña color-text">27 de enero de 2026
-                                • Cronopio centro de neurociencias e intervención clínica • Consulta por psicología
+                            <p class="meta-reseña color-text">6 de enero de 2026 • Consulta por psicología
                             </p>
                         </div>
                     </div>
                     <div class="tarjeta-testimonio">
                         <div class="body-card">
-                            <h3 class="fs-6 mb-4 fw-bold color-text-brand">Natalia C.</h3>
-                            <p class="mb-3">Es sencillamente magnífica, tiene un aura tan bonita, es atenta y detallada,
-                                su consultorio genera esa paz, me sentí tan a gusto con ella, se tomó el espacio para
-                                escucharme y aunque pasamos la hora de la consulta eso no la detuvo, siguió atenta y
-                                ayudándome en mi proceso, será un proceso largo pero que definitivamente quiero seguir
-                                con ella, verdaderamente es muy difícil conectar con un médico psicólogo, por muchas
-                                razones, pero ella es maravillosa, no duden en agendas su cita con ella, no puedo
-                                esperar a ver cómo me ayuda en mi proceso, se que ella me ayudará en este gran cambio
-                                para mi vida, Gracias Doc, estoy infinitamente agradecida contigo, y espero se tu
-                                paciente por muchísimo tiempo.
-                            </p>
+                            <h3 class="fs-6 mb-4 fw-bold color-text-brand">William</h3>
+                            <p class="mb-3">Muy bien manejado el espacio, explicaciones y comentarios muy acertados.</p>
                             <div class="divider mb-3"></div>
-                            <p class="meta-reseña color-text">22 de diciembre de 2025
-                                • Cronopio centro de neurociencias e intervención clínica • Evaluación psicológica
+                            <p class="meta-reseña color-text">9 de diciembre de 2025 • Consulta por psicología
                             </p>
                         </div>
                     </div>
                     <div class="tarjeta-testimonio">
                         <div class="body-card">
-                            <h3 class="fs-6 mb-4 fw-bold color-text-brand">Favian O.</h3>
-                            <p class="mb-3">Todo fue excelente, por ahora muy buena oportunidad.
+                            <h3 class="fs-6 mb-4 fw-bold color-text-brand">M.M.</h3>
+                            <p class="mb-3">Excelente psicóloga, mantiene escucha activa durante la consulta y promueve
+                                un espacio adecuado para la terapia
                             </p>
                             <div class="divider mb-3"></div>
-                            <p class="meta-reseña color-text">15 de diciembre de 2025
-                                • Cronopio centro de neurociencias e intervención clínica • Psicoterapia de pareja
-                            </p>
-                        </div>
-                    </div>
-                    <div class="tarjeta-testimonio">
-                        <div class="body-card">
-                            <h3 class="fs-6 mb-4 fw-bold color-text-brand">Laura G.</h3>
-                            <p class="mb-3">Cada sesión es una curita para el alma y el corazón, gracias!
-                            </p>
-                            <div class="divider mb-3"></div>
-                            <p class="meta-reseña color-text">15 de diciembre de 2025
-                                • Cronopio centro de neurociencias e intervención clínica • Psicoterapia de pareja
-                            </p>
-                        </div>
-                    </div>
-                    <div class="tarjeta-testimonio">
-                        <div class="body-card">
-                            <h3 class="fs-6 mb-4 fw-bold color-text-brand">Natalia V.</h3>
-                            <p class="mb-3">Se pone en la situación cuando si fuera para ella misma, escucha y me
-                                impulsa a seguir en terapia
-                            </p>
-                            <div class="divider mb-3"></div>
-                            <p class="meta-reseña color-text">28 de noviembre de 2025
-                                • Cronopio centro de neurociencias e intervención clínica • Evaluación psicológica
+                            <p class="meta-reseña color-text">6 de diciembre de 2025 • Evaluación psicológica
                             </p>
                         </div>
                     </div>
@@ -896,14 +878,13 @@
                             <div class="col-12 col-md-6">
                                 <div class="card h-100 background-neutro-050 p-3 p-md-4">
                                     <div class="body-card">
-                                        <h3 class="fs-6 fw-bold color-text-brand">María E.</h3>
-                                        <p class="mb-3">La Dra tiene un aura muy linda , fue muy gentil y explicó a
-                                            detallado lo que me está sucediendo. Se nota que realiza su profesión con
-                                            mucha pasión
+                                        <h3 class="fs-6 fw-bold color-text-brand">Lina R.</h3>
+                                        <p class="mb-3">Gracias Doctora Isabela, sé que es el inicio de un proceso pero
+                                            que llegaremos al éxito. Gracias por escucharme.
                                         </p>
                                         <div class="divider mb-3"></div>
-                                        <p class="meta-reseña color-text mb-0">7 de mayo de 2026 • Natalia Zapata •
-                                            Consulta por psicología
+                                        <p class="meta-reseña color-text mb-0">8 de abril de 2026 • Dra. Isabela Carrejo
+                                            • Consulta en línea
                                         </p>
                                     </div>
                                 </div>
@@ -912,13 +893,14 @@
                             <div class="col-md-6 d-none d-md-block">
                                 <div class="card h-100 background-neutro-050 p-3">
                                     <div class="body-card">
-                                        <h3 class="fs-6 fw-bold color-text-brand">Luis E.</h3>
-                                        <p class="mb-3">Es muy humana, pero jamás deja de ser técnica y precisa en sus
-                                            palabras, hace sentir segura la terapia y te deja ser sin incomodidad
+                                        <h3 class="fs-6 fw-bold color-text-brand">Luz M.</h3>
+                                        <p class="mb-3">Fue de gran ayuda en mi triste situación, me siento mejor por
+                                            apoyarme en como enfrentar mi duelo. Me enseñó a realizar una mejor
+                                            respiración.
                                         </p>
                                         <div class="divider mb-3"></div>
-                                        <p class="meta-reseña color-text mb-0">13 de abril de 2026
-                                            • Dra. Natalia Zapata • Evaluación psicológica
+                                        <p class="meta-reseña color-text mb-0">14 de febrero de 2026 • Dra. Isabela
+                                            Carrejo • Consulta por psicología
                                         </p>
                                     </div>
                                 </div>
@@ -932,12 +914,13 @@
                             <div class="col-12 col-md-6">
                                 <div class="card h-100 background-neutro-050 p-3 p-md-4">
                                     <div class="body-card">
-                                        <h3 class="fs-6 fw-bold color-text-brand">AV.</h3>
-                                        <p class="mb-3">Excelente consulta. Gracias a la doctora por atenderme.
+                                        <h3 class="fs-6 fw-bold color-text-brand">Wilson f.</h3>
+                                        <p class="mb-3">Me gustó la dedicación de la profesional dispuesto a asister a
+                                            una próxima cita.
                                         </p>
                                         <div class="divider mb-3"></div>
-                                        <p class="meta-reseña color-text mb-0">26 de marzo de 2026
-                                            • Dra. Natalia Zapata • Consulta por psicología</p>
+                                        <p class="meta-reseña color-text mb-0">9 de febrero de 2026 • Dra. Isabela
+                                            Carrejo • Consulta por psicología</p>
                                     </div>
                                 </div>
                             </div>
@@ -945,12 +928,11 @@
                             <div class="col-md-6 d-none d-md-block ">
                                 <div class="card h-100 background-neutro-050 p-3">
                                     <div class="body-card">
-                                        <h3 class="fs-6 fw-bold color-text-brand">Camila.</h3>
-                                        <p class="mb-3">Muy buena la atención muy entregada en lo que hace.</p>
+                                        <h3 class="fs-6 fw-bold color-text-brand">Emily.</h3>
+                                        <p class="mb-3">Genera confianza y es muy atenta. Me sentí escuchada.</p>
                                         <div class="divider mb-3"></div>
-                                        <p class="meta-reseña color-text mb-0">19 de febrero de 2026
-                                            · Dra. Natalia Zapata
-                                            · Evaluación psicológica</p>
+                                        <p class="meta-reseña color-text mb-0">6 de enero de 2026 • Dra. Isabela
+                                            Carrejo • Paquete de 6 sesiones</p>
                                     </div>
                                 </div>
                             </div>
@@ -963,14 +945,13 @@
                             <div class="col-12 col-md-6">
                                 <div class="card h-100 background-neutro-050 p-3 p-md-4">
                                     <div class="body-card">
-                                        <h3 class="fs-6 fw-bold color-text-brand">avv.</h3>
-                                        <p class="mb-3">Fue muy clara en la primera consulta , explica bien las cosas y
-                                            genera seguridad.
+                                        <h3 class="fs-6 fw-bold color-text-brand">William.</h3>
+                                        <p class="mb-3">Muy bien manejado el espacio, explicaciones y comentarios muy
+                                            acertados.
                                         </p>
                                         <div class="divider mb-3"></div>
-                                        <p class="meta-reseña color-text mb-0">27 de enero de 2026
-                                            • Dra. Natalia Zapata
-                                            • Consulta por psicología</p>
+                                        <p class="meta-reseña color-text mb-0">9 de diciembre de 2025 • Dra. Isabela
+                                            Carrejo • Consulta por psicología</p>
                                     </div>
                                 </div>
                             </div>
@@ -978,76 +959,14 @@
                             <div class="col-md-6 d-none d-md-block ">
                                 <div class="card h-100 background-neutro-050 p-3 p-md-4">
                                     <div class="body-card">
-                                        <h3 class="fs-6 fw-bold color-text-brand">Natalia C.</h3>
-                                        <p class="mb-3">Es sencillamente magnífica, tiene un aura tan bonita, es atenta
-                                            y detallada, su consultorio genera esa paz, me sentí tan a gusto con ella,
-                                            se tomó el espacio para escucharme y aunque pasamos la hora de la consulta
-                                            eso no la detuvo, siguió atenta y ayudándome en mi proceso, será un proceso
-                                            largo pero que definitivamente quiero seguir con ella, verdaderamente es muy
-                                            difícil conectar con un médico psicólogo, por muchas razones, pero ella es
-                                            maravillosa, no duden en agendas su cita con ella, no puedo esperar a ver
-                                            cómo me ayuda en mi proceso, se que ella me ayudará en este gran cambio para
-                                            mi vida, Gracias Doc, estoy infinitamente agradecida contigo, y espero se tu
-                                            paciente por muchísimo tiempo.
+                                        <h3 class="fs-6 fw-bold color-text-brand">M.M.</h3>
+                                        <p class="mb-3">Excelente psicóloga, mantiene escucha activa durante la consulta
+                                            y promueve un espacio adecuado para la terapia
                                         </p>
                                         <div class="divider mb-3"></div>
-                                        <p class="meta-reseña color-text mb-0">22 de diciembre de 2025
-                                            • Dra. Natalia Zapata • Evaluación psicológica
+                                        <p class="meta-reseña color-text mb-0">6 de diciembre de 2025 • Dra. Isabela
+                                            Carrejo • Evaluación psicológica
                                         </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 4: repetir misma estructura con nuevas reseñas -->
-                    <div class="carousel-item">
-                        <div class="row g-3">
-                            <!-- ...más tarjetas -->
-                            <div class="col-12 col-md-6">
-                                <div class="card h-100 background-neutro-050 p-3 p-md-4">
-                                    <div class="body-card">
-                                        <h3 class="fs-6 fw-bold color-text-brand">Favian O.</h3>
-                                        <p class="mb-3">Todo fue excelente, por ahora muy buena oportunidad.
-                                        </p>
-                                        <div class="divider mb-3"></div>
-                                        <p class="meta-reseña color-text mb-0">15 de diciembre de 2025
-                                            • Dra. Natalia Zapata
-                                            • Psicoterapia de pareja</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Segunda tarjeta: solo visible en tablet+ -->
-                            <div class="col-md-6 d-none d-md-block ">
-                                <div class="card h-100 background-neutro-050 p-3 p-md-4">
-                                    <div class="body-card">
-                                        <h3 class="fs-6 fw-bold color-text-brand">Laura G.</h3>
-                                        <p class="mb-3">Cada sesión es una curita para el alma y el corazón, gracias!
-                                        </p>
-                                        <div class="divider mb-3"></div>
-                                        <p class="meta-reseña color-text mb-0">10 de diciembre de 2025 • Dra. Natalia
-                                            Zapata
-                                            · Consulta por psicología
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 5: repetir misma estructura con nuevas reseñas -->
-                    <div class="carousel-item">
-                        <div class="row g-3">
-                            <!-- ...más tarjetas -->
-                            <div class="col-12 col-md-6">
-                                <div class="card h-100 background-neutro-050 p-3 p-md-4">
-                                    <div class="body-card">
-                                        <h3 class="fs-6 fw-bold color-text-brand">Natalia V.</h3>
-                                        <p class="mb-3">Se pone en la situación cuando si fuera para ella misma, escucha
-                                            y me impulsa a seguir en terapia.
-                                        </p>
-                                        <div class="divider mb-3"></div>
-                                        <p class="meta-reseña color-text mb-0">28 de noviembre de 2025
-                                            • Dra. Natalia Zapata
-                                            • Psicoterapia de pareja</p>
                                     </div>
                                 </div>
                             </div>
