@@ -737,6 +737,12 @@ body {
     background-color: var(--background-accent-brand);
 }
 
+/* --- sección  cta estudiantes --- */
+.seccion-cta .parrafo-estudiantes {
+    color: rgba(248, 246, 237, 0.7);
+}
+
+
 /* =========================================
    Breakpoints Customizados
    ========================================= */
