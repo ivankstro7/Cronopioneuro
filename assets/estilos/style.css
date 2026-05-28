@@ -101,6 +101,14 @@
     border-radius: 100px;
 }
 
+.btn-link:hover,
+.btn-link:focus {
+    background-color: var(--background-neutro-050) !important;
+    border-color: var(--color-brand-primary);
+    color: var(--color-brand-primary);
+    filter: brightness(0.95);
+}
+
 /* C. Tipografía Secundaria */
 .font-alt {
     font-family: var(--font-secondary);
