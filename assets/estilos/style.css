@@ -391,7 +391,11 @@ body {
 
 /* Cancelar el top:0 de Bootstrap y anclar al bottom */
 .carrusel-testimonios .carousel-control-prev,
-.carrusel-testimonios .carousel-control-next {
+.carrusel-testimonios .carousel-control-next,
+.carrusel-mobile .carousel-control-prev,
+.carrusel-mobile .carousel-control-next,
+.carrusel-desktop .carousel-control-prev,
+.carrusel-desktop .carousel-control-next {
     position: absolute;
     bottom: 0;
     top: auto;
@@ -405,19 +409,27 @@ body {
 }
 
 /* Centrar con gap de 1rem (16px) entre los dos botones */
-.carrusel-testimonios .carousel-control-prev {
+.carrusel-testimonios .carousel-control-prev,
+.carrusel-mobile .carousel-control-prev,
+.carrusel-desktop .carousel-control-prev {
     left: calc(50% - 40px - 8px);
     right: auto;
 }
 
-.carrusel-testimonios .carousel-control-next {
+.carrusel-testimonios .carousel-control-next,
+.carrusel-mobile .carousel-control-next,
+.carrusel-desktop .carousel-control-next {
     right: calc(50% - 40px - 8px);
     left: auto;
 }
 
 /* Íconos oscuros */
 .carrusel-testimonios .carousel-control-prev-icon,
-.carrusel-testimonios .carousel-control-next-icon {
+.carrusel-testimonios .carousel-control-next-icon,
+.carrusel-mobile .carousel-control-prev-icon,
+.carrusel-mobile .carousel-control-next-icon,
+.carrusel-desktop .carousel-control-prev-icon,
+.carrusel-desktop .carousel-control-next-icon {
     width: 14px;
     height: 14px;
     filter: invert(1) brightness(0);
