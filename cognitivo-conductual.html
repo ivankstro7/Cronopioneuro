@@ -370,93 +370,104 @@
         </div>
     </div>
     <!-- Sección de situaciones -->
-    <section class="seccion-situaciones py-5 background-neutro-150">
+    <section class="seccion-situaciones grid-cards py-5 background-neutro-150">
         <div class="container">
-            <div class="row align-items-center g-5">
-                <!-- Columna izquierda -->
-                <div class="col-12 col-xl-6" data-aos="fade-in" data-aos-delay="300">
+            <div class="row justify-content-center mb-5 text-center">
+                <div class="col-12 col-lg-9 col-xl-8">
                     <h2 class="mb-4 color-text-primary">
                         Deja de luchar contra tu ansiedad.<br>
                         <span class="fw-bold color-text-brand">Aprende a vivir con calma.</span>
                     </h2>
-                    <p class="color-text-light mb-0">
+                    <p class="color-text-light mb-0 fs-5">
                         Cada uno de nosotros puede enfrentarse a momentos de gran dificultad: ansiedad que paraliza,
-                        estrés que desborda, relaciones que duelen o una autoestima que no termina de sostenerse. La
-                        Terapia ACT ofrece un entorno seguro y libre de juicios para trabajar en favor de un bienestar
-                        psicológico más profundo y duradero.
+                        estrés que desborda, relaciones que duelen o una autoestima que no termina de sostenerse.
                     </p>
                 </div>
-                <!-- Carousel mobile -->
-                <div id="carruselMobile" class="carousel slide d-block d-md-none carrusel-mobile" data-bs-ride="false"
-                    data-bs-interval="false">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div
-                                class="card situation-card p-4 border rounded-4 bg-white shadow-sm d-flex flex-row align-items-start gap-3mx-1">
-                                <img src="assets/img/01.hero_image/check_circle_fill.webp" alt="✓"
-                                    class="icono-check flex-shrink-0" width="24" height="24">
-                                <span class="color-text-primary fw-medium">Ansiedad generalizada y ataques de
-                                    pánico</span>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div
-                                class="card situation-card p-4 border rounded-4 bg-white shadow-sm d-flex flex-row align-items-start gap-3 mx-1">
-                                <img src="assets/img/01.hero_image/check_circle_fill.webp" alt="✓"
-                                    class="icono-check flex-shrink-0" width="24" height="24">
-                                <span class="color-text-primary fw-medium">Depresión y bajo estado de ánimo</span>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div
-                                class="card situation-card p-4 border rounded-4 bg-white shadow-sm d-flex flex-row align-items-start gap-3 mx-1">
-                                <img src="assets/img/01.hero_image/check_circle_fill.webp" alt="✓"
-                                    class="icono-check flex-shrink-0" width="24" height="24">
-                                <span class="color-text-primary fw-medium">Estrés crónico y burnout</span>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div
-                                class="card situation-card p-4 border rounded-4 bg-white shadow-sm d-flex flex-row align-items-start gap-3 mx-1">
-                                <img src="assets/img/01.hero_image/check_circle_fill.webp" alt="✓"
-                                    class="icono-check flex-shrink-0" width="24" height="24">
-                                <span class="color-text-primary fw-medium">Dependencia emocional y vínculos
-                                    difíciles</span>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div
-                                class="card situation-card p-4 border rounded-4 bg-white shadow-sm d-flex flex-row align-items-start gap-3 mx-1">
-                                <img src="assets/img/01.hero_image/check_circle_fill.webp" alt="✓"
-                                    class="icono-check flex-shrink-0" width="24" height="24">
-                                <span class="color-text-primary fw-medium">Baja autoestima y autocrítica excesiva</span>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div
-                                class="card situation-card p-4 border rounded-4 bg-white shadow-sm d-flex flex-row align-items-start gap-3 mx-1">
-                                <img src="assets/img/01.hero_image/check_circle_fill.webp" alt="✓"
-                                    class="icono-check flex-shrink-0" width="24" height="24">
-                                <span class="color-text-primary fw-medium">Adicciones y conductas problemáticas</span>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div
-                                class="card situation-card p-4 border rounded-4 bg-white shadow-sm d-flex flex-row align-items-start gap-3 mx-1">
-                                <img src="assets/img/01.hero_image/check_circle_fill.webp" alt="✓"
-                                    class="icono-check flex-shrink-0" width="24" height="24">
-                                <span class="color-text-primary fw-medium">Crisis vitales y duelos</span>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div
-                                class="card situation-card p-4 border rounded-4 bg-white shadow-sm d-flex flex-row align-items-start gap-3 mx-1">
-                                <img src="assets/img/01.hero_image/check_circle_fill.webp" alt="✓"
-                                    class="icono-check flex-shrink-0" width="24" height="24">
-                                <span class="color-text-primary fw-medium">Desarrollo personal y autoconocimiento</span>
+            </div>
+            <!-- Carousel mobile -->
+            <div id="carruselMobile" class="carousel slide d-block d-md-none carrusel-mobile" data-bs-ride="false"
+                data-bs-interval="false">
+                <div class="carousel-inner mb-4">
+                    <div class="carousel-item active">
+                        <div class="card situation-card p-4 h-100">
+                            <span class="numero color-text-light text-uppercase">01</span>
+                            <div class="divider mb-4"></div>
+                            <div class="body-card">
+                                <h3 class="mb-0 color-text-secondary fs-6">Ansiedad generalizada y ataques
+                                    de pánico</h3>
                             </div>
                         </div>
                     </div>
+                    <div class="carousel-item">
+                        <div class="card situation-card p-4 h-100">
+                            <span class="numero color-text-light text-uppercase">02</span>
+                            <div class="divider mb-4"></div>
+                            <div class="body-card">
+                                <h3 class="mb-0 color-text-secondary fs-6">Depresión y bajo estado de ánimo
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card situation-card p-4 h-100">
+                            <span class="numero color-text-light text-uppercase">03</span>
+                            <div class="divider mb-4"></div>
+                            <div class="body-card">
+                                <h3 class="mb-0 color-text-secondary fs-6">Estrés crónico y burnout</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card situation-card p-4 h-100">
+                            <span class="numero color-text-light text-uppercase">04</span>
+                            <div class="divider mb-4"></div>
+                            <div class="body-card">
+                                <h3 class="mb-0 color-text-secondary fs-6">Dependencia emocional y vínculos
+                                    difíciles</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card situation-card p-4 h-100">
+                            <span class="numero color-text-light text-uppercase">05</span>
+                            <div class="divider mb-4"></div>
+                            <div class="body-card">
+                                <h3 class="mb-0 color-text-secondary fs-6">Baja autoestima y autocrítica
+                                    excesiva</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card situation-card p-4 h-100">
+                            <span class="numero color-text-light text-uppercase">06</span>
+                            <div class="divider mb-4"></div>
+                            <div class="body-card">
+                                <h3 class="mb-0 color-text-secondary fs-6">Adicciones y conductas
+                                    problemáticas</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card situation-card p-4 h-100">
+                            <span class="numero color-text-light text-uppercase">07</span>
+                            <div class="divider mb-4"></div>
+                            <div class="body-card">
+                                <h3 class="mb-0 color-text-secondary fs-6">Crisis vitales y duelos</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card situation-card p-4 h-100">
+                            <span class="numero color-text-light text-uppercase">08</span>
+                            <div class="divider mb-4"></div>
+                            <div class="body-card">
+                                <h3 class="mb-0 color-text-secondary fs-6">Desarrollo personal y
+                                    autoconocimiento</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4">
                     <button class="carousel-control-prev" type="button" data-bs-target="#carruselMobile"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -468,89 +479,101 @@
                         <span class="visually-hidden">Siguiente</span>
                     </button>
                 </div>
-                <!-- Carousel web -->
-                <div id="carruselDesktop" class="carousel slide d-none d-md-block carrusel-desktop" data-bs-ride="false"
-                    data-bs-interval="false">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row g-4 px-5">
-                                <div class="col-md-3">
-                                    <div
-                                        class="card situation-card p-4 border rounded-4 h-100 bg-white shadow-sm d-flex flex-row align-items-start gap-3">
-                                        <img src="assets/img/01.hero_image/check_circle_fill.webp" alt="✓"
-                                            class="icono-check flex-shrink-0" width="24" height="24">
-                                        <span class="color-text-primary fw-medium">Ansiedad generalizada y ataques de
-                                            pánico</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div
-                                        class="card situation-card p-4 border rounded-4 h-100 bg-white shadow-sm d-flex flex-row align-items-start gap-3">
-                                        <img src="assets/img/01.hero_image/check_circle_fill.webp" alt="✓"
-                                            class="icono-check flex-shrink-0" width="24" height="24">
-                                        <span class="color-text-primary fw-medium">Depresión y bajo estado de
-                                            ánimo</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div
-                                        class="card situation-card p-4 border rounded-4 h-100 bg-white shadow-sm d-flex flex-row align-items-start gap-3">
-                                        <img src="assets/img/01.hero_image/check_circle_fill.webp" alt="✓"
-                                            class="icono-check flex-shrink-0" width="24" height="24">
-                                        <span class="color-text-primary fw-medium">Estrés crónico y burnout</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div
-                                        class="card situation-card p-4 border rounded-4 h-100 bg-white shadow-sm d-flex flex-row align-items-start gap-3">
-                                        <img src="assets/img/01.hero_image/check_circle_fill.webp" alt="✓"
-                                            class="icono-check flex-shrink-0" width="24" height="24">
-                                        <span class="color-text-primary fw-medium">Dependencia emocional y vínculos
-                                            difíciles</span>
+            </div>
+            <!-- Carousel desktop -->
+            <div id="carruselDesktop" class="carousel slide d-none d-md-block carrusel-desktop" data-bs-ride="false"
+                data-bs-interval="false">
+                <div class="carousel-inner mb-4">
+                    <div class="carousel-item active">
+                        <div class="row row-cols-md-2 g-4">
+                            <div class="col-lg-3">
+                                <div class="card situation-card p-4 h-100 w-100">
+                                    <span class="numero color-text-light text-uppercase">01</span>
+                                    <div class="divider mb-4"></div>
+                                    <div class="body-card">
+                                        <h3 class="mb-0 color-text-secondary fs-6">Ansiedad generalizada y
+                                            ataques de pánico</h3>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row g-4 px-5">
-                                <div class="col-md-3">
-                                    <div
-                                        class="card situation-card p-4 border rounded-4 h-100 bg-white shadow-sm d-flex flex-row align-items-start gap-3">
-                                        <img src="assets/img/01.hero_image/check_circle_fill.webp" alt="✓"
-                                            class="icono-check flex-shrink-0" width="24" height="24">
-                                        <span class="color-text-primary fw-medium">Baja autoestima y autocrítica
-                                            excesiva</span>
+                            <div class="col-lg-3">
+                                <div class="card situation-card p-4 h-100 w-100">
+                                    <span class="numero color-text-light text-uppercase">02</span>
+                                    <div class="divider mb-4"></div>
+                                    <div class="body-card">
+                                        <h3 class="mb-0 color-text-secondary fs-6">Depresión y bajo estado
+                                            de ánimo</h3>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
-                                    <div
-                                        class="card situation-card p-4 border rounded-4 h-100 bg-white shadow-sm d-flex flex-row align-items-start gap-3">
-                                        <img src="assets/img/01.hero_image/check_circle_fill.webp" alt="✓"
-                                            class="icono-check flex-shrink-0" width="24" height="24">
-                                        <span class="color-text-primary fw-medium">Adicciones y conductas
-                                            problemáticas</span>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card situation-card p-4 h-100 w-100">
+                                    <span class="numero color-text-light text-uppercase">03</span>
+                                    <div class="divider mb-4"></div>
+                                    <div class="body-card">
+                                        <h3 class="mb-0 color-text-secondary fs-6">Estrés crónico y burnout
+                                        </h3>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
-                                    <div
-                                        class="card situation-card p-4 border rounded-4 h-100 bg-white shadow-sm d-flex flex-row align-items-start gap-3">
-                                        <img src="assets/img/01.hero_image/check_circle_fill.webp" alt="✓"
-                                            class="icono-check flex-shrink-0" width="24" height="24">
-                                        <span class="color-text-primary fw-medium">Crisis vitales y duelos</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div
-                                        class="card situation-card p-4 border rounded-4 h-100 bg-white shadow-sm d-flex flex-row align-items-start gap-3">
-                                        <img src="assets/img/01.hero_image/check_circle_fill.webp" alt="✓"
-                                            class="icono-check flex-shrink-0" width="24" height="24">
-                                        <span class="color-text-primary fw-medium">Desarrollo personal y
-                                            autoconocimiento</span>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card situation-card p-4 h-100 w-100">
+                                    <span class="numero color-text-light text-uppercase">04</span>
+                                    <div class="divider mb-4"></div>
+                                    <div class="body-card">
+                                        <h3 class="mb-0 color-text-secondary fs-6">Dependencia emocional y
+                                            vínculos difíciles</h3>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="carousel-item">
+                        <div class="row row-cols-md-2 g-4">
+                            <div class="col-lg-3">
+                                <div class="card situation-card p-4 h-100 w-100">
+                                    <span class="numero color-text-light text-uppercase">05</span>
+                                    <div class="divider mb-4"></div>
+                                    <div class="body-card">
+                                        <h3 class="mb-0 color-text-secondary fs-6">Baja autoestima y
+                                            autocrítica excesiva</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card situation-card p-4 h-100 w-100">
+                                    <span class="numero color-text-light text-uppercase">06</span>
+                                    <div class="divider mb-4"></div>
+                                    <div class="body-card">
+                                        <h3 class="mb-0 color-text-secondary fs-6">Adicciones y conductas
+                                            problemáticas</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card situation-card p-4 h-100 w-100">
+                                    <span class="numero color-text-light text-uppercase">07</span>
+                                    <div class="divider mb-4"></div>
+                                    <div class="body-card">
+                                        <h3 class="mb-0 color-text-secondary fs-6">Crisis vitales y duelos
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card situation-card p-4 h-100 w-100">
+                                    <span class="numero color-text-light text-uppercase">08</span>
+                                    <div class="divider mb-4"></div>
+                                    <div class="body-card">
+                                        <h3 class="mb-0 color-text-secondary fs-6">Desarrollo personal y
+                                            autoconocimiento</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4">
                     <button class="carousel-control-prev" type="button" data-bs-target="#carruselDesktop"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
