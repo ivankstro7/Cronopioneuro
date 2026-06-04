@@ -651,6 +651,11 @@ body {
    4. Quienes somos
    ========================================= */
 
+/* --- Hero --- */
+.hero-section-secondary .hero-imagen-adaptativa {
+    object-position: 95% center;
+}
+
 /* --- sección  Cronopio --- */
 .seccion-split .card h2 {
     font-size: 2rem;
@@ -919,6 +924,28 @@ body {
             );
     }
 
+    /* --- Quienes somos --- */
+    .hero-section-secondary .hero-imagen-adaptativa {
+        position: relative;
+        object-position: right center;
+    }
+
+    .hero-degradado-secondary::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to left,
+                rgba(248, 246, 237, 0) 0%,
+                /* Esquina inferior derecha: 0% opacidad */
+                rgba(248, 246, 237, 0) 25%,
+                /* Stop 25%: sigue al 0% opacidad */
+                rgba(248, 246, 237, 0.5) 75%,
+                /* Stop 50%: sube al 75% opacidad */
+                rgba(248, 246, 237, 1) 100%
+                /* Esquina superior izquierda: 100% opacidad */
+            );
+    }
+
     /* --- profesionales --- */
     .seccion-equipo .imagen-profesional {
         width: 360px;
@@ -946,6 +973,10 @@ body {
     }
 
     /* ---  Quienes somos --- */
+    .hero-section-secondary .hero-imagen-adaptativa {
+        position: absolute;
+    }
+
     .seccion-split .card .card-quote {
         font-size: 1.5rem;
     }
