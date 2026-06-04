@@ -260,61 +260,55 @@
         </div>
     </nav>
     <!-- Hero Section -->
-    <section
-        class="hero-section py-5 hero-degradado position-relative overflow-hidden d-flex align-items-end align-items-md-center"
-        style="min-height:500px;" data-aos="fade-in" data-aos-delay="300">
-        <img src="assets/img/01.hero_image/hero-imagen-servicios.webp"
-            alt="Persona con los brazos abiertos representando bienestar y libertad" class="hero-imagen-fondo"
-            loading="eager" fetchpriority="high" width="1440" height="500">
-        <div class="container position-relative z-1 py-5 py-md-0">
-            <div class="row align-items-end" data-aos="fade-in" data-aos-delay="300">
+    <section class="hero-section pt-4 pe-0 pt-md-0 hero-degradado position-relative overflow-hidden d-flex flex-column d-md-flex flex-md-column justify-content-md-center"
+        data-aos="fade-in" data-aos-delay="300">
+        <!-- Imagen Hero: En móvil fluye al final del HTML mediante CSS, en web es absoluta -->
+        <img src="assets/img/09.banner-servicios/banner-cognitivo-conductual.webp"
+            alt="natalia zapata psicologa en cali especialista en terapia act y cognitivo conductual"
+            class="hero-imagen-adaptativa order-last order-lg-first" loading="eager" fetchpriority="high" width="1440"
+            height="500">
+        <div class="container position-relative z-1">
+            <div class="row align-items-md-end g-4" data-aos="fade-in" data-aos-delay="300">
                 <!-- Columna Texto -->
-                <div class="col-lg-6 col-xl-7">
+                <div class="col-12 col-md-12 col-lg-6 col-xl-7">
                     <p class="text-uppercase small text-muted mb-2 ls-1">TERAPIA PSICOLÓGICA ACT / Cognitivo Conductual
                     </p>
-                    <h1 class="d-block d-xl-none color-text-primary fw-bold mb-4 main-title">Aprende a Relacionarte
-                        <span class="color-text-brand">con tu Ansiedad y Recupera tu Vida.</span>
+                    <!-- Título unificado: Eliminamos duplicados usando una clase de control de quiebre -->
+                    <h1 class="color-text-primary fw-bold mb-4 main-title text-balance">
+                        Aprende a Relacionarte <span class="d-md-block color-text-brand">con tu Ansiedad y Recupera tu
+                            Vida.</span>
                     </h1>
-                    <h1 class="d-none d-xl-block color-text-primary fw-bold mb-4 main-title">Aprende a Relacionarte
-                        <span class="color-text-brand"><br>con tu Ansiedad <br>y Recupera tu Vida.</span>
-                    </h1>
-                    <p class="d-block d-xl-none color-text-light hero-description mb-4">
+                    <!-- Descripción unificada sin bloques duplicados -->
+                    <p class="color-text-primary hero-description mb-4">
                         No se trata de eliminar lo que sientes. Se trata de aprender a habitarlo con calma
-                        y de actuar desde tus valores. La Terapia de Aceptación y Compromiso <button type="button"
-                            class="btn btn-link p-0 border-0" data-bs-toggle="modal" data-bs-target="#modalACT">
-                            ACT
-                        </button>
-                        es el enfoque psicológico con mayor respaldo científico para adultos y adolescentes
-                        que quieren resultados reales en su día a día.
-                    </p>
-                    <p class="d-none d-xl-block color-text-light hero-description mb-4">
-                        No se trata de eliminar lo que sientes. Se trata de aprender a habitarlo con calma <br>
-                        y de actuar desde tus valores. La Terapia de Aceptación y Compromiso <button type="button"
-                            class="btn btn-link p-0 border-0" data-bs-toggle="modal" data-bs-target="#modalACT">
-                            ACT
-                        </button> <br>
-                        es el enfoque psicológico con mayor respaldo científico para adultos<br> y adolescentes
-                        que quieren resultados reales en su día a día.
+                        y de actuar desde tus valores. La Terapia de Aceptación y Compromiso
+                        <button type="button"
+                            class="btn btn-link p-0 border-0 fw-semibold align-baseline color-text-brand"
+                            data-bs-toggle="modal" data-bs-target="#modalACT">ACT</button>
+                        es el enfoque psicológico con mayor respaldo científico para adultos y adolescentes que quieren
+                        resultados reales en su día a día.
                     </p>
                     <div
-                        class="d-flex flex-wrap justify-content-center justify-content-md-start align-items-center gap-4 mb-4">
-                        <a class="zl-facility-url btn btn-secondary rounded-5 col-12 col-md-auto"
+                        class="d-flex flex-wrap justify-content-center justify-content-md-start align-items-center gap-3 mb-4 mb-lg-0">
+                        <a class="zl-facility-url btn btn-secondary rounded-5 col-12 col-md-auto py-3 px-4 fw-bold"
                             href="https://www.doctoralia.co/clinicas/cronopio-centro-de-neurociencias-e-intervencion-clinica#services-section"
-                            target="_blank" rel="nofollow"
+                            target="_blank" rel="noopener"
                             data-zlw-facility="cronopio-centro-de-neurociencias-e-intervencion-clinica"
                             data-zlw-type="facility-button-with-saas-only" data-zlw-saas-only="true"
                             data-zlw-a11y-title="Widget de reserva de citas médicas">Agendar mi primera sesión</a>
-                        <a href="precios.html" class="col-12 col-md-auto btn-link text-decoration-none text-center">Ver
+
+                        <a href="precios.html"
+                            class="col-12 col-md-auto btn-link text-decoration-none text-center fw-medium color-text-primary py-2">Ver
                             precios</a>
                     </div>
                 </div>
                 <!-- Columna Tabla de especificaciones -->
-                <div class="col-lg-6 col-xl-4 offset-xl-1" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card border rounded-4 p-0 overflow-hidden background-neutro-050">
+                <div class="col-12 col-md-12 col-lg-6 col-xl-4 offset-xl-1" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border rounded-4 p-0 overflow-hidden background-neutro-050 shadow-sm">
                         <!-- Fila 1 -->
                         <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
-                            <span class="small text-uppercase color-text-light" style="letter-spacing:.07em;">Duración
-                                por sesión</span>
+                            <span class="small text-uppercase color-text-light"
+                                style="letter-spacing:.07em;">Duración por sesión</span>
                             <span class="color-text-brand">50 minutos</span>
                         </div>
                         <!-- Fila 2 -->
@@ -337,6 +331,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -960,9 +955,11 @@
                         </div>
                         <div
                             class="d-flex flex-md-column flex-xl-row align-items-center justify-content-between mt-auto pt-2 mt-xl-0">
-                            <a id="zl-url" class="zl-url btn btn-primary text-on-brand col-md-12 col-lg-auto mb-md-3 mb-xl-0" target="_blank"
-                                href="https://www.doctoralia.co/natalia-zapata-posso/psicologo/cali#profile-pricing" rel="nofollow"
-                                data-zlw-doctor="natalia-zapata-posso" data-zlw-type="big_with_calendar"
+                            <a id="zl-url"
+                                class="zl-url btn btn-primary text-on-brand col-md-12 col-lg-auto mb-md-3 mb-xl-0"
+                                target="_blank"
+                                href="https://www.doctoralia.co/natalia-zapata-posso/psicologo/cali#profile-pricing"
+                                rel="nofollow" data-zlw-doctor="natalia-zapata-posso" data-zlw-type="big_with_calendar"
                                 data-zlw-opinion="false" data-zlw-hide-branding="true" data-zlw-saas-only="true"
                                 data-zlw-a11y-title="Widget de reserva de citas médicas">Agendar cita</a>
                             <a href="natalia-zapata.html"
@@ -990,9 +987,11 @@
                         </div>
                         <div
                             class="d-flex flex-md-column flex-xl-row align-items-center justify-content-between mt-auto pt-2 mt-xl-0">
-                            <a id="zl-url" class="zl-url btn btn-primary text-on-brand col-md-12 col-lg-auto mb-md-3 mb-xl-0" target="_blank"
-                                href="https://www.doctoralia.co/isabela-carrejo-hurtado/psicologo/cali#profile-pricing" rel="nofollow"
-                                data-zlw-doctor="isabela-carrejo" data-zlw-type="big_with_calendar"
+                            <a id="zl-url"
+                                class="zl-url btn btn-primary text-on-brand col-md-12 col-lg-auto mb-md-3 mb-xl-0"
+                                target="_blank"
+                                href="https://www.doctoralia.co/isabela-carrejo-hurtado/psicologo/cali#profile-pricing"
+                                rel="nofollow" data-zlw-doctor="isabela-carrejo" data-zlw-type="big_with_calendar"
                                 data-zlw-opinion="false" data-zlw-hide-branding="true" data-zlw-saas-only="true"
                                 data-zlw-a11y-title="Widget de reserva de citas médicas">Agendar cita</a>
                             <a href="isabela-carrejo.html"
@@ -1020,9 +1019,11 @@
                         </div>
                         <div
                             class="d-flex flex-md-column flex-xl-row align-items-center justify-content-between mt-auto pt-2 mt-xl-0">
-                            <a id="zl-url" class="zl-url btn btn-primary text-on-brand col-md-12 col-lg-auto mb-md-3 mb-xl-0" target="_blank"
-                                href="https://www.doctoralia.co/maria-alejandra-victoria-abad/psicologo/cali#profile-pricing" rel="nofollow"
-                                data-zlw-doctor="isabela-carrejo" data-zlw-type="big_with_calendar"
+                            <a id="zl-url"
+                                class="zl-url btn btn-primary text-on-brand col-md-12 col-lg-auto mb-md-3 mb-xl-0"
+                                target="_blank"
+                                href="https://www.doctoralia.co/maria-alejandra-victoria-abad/psicologo/cali#profile-pricing"
+                                rel="nofollow" data-zlw-doctor="isabela-carrejo" data-zlw-type="big_with_calendar"
                                 data-zlw-opinion="false" data-zlw-hide-branding="true" data-zlw-saas-only="true"
                                 data-zlw-a11y-title="Widget de reserva de citas médicas">Agendar cita</a>
                             <a href="alejandra-abad.html"
@@ -1549,7 +1550,8 @@
                             </p>
                             <div
                                 class="d-flex flex-column align-items-center align-items-md-start align-items-lg-center flex-lg-row justify-content-lg-between">
-                                <a href="https://wa.me/573142725677?text=Hola%20quiero%20solicitar%20orientaci%C3%B3n%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer"
+                                <a href="https://wa.me/573142725677?text=Hola%20quiero%20solicitar%20orientaci%C3%B3n%20sobre%20sus%20servicios"
+                                    target="_blank" rel="noopener noreferrer"
                                     class="btn btn-primary text-on-brand mb-3 mb-lg-0 col-12 col-lg-auto text-center"
                                     aria-label="Contactar por WhatsApp" title="Contactar por WhatsApp">
                                     Quiero iniciar mi proceso hoy</a>
