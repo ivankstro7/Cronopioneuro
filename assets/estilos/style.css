@@ -773,6 +773,16 @@ body {
     color: rgba(248, 246, 237, 0.7);
 }
 
+/* =========================================
+   8. Contacto
+   ========================================= */
+
+/* --- sección  hero --- */
+.card-contacto-info,
+.card-contacto-datos {
+    background-color: #FDFCF7;
+}
+
 
 /* =========================================
    Breakpoints Customizados
