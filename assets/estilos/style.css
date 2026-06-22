@@ -5,50 +5,61 @@
     /* --- Color Brand --- */
     --color-brand-primary: #072929;
 
-    /* --- Color Action --- */
-    --bg-surface-promotional: #DBFF00;
+    /* --- Color Accent --- */
+    --color-accent: #DBFF00;
 
     /* --- Color Surface (Fondos) --- */
     --background-neutro-050: #FFFFFF;
-    --background-neutro-100: #F3F7F6;
-    --background-neutro-150: #F1F5F4;
+    --background-neutro-100: #F8F6ED;
+    --background-neutro-150: #E8E9DC;
     --background-neutro-200: #CED4D0;
+    --background-neutro-250: #F2F1E6;
     --background-neutro-300: #AEC8BB;
     --background-accent-tonal: #86AE3E;
     --background-accent-subtle: #CED7A4;
+    --background-accent-brand: #072929;
 
     /* --- Color Content (Textos) --- */
-    --text-primary: #000000;
-    --text-secondary: #49454F;
+    --color-text-brand: #072929;
+    --color-text-primary: #000000;
+    --color-text-secundary: #49454F;
+    --color-text: #546256;
+    --color-text-light: #4F5852;
+    --text-on-brand-secundary: #dbff00;
     --text-on-brand: #ffffff;
 
     /* --- Color Stroke (Contornos) --- */
-    --color-stroke-light: #DEE2E6;
+    --color-stroke-light: #DFDCD4;
 
     /* --- Tipografías --- */
-    --font-principal: 'DM Sans', sans-serif;
+    --font-primary: 'DM Sans', sans-serif;
+    --font-secondary: 'Inter', sans-serif;
+
+    /* --- Definición del Padding Centralizado --- */
+    --nav-padding-x: 1rem;
 
     /* =========================================
-   2. BOOTSTRAP OVERRIDES (El puente)
+   2. BOOTSTRAP OVERRIDES
    ========================================= */
     --bs-primary: var(--color-brand-primary);
-    --bs-body-font-family: 'DM Sans', sans-serif;
+    --bs-body-font-family: var(--font-primary);
     --bs-body-color: var(--text-primary);
-    --bs-body-bg: var(--background-neutro-050);
+    --bs-body-bg: var(--background-neutro-100);
+    --bs-secondary-color: var(--color-text-light);
 }
 
 /* =========================================
    3. COMPONENTES PERSONALIZADOS
    ========================================= */
 
-/* A. Ajuste del Botón Primary (Oscuro) */
+/* A. Ajuste del Botón Primary */
 .btn-primary {
     background-color: var(--color-brand-primary);
-    color: var(--text-on-brand);
+    color: var(--text-on-brand-secundary);
     font-weight: 600;
-    padding: .5rem 1rem;
+    padding: 1rem 1.5rem;
     border-color: var(--color-brand-primary);
-    border-radius: .5rem;
+    border-radius: 100px;
     transition: all 0.3s ease;
 }
 
@@ -63,18 +74,19 @@
 }
 
 /* B. boton Secundario */
-.btn-promo {
-    background-color: var(--bg-surface-promotional);
+.btn-secondary {
+    background-color: var(--color-accent);
     color: var(--color-brand-primary);
-    font-weight: 700;
+    font-weight: 600;
     border-color: var(--color-brand-primary);
-    border-radius: .5rem;
+    border-radius: 100px;
+    padding: 1rem 1.5rem;
     transition: all 0.3s ease;
 }
 
-.btn-promo:hover,
-.btn-promo:focus {
-    background-color: var(--bg-surface-promotional);
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: var(--color-accent) !important;
     border-color: var(--color-brand-primary);
     color: var(--color-brand-primary);
     filter: brightness(0.95);
@@ -82,29 +94,39 @@
 
 .btn-link {
     color: var(--color-brand-primary) !important;
-    font-weight: 600;
+    font-weight: 500;
     transition: all 0.3s ease;
-    padding: 0;
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--color-stroke-light);
+    border-radius: 100px;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+    background-color: var(--background-neutro-050) !important;
+    border-color: var(--color-brand-primary);
+    color: var(--color-brand-primary);
+    filter: brightness(0.95);
 }
 
 /* C. Tipografía Secundaria */
 .font-alt {
-    font-family: var(--font-principal);
+    font-family: var(--font-secondary);
     font-weight: 400;
     font-style: italic;
 }
 
-/* D. Badge */
-.badge {
-    padding: .5rem 1rem;
-    font-size: 0.875rem;
-    font-weight: normal;
-    line-height: 150%;
+/* D. Nav link */
+.nav-link {
+    font-family: var(--font-secondary);
+}
+
+.navbar-nav .nav-link.active {
     color: var(--color-brand-primary);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
     background-color: var(--background-neutro-200);
-    white-space: normal;
-    text-align: start;
-    border: 1px solid var(--color-brand-primary);
+    border-radius: 2rem;
 }
 
 /* E. Card */
@@ -121,7 +143,7 @@
     --bs-accordion-inner-border-radius: 1rem;
     --bs-accordion-btn-color: var(--color-brand-primary);
     --bs-accordion-active-color: var(--color-brand-primary);
-    --bs-accordion-active-bg: var(--background-neutro-200);
+    --bs-accordion-active-bg: var(--background-neutro-150);
 }
 
 .accordion-button {
@@ -133,6 +155,85 @@
     color: var(--text-secondary);
 }
 
+/* G. Text Color classes */
+.color-text-brand {
+    color: var(--color-text-brand);
+}
+
+.color-text-primary {
+    color: var(--color-text-primary);
+}
+
+.color-text-secondary {
+    color: var(--color-text-secundary);
+}
+
+.color-text {
+    color: var(--color-text);
+}
+
+.color-text-light {
+    color: var(--color-text-light);
+}
+
+.color-text-on-brand-secondary {
+    color: var(--text-on-brand-secundary);
+}
+
+.color-text-on-brand {
+    color: var(--text-on-brand);
+}
+
+/* H. Color Surface (Fondos) */
+.background-neutro-050 {
+    background-color: var(--background-neutro-050);
+}
+
+.background-neutro-100 {
+    background-color: var(--background-neutro-100);
+}
+
+.background-neutro-150 {
+    background-color: var(--background-neutro-150);
+}
+
+.background-neutro-200 {
+    background-color: var(--background-neutro-200);
+}
+
+.background-neutro-250 {
+    background-color: var(--background-neutro-250);
+}
+
+.background-neutro-300 {
+    background-color: var(--background-neutro-300);
+}
+
+.background-accent-tonal {
+    background-color: var(--background-accent-tonal);
+}
+
+.background-accent-subtle {
+    background-color: var(--background-accent-subtle);
+}
+
+.background-brand-primary {
+    background-color: var(--color-brand-primary);
+}
+
+.background-accent-brand {
+    background-color: var(--background-accent-brand);
+}
+
+.bg-accent {
+    background-color: var(--color-accent);
+}
+
+/* I. Divider */
+.divider {
+    border-top: 1px solid var(--color-stroke-light);
+}
+
 /* Evitar scroll horizontal */
 html,
 body {
@@ -141,423 +242,119 @@ body {
 }
 
 /* =========================================
-   4. banner promocional
+   1. Inicio
    ========================================= */
 
-/* --- Header --- */
-.header {
-    background-color: var(--bg-surface-promotional);
-    transition: all 0.3s ease;
-    z-index: 1030;
-}
-
-.time-box {
-    font-weight: 700;
-    color: var(--color-brand-primary);
-}
-
-/* =========================================
-   5. SECCIÓN HERO
-   ========================================= */
-#hero {
-    background-color: var(--background-neutro-100);
-}
-
-#hero .discount p:first-child {
-    font-size: 1.125rem;
-    color: var(--color-brand-primary);
-}
-
-#hero h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 120%;
-    color: var(--color-brand-primary);
-}
-
-#hero .price {
-    font-size: 1.125rem;
-    font-family: var(--font-principal);
-    font-weight: 400;
-    font-style: italic;
-    color: var(--text-secondary);
-    text-decoration: line-through;
-}
-
-#hero small {
-    color: var(--text-secondary);
-}
-
-/* =========================================
-   6. Datos de confianza
-   ========================================= */
-#datos-confianza h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-brand-primary);
-}
-
-.bg-light-card {
-    background-color: var(--background-neutro-150);
-}
-
-.bg-light-gray-card {
-    background-color: var(--background-neutro-200);
-}
-
-.bg-neutro-card {
-    background-color: var(--background-neutro-300);
-}
-
-.bg-accent-card {
-    background-color: var(--background-accent-subtle);
-}
-
-.bg-light-card img,
-.bg-accent-card img,
-.bg-neutro-card img {
-    width: 50%;
-}
-
-.data-card {
-    border: 1px solid var(--color-brand-primary);
-    text-align: left;
-    overflow: hidden;
-}
-
-.data-card h3 {
-    font-size: 1.5rem;
-    color: var(--color-brand-primary);
-}
-
-.data-card p {
-    font-size: 1rem;
-    color: var(--text-primary);
-}
-
-.rating-stars .star-icon {
-    width: 18px;
-    height: 18px;
-}
-
-/* =========================================
-   7. problema que resuelvemos
-   ========================================= */
-#problema {
-    padding-bottom: 250px;
-}
-
-#problema h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-brand-primary);
-}
-
-#problema .subtitle {
-    font-size: 1.125rem;
-}
-
-#problema .card-bg-light h3 {
-    font-size: 1.125rem;
-    color: #D81813;
-}
-
-#problema .card-bg-light .trailing-icon {
-    background-color: var(--background-neutro-150);
-    padding: 0.25rem;
-    border-radius: 1rem;
-}
-
-#problema .card-bg-light .trailing-icon .container,
-#problema .card-bg-dark .trailing-icon .container {
-    background-color: var(--background-neutro-050);
-    padding: .5rem;
-    border-radius: 0.75rem;
-}
-
-#problema .card-bg-dark {
+/* --- Topbar Promocional --- */
+.top-bar {
+    font-family: var(--font-secondary);
     background-color: var(--color-brand-primary);
+    font-size: 0.875rem;
 }
 
-#problema .card-bg-dark h3 {
-    font-size: 1.125rem;
+.text-lime {
+    color: var(--color-accent) !important;
 }
 
-#problema .card-bg-dark .trailing-icon {
-    background-color: var(--background-neutro-300);
-    padding: 0.25rem;
-    border-radius: 1rem;
-}
-
-.problem-list li {
-    color: var(--text-secondary);
-}
-
-/* Estilo para las listas (Tradicional y Método) */
-.problem-list li {
-    font-size: 1rem;
-    padding-left: 1.5rem;
-    position: relative;
-    line-height: 150%;
-}
-
-/* Viñeta para la lista Tradicional (Problemas - Círculo o X simple) */
-.problem-list li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: var(--text-secondary);
-    font-weight: bold;
-}
-
-/* Viñeta para la lista Método (Solución - Checkmark simple) */
-.solution-check-icon {
-    width: 24px;
-    height: 24px;
-}
-
-#problema .paragraph {
-    font-family: "Handlee", cursive;
-    font-weight: 400;
-    font-size: 1.125rem;
-    line-height: 150%;
-}
-
-#problema .bg-image {
-    position: absolute;
-    z-index: 1;
-    /* Asegura que la imagen esté sobre el fondo, pero debajo de las tarjetas si se superponen */
-    /* Posición Mobile: Abajo y centrada */
-    left: 50%;
-    transform: translateX(-50%);
-    /* Centrado horizontal */
-    bottom: 4%;
-    /* Ajusta este valor para que la imagen no se corte en el fondo */
-    width: 150px;
-    /* Tamaño móvil, ajusta a tu preferencia */
-    height: auto;
-}
-
-/* =========================================
-   8. SECCIÓN OFERTA DETALLADA
-   ========================================= */
-#oferta {
+/* --- Header / Navbar --- */
+.navbar {
     background-color: var(--background-neutro-100);
 }
 
-#oferta .discount p:first-child {
-    font-size: 1.125rem;
-    color: var(--color-brand-primary);
+.dropdown-menu {
+    border: 0;
 }
 
-#oferta h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-brand-primary);
+.dropdown-menu .number {
+    font-family: "Fraunces", serif;
 }
 
-#oferta .card-offer {
-    border: 1px solid var(--color-brand-primary);
-}
-
-#oferta .card-offer h3 {
-    font-size: 1.125rem;
-}
-
-#oferta .card-offer .leading-icon {
-    background-color: var(--background-neutro-200);
-    padding: 0.25rem;
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: var(--background-neutro-150);
     border-radius: 1rem;
 }
 
-#oferta .card-offer .leading-icon .container,
-#oferta .card-offer .leading-icon .container {
-    background-color: var(--background-neutro-050);
-    padding: .5rem;
-    border-radius: 0.75rem;
+.navbar-collapse {
+    background: var(--background-neutro-050);
+    border-radius: 1rem;
 }
 
-#oferta .card-offer .title-description h4 {
-    font-size: 1.125rem;
-    line-height: 150%;
+/* --- Hero --- */
+.hero-section h1 {
+    font-size: 2.5rem;
 }
 
-#oferta .card-offer .title-description small {
-    color: var(--text-secondary);
-    line-height: 150%;
+.hero-section .hero-description {
+    font-size: 1rem;
 }
 
-#oferta .card-summary {
-    background-color: var(--bg-surface-promotional);
-    border: 1px solid var(--color-brand-primary);
-}
-
-#oferta .card-summary small,
-#oferta .card-summary h3 {
+.hero-section .paragraph {
     color: var(--color-brand-primary);
 }
 
-#oferta .card-summary h3 {
+/* --- Sección de confianza --- */
+.grid-cards h2 {
     font-size: 2rem;
 }
 
-#oferta .card-summary .card-price {
-    border-top: 1px solid var(--color-brand-primary);
+.grid-cards .numero {
+    font-size: 0.875rem;
+    margin-bottom: 5rem;
 }
 
-#oferta .bg-light-price-card {
-    color: var(--color-brand-primary);
-    background-color: var(--background-neutro-200);
-    border: 1px solid var(--color-brand-primary);
+/* --- Sección de problema solución --- */
+.seccion-problema h2 {
+    font-size: 2rem;
 }
 
-#oferta .text-muted-custom {
-    color: var(--text-secondary);
+.seccion-problema .tradicional .header-tradicional {
+    border-radius: 1rem 1rem 0 0;
 }
 
-#oferta .text-muted-custom-secundary {
-    font-family: "Handlee", cursive;
-    font-weight: 400;
+.seccion-problema .cronopio {
+    border-radius: 0 0 1rem 1rem;
+}
+
+/* --- Sección pasos --- */
+.seccion-pasos .numero {
+    font-size: 4.5rem;
     font-style: italic;
-    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
 }
 
-/* =========================================
-   9. SECCIÓN PROCESO DE 3 PASOS
-   ========================================= */
-
-#pasos h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-brand-primary);
-}
-
-#pasos h3 {
-    font-size: 1.125rem;
-    color: var(--color-brand-primary);
-}
-
-#pasos .small-text {
-    color: var(--text-secondary);
-}
-
-#pasos .card-steps {
-    border: 1px solid var(--color-stroke-light);
-    background-color: var(--background-neutro-100);
-    padding: 1rem;
-}
-
-#pasos .paragraph {
-    font-family: "Handlee", cursive;
-    line-height: 150%;
-}
-
-/* =========================================
-   10. SECCIÓN TESTIMONIOS Y DATOS DE CONFIANZA
-   ========================================= */
-
-#testimonios {
-    background-color: var(--color-brand-primary);
-    border-bottom: 0.5rem solid var(--bg-surface-promotional);
-}
-
-/* Badge Promocional (Fondo Amarillo) */
-.badge-secondary-promotional {
-    background-color: var(--bg-surface-promotional);
-    border: 1px solid var(--color-brand-primary);
-}
-
-#testimonios h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-/* Estilos de la tarjeta de testimonio (Fondo blanco) */
-#testimonialCarousel .carousel-inner {
-    background-color: var(--background-neutro-050);
-    min-height: 400px;
-}
-
-#testimonialCarousel .carousel-inner .carousel-item .blockquote {
-    min-height: 215px;
-}
-
-#testimonialCarousel .testimonial-rating {
-    border-bottom: 1px solid var(--color-brand-primary);
-}
-
-/* Estilos de los botones del carrusel */
-.carousel-control-prev,
-.carousel-control-next {
-    width: 48px;
-    height: 48px;
-    border-radius: 100%;
-    border: 1px solid var(--color-stroke-light);
-    background-color: var(--background-neutro-050);
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 1;
-}
-
-.carousel-control-prev {
-    left: -20px;
-}
-
-/* Ajusta la posición fuera de la tarjeta */
-.carousel-control-next {
-    right: -20px;
-}
-
-/* Iconos de navegación del carrusel */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 1rem;
-    height: 1rem;
-    border: 2px solid var(--color-brand-primary);
-    border-width: 0 2px 2px 0;
-}
-
-.carousel-control-prev-icon {
-    transform: rotate(135deg);
-    /* Flecha apuntando a la izquierda */
-}
-
-.carousel-control-next-icon {
-    transform: rotate(-45deg);
-    /* Flecha apuntando a la derecha */
-}
-
-/* =========================================
-   11. SECCIÓN EQUIPO
-   ========================================= */
-
-#equipo h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-#equipo .subtitle {
-    font-size: 1.125rem;
-}
-
-/* Estilo general para las tarjetas de equipo */
-.card-team {
-    background-color: var(--background-neutro-100);
+.grid-cards .banner-cta {
+    background-color: #F2F1E6;
     border: 1px solid var(--color-stroke-light);
 }
 
-.team-grid .card-team .image {
-    min-height: 150px;
-    height: 100%;
-    object-fit: cover;
-}
-
-.team-grid .card-team h4 {
+/* --- Sección servicios --- */
+.grid-cards .link {
     font-size: 1.125rem;
 }
 
-/* Estilo para las etiquetas/tags de especialidad */
+.banner-orientacion {
+    background-color: #011A1A;
+    border: 1px solid #F1FCFA;
+}
+
+.banner-orientacion p {
+    font-family: var(--font-primary);
+    font-size: 1.125rem;
+    color: #F8F6ED;
+}
+
+/* --- Sección equipo --- */
+.nombre-profesional {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.especialidad-profesional {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
 .tag {
     background-color: var(--background-neutro-200);
     color: var(--color-brand-primary);
@@ -570,56 +367,81 @@ body {
     border-radius: 0.5rem;
 }
 
-
-/* El texto secundario (e.g., • Psicóloga Clínica, Universidad) */
-.text-muted-custom {
-    color: var(--color-text-secondary);
+/* --- Sección equipo - modal --- */
+.modal .meta-reseña {
+    font-size: 0.75rem;
 }
 
-/* =========================================
-   12. SECCIÓN PREGUNTAS FRECUENTES (FAQ)
-   ========================================= */
-
-#faq h2 {
-    font-size: 1.5rem;
+#carruselTestimonios .card .body-card h3 {
+    margin-bottom: 5rem;
 }
 
-#faq .paragraph {
-    font-size: 1.125rem;
-    color: var(--text-secondary);
+/* Espacio para los botones en la parte inferior */
+.carrusel-testimonios {
+    padding-bottom: 56px;
 }
 
-/* =========================================
-   13. cta final
-   ========================================= */
-
-#final-cta h2 {
-    font-size: 1.5rem;
-    color: var(--color-brand-primary);
+.carrusel-testimonios .meta-reseña {
+    font-size: 0.75rem;
 }
 
-#final-cta .paragraph {
-    font-size: 1.125rem;
+/* Cancelar el top:0 de Bootstrap y anclar al bottom */
+.carrusel-testimonios .carousel-control-prev,
+.carrusel-testimonios .carousel-control-next,
+.carrusel-mobile .carousel-control-prev,
+.carrusel-mobile .carousel-control-next,
+.carrusel-desktop .carousel-control-prev,
+.carrusel-desktop .carousel-control-next {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    transform: none;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #D9D6CF;
+    border-radius: 50%;
+    opacity: 1;
 }
 
-.cta-image-box img {
-    border-radius: 1rem 1rem 0 0;
+/* Centrar con gap de 1rem (16px) entre los dos botones */
+.carrusel-testimonios .carousel-control-prev,
+.carrusel-mobile .carousel-control-prev,
+.carrusel-desktop .carousel-control-prev {
+    left: calc(50% - 40px - 8px);
+    right: auto;
 }
 
-.cta-main-content {
-    background-color: var(--background-accent-subtle);
-    border-radius: 0 0 1rem 1rem;
+.carrusel-testimonios .carousel-control-next,
+.carrusel-mobile .carousel-control-next,
+.carrusel-desktop .carousel-control-next {
+    right: calc(50% - 40px - 8px);
+    left: auto;
 }
 
-.cta-final-text {
-    font-family: var(--font-principal);
-    font-weight: 400;
-    font-style: italic;
+/* Íconos oscuros */
+.carrusel-testimonios .carousel-control-prev-icon,
+.carrusel-testimonios .carousel-control-next-icon,
+.carrusel-mobile .carousel-control-prev-icon,
+.carrusel-mobile .carousel-control-next-icon,
+.carrusel-desktop .carousel-control-prev-icon,
+.carrusel-desktop .carousel-control-next-icon {
+    width: 14px;
+    height: 14px;
+    filter: invert(1) brightness(0);
 }
 
-/* =========================================
-   14. Footer
-   ========================================= */
+/* --- Sección de llamada a la acción --- */
+.seccion-cta h2 {
+    font-size: 2rem;
+}
+
+.seccion-cta .cta-right img {
+    min-height: 50vh;
+    object-fit: fill;
+}
+
+/* --- Footer --- */
 .footer-cronopio {
     background-color: var(--color-brand-primary);
     /* Color oscuro del diseño */
@@ -666,6 +488,10 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+.footer-cronopio .especialidad {
+    color: var(--text-on-brand);
+}
+
 .x-small {
     font-size: 0.75rem;
 }
@@ -673,10 +499,6 @@ body {
 .footer-icon img {
     max-width: 24px;
 }
-
-/* =========================================
-   FAB de WhatsApp
-   ========================================= */
 
 /* Botón flotante personalizado */
 .whatsapp-fab {
@@ -707,41 +529,272 @@ body {
 }
 
 /* =========================================
+   2. Servicios
+   ========================================= */
+
+/* --- Hero image --- */
+.hero-imagen-fondo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center right;
+    z-index: 0;
+}
+
+.hero-degradado .text-small {
+    font-size: 1.5rem;
+}
+
+.hero-degradado h1 {
+    font-size: 2.5rem;
+}
+
+/* --- sección  servicios --- */
+.seccion-servicios .banner-cta {
+    background-color: #F2F1E6;
+    border: 1px solid var(--color-stroke-light);
+}
+
+/* --- sección  enfoque --- */
+.seccion-enfoque h2 {
+    font-size: 1.5rem;
+}
+
+/* =========================================
+   3. Servicio
+   ========================================= */
+
+/* --- hero image --- */
+.hero-imagen-adaptativa {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    /* Forzamos la relación de aspecto solicitada en móviles (puedes usar 1/1 o 3/4) */
+    aspect-ratio: 4 / 3;
+    margin-top: 1.5rem;
+    /* Separación sutil del contenido superior */
+}
+
+/* Evitar saltos de líneas bruscos en títulos */
+.text-balance {
+    text-wrap: balance;
+}
+
+/* --- sección  situaciones --- */
+.seccion-situaciones h2 {
+    font-size: 2rem;
+}
+
+.seccion-situaciones .card .ultima-fila {
+    border-top: 1px solid var(--color-stroke-light);
+}
+
+.seccion-situaciones .card img {
+    width: 7%;
+}
+
+.card-profesional img {
+    width: 50%;
+}
+
+/* --- sección  beneficios --- */
+.seccion-beneficios h2 {
+    font-size: 2rem;
+}
+
+.seccion-beneficios .card-titulo-beneficios {
+    border-radius: 0 0 1rem 1rem;
+    border: 1px solid var(--color-stroke-light);
+    margin-bottom: 0.25rem;
+}
+
+.seccion-beneficios .card-titulo-beneficios .imagen-mascota-beneficios {
+    width: 75%;
+}
+
+.seccion-beneficios .beneficios-lista .card-beneficio:first-child {
+    border-radius: 1rem 1rem 0 0;
+    border: 1px solid var(--color-stroke-light);
+}
+
+.seccion-beneficios .beneficios-lista .card-beneficio:last-child {
+    border-radius: 0 0 1rem 1rem;
+    border: 1px solid var(--color-stroke-light);
+}
+
+.seccion-beneficios .numero {
+    font-size: 0.875rem;
+    margin-bottom: 5rem;
+}
+
+/* --- sección  FAQ --- */
+.seccion-faq h2 {
+    font-size: 2rem;
+}
+
+.seccion-faq .accordion-item {
+    background-color: var(--background-neutro-050);
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.seccion-faq .accordion-button {
+    background-color: var(--background-neutro-150);
+}
+
+
+/* =========================================
+   4. Quienes somos
+   ========================================= */
+
+/* --- Hero --- */
+.hero-section-secondary .hero-imagen-adaptativa {
+    object-position: 95% center;
+}
+
+/* --- sección  Cronopio --- */
+.seccion-split .card h2 {
+    font-size: 2rem;
+}
+
+.seccion-split .card .imagen-mascota img {
+    width: 100px;
+    height: auto;
+}
+
+.seccion-split .card .card-quote {
+    font-family: "Fraunces", serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+.imagen-split {
+    border-radius: 1.25rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    aspect-ratio: 1 / 1;
+    /* mobile */
+}
+
+.imagen-split img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.imagen-profesionales {
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+    flex-shrink: 0;
+    aspect-ratio: 1 / 1;
+    /* mobile */
+}
+
+.imagen-profesionales img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* =========================================
+   5. Profesionales
+   ========================================= */
+
+/* --- sección  Cronopio --- */
+.seccion-equipo h1 {
+    font-size: 2rem;
+}
+
+.seccion-equipo .imagen-profesional {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.seccion-equipo .imagen-profesional img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =========================================
+   6. Profesional
+   ========================================= */
+/* --- sección  perfil --- */
+.seccion-perfil .imagen-profesional {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.seccion-perfil .imagen-profesional img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.seccion-perfil .accordion-button {
+    background-color: var(--background-neutro-150);
+}
+
+/* =========================================
+   7. Precios
+   ========================================= */
+
+/* --- sección  precios --- */
+.grid-cards .pricing-card {
+    background-color: #FDFCF7;
+    border: 1px solid #DFDCD4;
+}
+
+.grid-cards .pricing-card h2 {
+    font-size: 1.5rem;
+}
+
+.grid-cards .pricing-card h3 {
+    font-size: 2rem;
+}
+
+.grid-cards .pricing-card-featured {
+    background-color: var(--background-accent-brand);
+}
+
+/* --- sección  cta estudiantes --- */
+.seccion-cta .parrafo-estudiantes {
+    color: rgba(248, 246, 237, 0.7);
+}
+
+/* =========================================
+   8. Contacto
+   ========================================= */
+
+/* --- sección  hero --- */
+.card-contacto-info,
+.card-contacto-datos {
+    background-color: #FDFCF7;
+}
+
+
+/* =========================================
    Breakpoints Customizados
    ========================================= */
 
-/* =========================================
-   Landscape Phones (608px)
-   ========================================= */
-
+/* --- 608px landscape --- */
 @media (min-width: 608px) {}
 
-/* =========================================
-    Tablets (768px)
-   ========================================= */
-
+/* --- 768px Tablet --- */
 @media (min-width: 768px) {
-    .data-card {
-        min-height: 250px;
-        height: 100%;
-    }
 
-    #testimonialCarousel .carousel-inner .carousel-item .blockquote {
-        min-height: 120px;
-    }
-
-    .alejandra-img {
-        width: 46%;
-    }
-
-    .cta-main-content {
-        border-radius: 1rem 0 0 1rem;
-    }
-
-    .cta-image-box img {
-        border-radius: 0 1rem 1rem 1rem;
-    }
-
+    /* --- Home --- */
     .instagram-item {
         flex: 0 0 30%;
         /* Muestra 3 y un poco de la 4ta */
@@ -750,58 +803,73 @@ body {
     .whatsapp-fab {
         bottom: 24px;
     }
+
+    .seccion-problema ul li {
+        min-height: 81px;
+    }
+
+    .seccion-problema .tradicional {
+        border-radius: 0 0 0 1rem;
+    }
+
+    .seccion-problema .cronopio {
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    .seccion-problema .cronopio .header-cronopio {
+        border-radius: 0 1rem 0 0;
+    }
+
+    .grid-cards .link {
+        font-size: 1.5rem;
+    }
+
+    .hero-imagen-fondo {
+        object-position: center top;
+    }
+
+    /* --- Servicios --- */
+    .seccion-situaciones .card .ultima-fila {
+        border-top: 0;
+    }
+
+    .hero-section {
+        min-height: 680px;
+    }
+
+    .seccion-beneficios .card-titulo-beneficios {
+        border-radius: 0 1rem 1rem 0;
+        margin-bottom: 0;
+        margin-right: 0.25rem;
+    }
+
+    .seccion-beneficios .beneficios-lista .card-beneficio:first-child {
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .seccion-beneficios .beneficios-lista .card-beneficio {
+        border-radius: 1rem 0 0 1rem;
+        border: 1px solid var(--color-stroke-light);
+        margin-bottom: 0.25rem;
+    }
+
+    .seccion-beneficios .beneficios-lista .card-beneficio:last-child {
+        border-radius: 1rem 0 0 1rem;
+        margin-bottom: 0;
+    }
+
+    .imagen-split {
+        aspect-ratio: unset;
+    }
+
 }
 
-/* =========================================
-    Desktops (992px)
-   ========================================= */
-
+/* --- 992px Small Desktop --- */
 @media (min-width: 992px) {
 
-    .bg-light-card,
-    .bg-accent-card {
-        min-height: 340px;
-    }
-
-    .bg-light-gray-card,
-    .bg-neutro-card {
-        min-height: 230px;
-    }
-
-    .bg-light-card img {
-        width: 100%;
-    }
-
-    .bg-neutro-card img {
-        width: 85%;
-    }
-
-    .bg-accent-card img {
-        width: 75%;
-    }
-
-    #testimonialCarousel .carousel-inner .carousel-item .blockquote {
-        min-height: 215px;
-    }
-
-    .card-team {
-        padding: 1.5rem !important;
-    }
-
-    /* Imagen del profesional en el diseño horizontal */
-    .team-img-horizontal {
-        width: 35%;
-        max-height: 160px;
-    }
-
-    .team-content-horizontal {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .alejandra-img {
-        width: 100%;
+    /* --- Home --- */
+    .seccion-problema ul li {
+        min-height: auto;
     }
 
     .instagram-scroll-container {
@@ -817,166 +885,151 @@ body {
         flex: none;
         width: 100%;
     }
-}
 
-/* =========================================
-    Large Desktops (1200px)
-   ========================================= */
+    .dropdown-menu {
+        border: 1px solid var(--color-stroke-light);
+    }
 
-@media (min-width: 1200px) {
-    .team-img-horizontal {
+    .navbar-collapse {
+        background: transparent;
+        border: 0;
+    }
+
+    /* --- Servicios --- */
+    .seccion-situaciones .card .ultima-fila {
+        border-top: 1px solid var(--color-stroke-light);
+    }
+
+    .seccion-beneficios .card-titulo-beneficios .imagen-mascota-beneficios {
         width: 50%;
-        max-height: 256px;
     }
 
-    .cta-main-content {
-        padding: 3.75rem !important;
+    /* La imagen vuelve a ser el fondo absoluto del contenedor */
+    .hero-imagen-adaptativa {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        margin-top: 0;
+        aspect-ratio: auto;
+        /* Desactivar la proporción fija en ambiente web */
+    }
+
+    .hero-degradado::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to left,
+                rgba(248, 246, 237, 0) 0%,
+                /* Esquina inferior derecha: 0% opacidad */
+                rgba(248, 246, 237, 0) 25%,
+                /* Stop 25%: sigue al 0% opacidad */
+                rgba(248, 246, 237, 0.9) 50%,
+                /* Stop 50%: sube al 75% opacidad */
+                rgba(248, 246, 237, 1) 100%
+                /* Esquina superior izquierda: 100% opacidad */
+            );
+    }
+
+    /* --- Quienes somos --- */
+    .hero-section-secondary .hero-imagen-adaptativa {
+        position: relative;
+        object-position: right center;
+    }
+
+    .hero-degradado-secondary::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to left,
+                rgba(248, 246, 237, 0) 0%,
+                /* Esquina inferior derecha: 0% opacidad */
+                rgba(248, 246, 237, 0) 25%,
+                /* Stop 25%: sigue al 0% opacidad */
+                rgba(248, 246, 237, 0.5) 75%,
+                /* Stop 50%: sube al 75% opacidad */
+                rgba(248, 246, 237, 1) 100%
+                /* Esquina superior izquierda: 100% opacidad */
+            );
+    }
+
+    /* --- profesionales --- */
+    .seccion-equipo .imagen-profesional {
+        width: 360px;
+        height: 360px;
+    }
+
+    /* --- perfil --- */
+    .seccion-perfil .imagen-profesional {
+        width: 260px;
+        height: 260px;
     }
 }
 
-/* =========================================
-    Larger Desktops (1400px)
-   ========================================= */
+/* --- 1200px md Desktop --- */
+@media (min-width: 1200px) {
 
+    /* --- Home --- */
+    .navbar-expand-xl .navbar-nav .nav-link {
+        padding: 0.5rem;
+    }
+
+    /* ---  Servicio --- */
+    .card-profesional img {
+        width: 25%;
+    }
+
+    /* ---  Quienes somos --- */
+    .hero-section-secondary .hero-imagen-adaptativa {
+        position: absolute;
+    }
+
+    .seccion-split .card .card-quote {
+        font-size: 1.5rem;
+    }
+}
+
+/* --- 1400px Larger Desktop --- */
 @media (min-width: 1400px) {
 
-    #hero h1 {
+    /* --- Home --- */
+    .navbar-expand-xl .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .grid-cards h2,
+    .seccion-problema h2,
+    .seccion-situaciones h2,
+    .seccion-beneficios h2,
+    .seccion-faq h2,
+    .seccion-cta h2,
+    .seccion-split .card h2,
+    .seccion-equipo h1 {
         font-size: 2.5rem;
-    }
-
-    #hero .paragraph {
-        font-size: 1.125rem;
-    }
-
-    .badge {
-        border-radius: 1rem;
-    }
-
-    #datos-confianza {
-        padding-top: 5rem !important;
-        padding-bottom: 5rem !important;
-    }
-
-    #datos-confianza h2 {
-        font-size: 2.25rem;
-        line-height: 150%;
-    }
-
-    .bg-light-card img,
-    .bg-neutro-card img {
-        width: 60%;
-    }
-
-    .bg-accent-card img {
-        width: 50%;
-    }
-
-    #problema {
-        padding-top: 5rem !important;
-        padding-bottom: 5rem !important;
-    }
-
-    #problema h2 {
-        font-size: 2.25rem;
-        line-height: 150%;
-    }
-
-    #problema .bg-image {
-        left: 5%;
-        bottom: 5%;
-    }
-
-    #oferta {
-        padding-top: 5rem !important;
-        padding-bottom: 5rem !important;
-    }
-
-    #oferta h2 {
-        font-size: 2.25rem;
-        line-height: 150%;
-    }
-
-    #pasos {
-        padding-top: 5rem !important;
-        padding-bottom: 5rem !important;
-    }
-
-    #pasos h2 {
-        font-size: 2.25rem;
-        line-height: 150%;
-    }
-
-    #testimonios {
-        padding-top: 5rem !important;
-        padding-bottom: 5rem !important;
-    }
-
-    #testimonios h2 {
-        font-size: 2.25rem;
-        line-height: 150%;
-    }
-
-    #testimonialCarousel .carousel-inner .carousel-item .blockquote {
-        min-height: 120px;
-    }
-
-    #equipo {
-        padding-top: 5rem !important;
-    }
-
-    #equipo h2 {
-        font-size: 2.25rem;
-        line-height: 150%;
-    }
-
-    #faq {
-        padding-top: 5rem !important;
-    }
-
-    #faq h2 {
-        font-size: 2.25rem;
-        line-height: 150%;
-    }
-
-    #faq .paragraph {
-        font-size: 1.25rem;
-    }
-
-    .whatsapp-fab img {
-        width: 72px;
-        height: 72px;
-    }
-
-    #final-cta {
-        padding-top: 5rem !important;
-        padding-bottom: 5rem !important;
-    }
-
-    #final-cta h2 {
-        font-size: 3.75rem;
-        margin-bottom: 2rem !important;
-    }
-
-    #final-cta .paragraph {
-        margin-bottom: 2rem !important;
-    }
-
-    #final-cta .paragraph,
-    #final-cta .cta-final-text {
-        font-size: 1.25rem;
-    }
-
-    #final-cta .cta-final-text {
-        margin-top: 2rem !important;
-    }
-
-    .cta-image-box img {
-        object-fit: cover;
-        /* Ajustamos el max-height para controlar la altura total de la sección */
-        max-height: 700px;
     }
 
     .whatsapp-fab {
         bottom: 32px;
+    }
+
+    /* --- Servicios --- */
+    .hero-degradado .text-small {
+        font-size: 2.5rem;
+    }
+
+    .hero-degradado h1 {
+        font-size: 3rem;
+    }
+
+    /* --- sección  enfoque --- */
+    .seccion-enfoque h2 {
+        font-size: 2.5rem;
     }
 }
